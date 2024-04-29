@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "flowbite": "^2.3.0",
+    "js": "^0.1.0",
+    "node.js": "^0.0.1-security",
+    "swipe-js": "^2.2.0",
+    "swiper": "^11.1.1"
+  }
+}
