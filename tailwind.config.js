@@ -8,7 +8,6 @@ module.exports = {
       },
       fontFamily: {
         'almendra': ["Almendra SC", "serif"],
-        'abel': ["Abel", "sans-serif"],
       },
     },
   },
