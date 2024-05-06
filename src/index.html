@@ -32,32 +32,34 @@
         <!-- Desktop Navigation -->
         <ul class="hidden lg:flex text-xl items-center gap-8
          text-gray-700 font-serif lg:ml-8">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./aboutUs.html">About Us</a></li>
-          <li><a href="./activities.html">Activities</a></li>
-          <li><a href="./event.html">Event</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg ml-16"><a href="#">Competition</a></button>
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./index.html" class="active:text-black">Home</a></li>
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./aboutUs.html" class="active:text-black">AboutUs</a></li>
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./activities.html" class="active:text-black">Activities</a></li>
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./event.html" class="active:text-black">Event</a></li>
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./contact.html" class="active:text-black">Contact</a></li>
+          <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg ml-16"><a href="./competition.html" class="active:text-black">Competition</a></button>
         </ul>
+        <!-- End of Desktop Navigation -->
         
         <div id="sideNav"
-            class="fixed top-0 right-0 bg-gray-200 text-black w-0 h-full flex items-center overflow-x-hidden duration-500 font-bold z-10">
+          class="fixed top-0 right-0 bg-gray-200 text-black w-0 h-full flex items-center overflow-x-hidden duration-500 font-bold z-10 lg:hidden">
             
           <div class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48">
             <a href="javascript:void(0)" onclick="exitNav()"><img src="/images/icon-close.svg" alt="Close logo"/></a>
           </div>
             
-            <!-- Mobile Navigation -->
+          <!-- Mobile Navigation -->
           <nav>
             <ul class="text-left text-3xl font-light font-serif ml-4 sm:text-3xl">
-              <li class="p-1"><a href="./index.html">Home</a></li>
-              <li class="p-2"><a href="./aboutUs.html">About Us</a></li>
-              <li class="p-2"><a href="./activities.html">Activities</a></li> 
-              <li class="p-2"><a href="./event.html">Events</a></li>
-              <li class="p-2"><a href="./contact.html">Contact</a></li>    
-              <li class="p-2"><a href="./competition.html">Competition</a></li>  
+              <li class="p-2 hover:text-yellow-600"><a href="./index.html">Home</a></li>
+              <li class="p-2 hover:text-yellow-600"><a href="./aboutUs.html">AboutUs</a></li>
+              <li class="p-2 hover:text-yellow-600"><a href="./activities.html">Activities</a></li> 
+              <li class="p-2 hover:text-yellow-600"><a href="./event.html">Events</a></li>
+              <li class="p-2 hover:text-yellow-600"><a href="./contact.html">Contact</a></li>    
+              <li class="p-2 hover:text-yellow-600"><a href="./competition.html">Competition</a></li>  
             </ul>
           </nav>
+          <!-- End of Mobile Navigtion -->
         </div>
       </nav>
 
@@ -82,9 +84,9 @@
 
     <section class="lg:px-10">
       <!-- Mobile section start here -->
-      <section class="md:hidden px-16 pt-12">
-        <img src="../images/section-image-00.jpg" alt="Mosque image" class="rounded-3xl w-[450px] mx-auto">
-        <img src="../images/section-image-01.jpg" alt="Mosque image" class="rounded-3xl w-[250px] -mt-64 ml-36" >
+      <section class="px-12 pt-12 mx-4 md:hidden">
+        <img src="../images/section-image-00.jpg" alt="Mosque image" class="rounded-3xl w-[400px]">
+        <img src="../images/section-image-01.jpg" alt="Mosque image" class="rounded-3xl w-[220px] -mt-64 ml-[135px]" >
       </section>
       <!-- Mobile section ends here -->
       
@@ -100,7 +102,7 @@
             <p class="text-xl font-semibold font-abel text-yellow-600 mb-2">About Us</p>
             <p class="text-4xl font-bold font-almendra mb-6">Welcome To The Lantern Islamic Foundation</p>
           </div>
-          <p class="text-lg mb-6 md:my-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id excepturi soluta doloremque velit consequatur enim modi dicta quis? Exercitationem quidem labore illum debitis alias provident deleniti esse, nulla ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim nisi, quibusdam in ab fugiat officia quisquam qui earum omnis placeat amet incidunt numquam? Nihil quos error beatae suscipit necessitatibus veniam?</p>
+          <p class="text-lg text-center mb-6 md:my-10 md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id excepturi soluta doloremque velit consequatur enim modi dicta quis? Exercitationem quidem labore illum debitis alias provident deleniti esse, nulla ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim nisi, quibusdam in ab fugiat officia quisquam qui earum omnis placeat amet incidunt numquam? Nihil quos error beatae suscipit necessitatibus veniam?</p>
     
           <button class="bg-yellow-500 px-6 py-3 rounded-2xl hover:bg-yellow-600 shadow-md transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:duration-200"><a href="./aboutUs.html" class="font-bold text-white">Discover More</a></button>
           <div class="flex items-center gap-3 my-3">
@@ -173,7 +175,7 @@
     <!-- SLIDER FOR DESKTOP -->
     <section class="hidden lg:block bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center text-center py-12 px-2">
       <p class="text-xl font-semibold text-yellow-600 mb-2">Islam Pillar</p>
-      <p class="text-4xl font-bold font-almendra mb-12">FIVE PILLARS OF ISLAM</p>>
+      <p class="text-4xl font-bold font-almendra mb-12">FIVE PILLARS OF ISLAM</p>
 
       <section id="animate-slider" class="hidden md:block">
   
@@ -601,7 +603,7 @@
       
       <section class="md:grid md:grid-cols-2 md:grid-rows-3 md:gap-5 md:px-6 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-10 lg:px-12 xl:grid-cols-3 xl:grid-rows-2 ">
 
-        <div class="border-2 rounded-2xl shadow-md p-8 mb-8">
+        <div class="border-2 rounded-3xl shadow-md p-8 mb-8">
           <div class="flex items-center justify-between mb-4">
             <img src="/images/value-image-06.svg" alt="">
             <p class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300">01</p>
@@ -611,7 +613,7 @@
           <a href="./activities.html" class="text-yellow-600 text-lg font-bold hover:text-black">Read More...</a>
         </div>
   
-        <div class="border-2 rounded-2xl shadow-md p-8 mb-8">
+        <div class="border-2 rounded-3xl shadow-md p-8 mb-8">
           <div class="flex items-center justify-between mb-4">
             <img src="/images/value-image-05.svg" alt="">
             <p class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300">02</p>
@@ -621,7 +623,7 @@
           <a href="./activities.html" class="text-yellow-600 text-lg font-bold hover:text-black">Read More...</a>
         </div>
   
-        <div class="border-2 rounded-2xl shadow-md p-8 mb-8">
+        <div class="border-2 rounded-3xl shadow-md p-8 mb-8">
           <div class="flex items-center justify-between mb-4">
             <img src="/images/value-image-04.svg" alt="">
             <p class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300">03</p>
@@ -631,7 +633,7 @@
           <a href="./activities.html" class="text-yellow-600 text-lg font-bold hover:text-black">Read More...</a>
         </div>
   
-        <div class="border-2 rounded-2xl shadow-md p-8 mb-8 ">
+        <div class="border-2 rounded-3xl shadow-md p-8 mb-8 ">
           <div class="flex items-center justify-between mb-4">
             <img src="/images/value-image-03.svg" alt="">
             <p class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300">04</p>
@@ -641,7 +643,7 @@
           <a href="./activities.html" class="text-yellow-600 text-lg font-bold hover:text-black">Read More...</a>
         </div>
   
-        <div class="border-2 rounded-2xl shadow-md p-8 mb-8">
+        <div class="border-2 rounded-3xl shadow-md p-8 mb-8">
           <div class="flex items-center justify-between mb-4">
             <img src="/images/value-image-01.svg" alt="">
             <p class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300">05</p>
@@ -651,21 +653,21 @@
           <a href="./activities.html" class="text-yellow-600 text-lg font-bold hover:text-black">Read More...</a>
         </div>
   
-        <div class="border-2 rounded-2xl shadow-md p-8 mb-8">
+        <div class="border-2 rounded-3xl shadow-md p-8 mb-8">
           <div class="flex items-center justify-between mb-4">
             <img src="/images/value-image-05.svg" alt="">
             <p class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300">06</p>
           </div>
           <p class="text-2xl font-semibold font-almendra mb-4">Quiz Competition</p>
           <p class="mb-4 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut ea sed voluptas, deleniti incidunt ratione consectetur quaerat quis et maiores quo temporibus iste cupiditate.</p>
-          <a href="./activities.html" class="text-yellow-600 text-lg font-bold hover:text-black">Read More...</a>
+          <a href="./competition.html" class="text-yellow-600 text-lg font-bold hover:text-black">Read More...</a>
         </div>
       </section>
 
     </section>
      
 
-    <section class="bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center text-center py-12 lg:px-12">
+    <section class="bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center text-center px-2 py-12 lg:px-12">
       <div class="text-center">
         <p class="text-xl font-semibold text-yellow-600 mb-2">Events</p>
         <p  class="text-4xl font-bold font-almendra mb-12">OUR COMING EVENTS</p>
@@ -673,15 +675,16 @@
 
       <div class=" px-4 py-10 md:flex md:justify-evenly md:gap-10 lg:flex lg:justify-evenly">
         <div>
-          <img src="/images/events-image.jpg" alt="" class="rounded-3xl mx-2 mb-4 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 hover:duration-300 hover:shadow-md hover:opacity-80">
+          <img src="/images/events-image.jpg" alt="" class="rounded-3xl mx-4 mb-4 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 hover:duration-300 hover:shadow-md hover:opacity-80">
         </div>
   
         <div>
-            <p class="text-3xl font-almendra font-semibold my-6"><a href="" class="hover:text-yellow-600">EXPLORING ISLAMIC INSIGHTS AND WISDOM</a></p>
-            
+          <p class="text-3xl font-almendra font-semibold my-6 hover:text-yellow-600">EXPLORING ISLAMIC INSIGHTS AND WISDOM</p>
+          <p class="text-xl font-medium mb-6 lg:w-4/5 lg:mx-auto ">We are dedicated to the advancement of the individual, family, and the community at large through faith, education and service.</p>
+
           <div class="flex items-center justify-center gap-2 ">
-              <img src="/images/marker.svg" alt="" class="md:mb-5 lg:mt-7">
-              <p class="text-xl text-gray-700">24, Apapa Road, Ebute-Metta, Lagos, Nigeria.</p>
+            <img src="/images/marker.svg" alt="" class="md:mb-5 lg:mt-7">
+            <p class="text-xl text-gray-700">24, Apapa Road, Ebute-Metta, Lagos, Nigeria.</p>
           </div>
             
     
@@ -703,11 +706,12 @@
             <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-500">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
           </div>
         </div>
-        <p class="text-white font-abel lg:max-w-96">Mattis inelit neque quis donec eleifnd amet. Amet sed et cursus eu euismod. Egestas in morbi tristique ornare vulputate vitae enim.</p>
+        <p class="text-white lg:max-w-96">We are dedicated to the advancement of the individual, family, and the community at large through faith, education and service.
+        </p>
 
         <div class="flex items-center gap-4 py-3">
           <a href="https://www.facebook.com/profile.php?id=61557895405553" target="_blank"><img src="/images/icon-facebook.svg" alt="" class="rounded-md"></a>
-          <p class="text-white">The Lantern Islamic foundation - TLIF</p>
+          <p class="text-white font-serif">The Lantern Islamic foundation - TLIF</p>
           
         </div>
       </div>
@@ -715,7 +719,7 @@
       <section class="text-white flex gap-10 md:gap-48 lg:gap-10 lg:px-20">
         <div class="">
           <p class="text-2xl pb-3 font-almendra pt-7">EVENTS</p>
-          <ul class="list-disc px-5 font-abel">
+          <ul class="list-disc px-5">
               <li class="p-1"><a href="#">Quran Memorization</a></li>
               <li class="p-1"><a href="#">Solah (Five Daily Prayers)</a></li>
               <li class="p-1"><a href="#">Mosque Development</a></li>
@@ -727,13 +731,13 @@
     
         <div class="">
             <p class="text-2xl pb-3 font-almendra pt-7">QUICK LINKS</p>
-            <ul class="list-disc px-5 font-abel ">
+            <ul class="list-disc px-5">
               <li class="p-1"><a href="./index.html">Home</a></li>
-                    <li class="p-1"><a href="./aboutUs.html">About Us</a></li>
-                    <li class="p-1"><a href="./activities.html">Activities</a></li>
-                    <li class="p-1"><a href="./events.html">Events</a></li>
-                    <li class="p-1"><a href="./contact.html">Contact</a></li>    
-                    <li class="p-1"><a href="./competition.html">Competition</a></li>        
+              <li class="p-1"><a href="./aboutUs.html">About Us</a></li>
+              <li class="p-1"><a href="./activities.html">Activities</a></li>
+              <li class="p-1"><a href="./events.html">Events</a></li>
+              <li class="p-1"><a href="./contact.html">Contact</a></li>    
+              <li class="p-1"><a href="./competition.html">Competition</a></li>        
             </ul>
         </div>
       </section>
