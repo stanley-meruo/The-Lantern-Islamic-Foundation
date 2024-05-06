@@ -12,33 +12,31 @@
   </head>
   <body>
      <!-- header with nav bar starts here -->
-     <header class="">
-      <nav class="flex items-center justify-between fixed w-full top-0 z-10 bg-white shadow-lg px-6 md:px-12 lg:px-24 xl:px-32">
+         <header class="sticky top-0 z-10">
+      <nav class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16">
 
-        <div class="flex items-center py-3">
-          <img src="/images/TLIF-LOGO.png" alt="logo" class="w-16" />
+        <a href="./index.html" class="flex items-center py-3">
+          <img src="/images/TLIF.png" alt="logo" class="w-16" />
           <div class="text-black">
-            <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
+            <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-600">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
+          </div>
+        </a>
+
+        <div class="flex items-center gap-6">
+          <img src="/images/search.svg" alt="" class="lg:hidden">
+          <div class="bg-yellow-500 p-2 hover:bg-gray-400 lg:hidden" onclick="openNav()">
+            <img src="/images/icon-hamburger.svg" alt="Hamburger image"/>
           </div>
         </div>
-
-        <div class="bg-gray-200 p-2 lg:hidden" onclick="openNav()">
-          <img src="/images/icon-hamburger.svg" alt="Hamburger image"/>
-        </div>
-        <ul class="hidden lg:flex text-xl items-center gap-4
+        <ul class="hidden lg:flex text-xl items-center gap-8
          text-gray-500 font-serif">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./about.html">About Us</a></li>
-          <li><a href="">Activities</a></li>
+          <li><a href="./activities.html">Activities</a></li>
           <li><a href="./event.html">Event</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="./donation.html">Donation</a></li>
+          <li><a href="./contact.html">Contact</a></li>
           <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-500 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg ml-16"><a href="#">Competition</a></button>
         </ul>
-
-
-        <div onclick="exitNav()" id="sideBar" class="fixed top-0 right-0 bg-transparent w-0 h-2/4 overflow-x-hidden duration-500 z-10">
         
           <div id="sideNav"
             class="fixed top-0 right-0 bg-gray-200 text-black w-0 h-full flex items-center overflow-x-hidden duration-500 font-bold z-10">
@@ -47,24 +45,23 @@
               <a href="javascript:void(0)" onclick="exitNav()"><img src="/images/icon-close.svg" alt="Close logo"/></a>
             </div>
             
-            <nav class="">
+            <nav>
               <ul class="text-left text-3xl font-light font-serif ml-4 sm:text-3xl">
-                <li class="p-2"><a href="./index.html">Home</a></li>
-                <li class="p-2"><a href="./aboutUs.html">About Us</a></li>
-                <li class="p-2"><a href="#">Activities</a></li>
-                <li class="p-2"><a href="./event.html">Event</a></li>
-                <li class="p-2"><a href="#">Blog</a></li>
-                <li class="p-2"><a href="#">Contact</a></li>
-                <li class="p-2"><a href="#">Competition</a></li>
-                <li class="p-2"><a href="./donation.html">Donation</a></li>
+                <li class="p-1"><a href="./index.html">Home</a></li>
+                <li class="p-2"><a href="./about.html">About Us</a></li>
+                <li class="p-2"><a href="./activities.html">Activities</a></li> 
+                <li class="p-2"><a href="./event.html">Events</a></li>
+                <li class="p-2"><a href="./contact.html">Contact</a></li>    
+                <li class="p-2"><a href="./competition.html">Competition</a></li>  
               </ul>
             </nav>
           </div>
+          
         </div>
       </nav>
 
-      
-      </section>
+      <div onclick="exitNav()" id="sideBar" class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10">
+      </div>
     </header>
 
     <!-- header -->
@@ -187,54 +184,55 @@
     </section>
     
 
-    <footer class="bg-black px-2 py-10 md:grid md:grid-cols-2 md:grid-rows-2 md:gap-12 md:px-12 xl:grid xl:grid-cols-4 xl:grid-rows-1 xl:gap-16 xl:px-32">
-      <div>
+   <footer class="bg-black px-6 py-10 lg:flex lg:justify-evenly">
+      <div class="">
         <div class="flex items-center py-3">
-          <img src="/images/TLIF-LOGO.png" alt="logo" class="w-16" />
+          <img src="/images/TLIF.png" alt="logo" class="w-16" />
           <div class="text-white">
-            <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
+            <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-500">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
           </div>
         </div>
-        <p class="text-white ">Mattis inelit neque quis donec eleifnd amet. Amet sed et cursus eu euismod. Egestas in morbi tristique ornare vulputate vitae enim.</p>
+        <p class="text-white font-abel lg:max-w-96">Mattis inelit neque quis donec eleifnd amet. Amet sed et cursus eu euismod. Egestas in morbi tristique ornare vulputate vitae enim.</p>
 
         <div class="flex items-center gap-4 py-3">
-          <img src="/images/icon-facebook.svg" alt="" class="rounded-md">
-          <img src="/images/icon-twitter.svg" alt="">
-          <img src="/images/icon-pinterest.svg" alt="">
-          <img src="/images/icon-instagram.svg" alt="">
+          <a href="https://www.facebook.com/profile.php?id=61557895405553" target="_blank"><img src="/images/icon-facebook.svg" alt="" class="rounded-md"></a>
+          <p class="text-white">The Lantern Islamic foundation - TLIF</p>
+          
         </div>
       </div>
+      
+      <section class="flex lg:gap-10 lg:px-20">
+        <div class="text-white ">
+          <p class="text-2xl pb-3 font-almendra pt-7">EVENTS</p>
+          <ul class="list-disc px-5 font-abel">
+              <li class="p-1"><a href="#">Quran Memorization</a></li>
+              <li class="p-1"><a href="#">Solah (Five Daily Prayers)</a></li>
+              <li class="p-1"><a href="#">Mosque Development</a></li>
+              <li class="p-1"><a href="#">Charity & Donation</a></li>
+              <li class="p-1"><a href="#">Quiz competition</a></li>
+              <li class="p-1"><a href="#">Fiqh (Understanding Islam)</a></li>
+          </ul>
+        </div>
+    
+        <div class="text-white ">
+            <p class="text-2xl pb-3 font-almendra pt-7">QUICK LINKS</p>
+            <ul class="list-disc px-5 font-abel ">
+              <li class="p-1"><a href="./index.html">Home</a></li>
+                    <li class="p-1"><a href="./about.html">About Us</a></li>
+                    <li class="p-1"><a href="./activities.html">Activities</a></li>
+                    <li class="p-1"><a href="./event.html">Events</a></li>
+                    <li class="p-1"><a href="./contact.html">Contact</a></li>    
+                    <li class="p-1"><a href="./competition.html">Competition</a></li>        
+            </ul>
+        </div>
+      </section>
+        
+      
 
-
-      <div class="text-white">
-        <p class="text-2xl pb-3 font-serif pt-7">SERVICES</p>
-        <ul class="list-disc px-5 font-sans">
-          <li class="p-1"><a href="#">Quran Memorization</a></li>
-          <li class="p-1"><a href="#">Special Child Care</a></li>
-          <li class="p-1"><a href="#">Mosque Development</a></li>
-          <li class="p-1"><a href="#">Charity & Donation</a></li>
-          <li class="p-1"><a href="#">Blog</a></li>
-          <li class="p-1"><a href="#">Matrimonial</a></li>
-          <li class="p-1"><a href="#">Funerals</a></li>
-        </ul>
-      </div>
-
-      <div class="text-white">
-        <p class="text-2xl pb-3 font-serif pt-7">QUICK LINKS</p>
-        <ul class="list-disc px-5 font-sans ">
-          <li class="p-2"><a href="./index.html">Home</a></li>
-                <li class="p-1"><a href="./aboutUs.html">About Us</a></li>
-                <li class="p-1"><a href="#">Activities</a></li>
-                <li class="p-1"><a href="./event.html">Event</a></li>
-                <li class="p-1"><a href="#">Blog</a></li>
-                <li class="p-1"><a href="#">Contact</a></li>            
-        </ul>
-      </div>
-
-      <div class=" my-5">
-        <p class="text-2xl text-white font-serif pb-3">NEWSLETTER</p>
+      <div class=" mt-5">
+        <p class="text-2xl text-white font-almendra pb-3">NEWSLETTER</p>
         <input type="text" name="email" placeholder="Your Email..." class="w-full p-3 border-[2px] rounded-lg">
-        <button class="bg-yellow-500 font-medium text-white px-4 py-2 my-4 w-full">Subscribe</button>
+        <button class="bg-yellow-500 font-medium font-almendra text-white px-4 py-2 my-4 w-full">Subscribe</button>
       </div>
 
     </footer>
