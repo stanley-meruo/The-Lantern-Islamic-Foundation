@@ -119,9 +119,6 @@
 
 
 
-
-
-
 /* DESTOP SLIDER */
 #animate-slider{
   width: 100%;
@@ -201,7 +198,6 @@
   padding-right: 4%;
   line-height: 1.8;
 }
-
 /* Staggered Vertical Items ------------------------------------------------------*/
 .item-header {
   position: absolute;
@@ -244,7 +240,6 @@
 .item.active .item-description .vertical-part b {
   transform: translateY(0);
 }
-
 /* Controls ----------------------------------------------------------------------*/
 .controls {
   position: relative;
@@ -280,7 +275,6 @@
 
 /* Fixed 'Go to top button' */
 #myBtn {
-  display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -297,3 +291,6 @@
   background-color: #555;
   border-bottom: #555;
 }
+
+
+
