@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="/images/TLIF.png" size="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
+    <title>TLIF | The Lantern Islamic Foundation</title>
+</head>
+<body>
+    <header class="sticky top-0 z-50">
+        <nav class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16">
+  
+          <a href="./index.html" class="flex items-center py-3">
+            <img src="/images/TLIF.png" alt="logo" class="w-16" />
+            <div class="text-black">
+              <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-600">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
+            </div>
+          </a>
+  
+          <div class="flex items-center gap-6">
+            <img src="/images/search.svg" alt="" class="lg:hidden">
+            <div class="bg-yellow-500 p-2 hover:bg-gray-400 lg:hidden" onclick="openNav()">
+              <img src="/images/icon-hamburger.svg" alt="Hamburger image"/>
+            </div>
+          </div>
+          <!-- Desktop Navigation -->
+          <ul class="hidden lg:flex text-xl items-center gap-8
+           text-gray-700 font-serif lg:ml-8">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./activities.html">Activities</a></li>
+            <li><a href="./event.html">Event</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg ml-16"><a href="#">Competition</a></button>
+          </ul>
+          <!-- End of Desktop Navigation -->
+          
+          <div id="sideNav"
+            class="fixed top-0 right-0 bg-gray-200 text-black w-0 h-full flex items-center overflow-x-hidden duration-500 font-bold z-10 lg:hidden">
+              
+            <div class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48">
+              <a href="javascript:void(0)" onclick="exitNav()"><img src="/images/icon-close.svg" alt="Close logo"/></a>
+            </div>
+              
+              <!-- Mobile Navigation -->
+            <nav>
+              <ul class="text-left text-3xl font-light font-serif ml-4 sm:text-3xl">
+                <li class="p-1"><a href="./index.html">Home</a></li>
+                <li class="p-2"><a href="./aboutUs.html">About Us</a></li>
+                <li class="p-2"><a href="./activities.html">Activities</a></li> 
+                <li class="p-2"><a href="./event.html">Events</a></li>
+                <li class="p-2"><a href="./contact.html">Contact</a></li>    
+                <li class="p-2"><a href="./competition.html">Competition</a></li>  
+              </ul>
+            </nav>
+          </div>
+        </nav>
+  
+        <div onclick="exitNav()" id="sideBar" class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10">
+        </div>
+      </header>
+    
+
+<section class="bg-hero-pattern lg:pt-10 pb-1 overflow-x-hidden">
+    <section class=" lg:ml-52 lg:mr-52 mb-10 lg:rounded-lg border-2 lg:border-yellow-400 lg:flex lg:justify-between">
+
+      <div class="grid lg:pt-0 pt-5">
+        <img src="../images/section-image-00.jpg" alt="An image here" class=" lg:h-[730px] lg:w-96 w-72 rounded-lg mx-auto ">
+      </div>
+
+      <div class="grid">
+        <form class=" pt-10 "> 
+          <label class="ml-5 lg:ml-20">Name :</label>
+          <input type="text"  class="p-3 rounded-lg border-2 border-yellow-400 bg-white lg:w-80 w-64 ml-6 lg:ml-12">
+          <br>
+  
+          <label class="ml-5 lg:ml-20">Class :</label>
+          <input type="text"  class="p-3 rounded-lg border-2 border-yellow-400 bg-white lg:w-80 w-64 ml-8 mt-10 lg:ml-14">
+          <br>
+  
+          <label class="ml-5 lg:ml-20">Age :</label>
+          <input type="number" min="7" max="10"  class="p-3 rounded-lg border-2 border-yellow-400 bg-white lg:ml-16 lg:w-80 w-[250px] ml-10 mt-10 ">
+          <br>
+  
+          <label class="ml-5 lg:ml-20">Email :</label>
+          <input type="email"  class="p-3 rounded-lg border-2 border-yellow-400 bg-white lg:w-80 w-[250px] ml-8 mt-10 lg:ml-14 ">
+          <br>
+  
+          <label class="ml-1 lg:ml-20">Phone No :</label>
+          <input type="text"  class="p-3 rounded-lg border-2 border-yellow-400 bg-white mt-10 lg:w-80 w-60 ml-6 ">
+          <br>
+  
+          <label class="ml-1 lg:ml-20">State of origin :</label>
+          <input type="text" class="p-3 rounded-lg border-2 border-yellow-400 bg-white mt-10 lg:w-80 w-60  " >
+
+        
+        </form>
+
+        <select class="p-3 rounded-lg border-2 border-yellow-400 bg-white w-[330px] lg:w-[500px] ml-5 mt-10 lg:mr-5">
+          <option>Select your Juz</option>
+          <option>Juz Amma</option>
+          <option>Juz Tabarak</option>
+          <option>Juz Mujadilla</option>
+          <option>Juz Ahqaf</option>
+        </select>
+        
+        <button class="bg-yellow-400 text-white rounded-2xl border-2 border-gray-300  text-xl mx-auto px-32 py-3 lg:mb-3 lg:px-52 mt-5 "><a href="#">Submit</a></button>
+        
+      </div>
+      
+      
+      
+      </section>
+      
+    </section>
+       
+
+
+        <footer class="bg-black px-6 py-10 lg:flex lg:justify-evenly">
+            <div class="">
+              <div class="flex items-center py-3">
+                <img src="/images/TLIF.png" alt="logo" class="w-16" />
+                <div class="text-white">
+                  <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-500">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
+                </div>
+              </div>
+              <p class="text-white lg:max-w-96">We are dedicated to the advancement of the individual, family, and the community at large through faith, education and service.
+              </p>
+        
+              <div class="flex items-center gap-4 py-3">
+                <a href="https://www.facebook.com/profile.php?id=61557895405553" target="_blank"><img src="/images/icon-facebook.svg" alt="" class="rounded-md"></a>
+                <p class="text-white font-serif">The Lantern Islamic foundation - TLIF</p>
+                
+              </div>
+            </div>
+            
+            <section class="text-white flex gap-10 md:gap-48 lg:gap-10 lg:px-20">
+              <div class="">
+                <p class="text-2xl pb-3 font-almendra pt-7">EVENTS</p>
+                <ul class="list-disc px-5">
+                    <li class="p-1"><a href="#">Quran Memorization</a></li>
+                    <li class="p-1"><a href="#">Solah (Five Daily Prayers)</a></li>
+                    <li class="p-1"><a href="#">Mosque Development</a></li>
+                    <li class="p-1"><a href="#">Charity & Donation</a></li>
+                    <li class="p-1"><a href="#">Quiz competition</a></li>
+                    <li class="p-1"><a href="#">Fiqh (Understanding Islam)</a></li>
+                </ul>
+              </div>
+          
+              <div class="">
+                  <p class="text-2xl pb-3 font-almendra pt-7">QUICK LINKS</p>
+                  <ul class="list-disc px-5">
+                    <li class="p-1"><a href="./index.html">Home</a></li>
+                          <li class="p-1"><a href="./aboutUs.html">About Us</a></li>
+                          <li class="p-1"><a href="./activities.html">Activities</a></li>
+                          <li class="p-1"><a href="./events.html">Events</a></li>
+                          <li class="p-1"><a href="./contact.html">Contact</a></li>    
+                          <li class="p-1"><a href="./competition.html">Competition</a></li>        
+                  </ul>
+              </div>
+            </section>
+              
+            
+        
+            <div class=" mt-5">
+              <p class="text-2xl text-white font-almendra pb-3">NEWSLETTER</p>
+              <input type="text" name="email" placeholder="Your Email..." class="w-full p-3 border-[2px] rounded-lg">
+              <button class="bg-yellow-500 font-medium font-almendra text-white px-4 py-2 my-4 w-full rounded-lg hover:bg-yellow-600">SUBSCRIBE</button>
+            </div>
+        
+          </footer>
+        
+          <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <img src="/images/arrow-small-up.svg" alt="" class="">
+          </button>
+        
+        
+        
+            <script src="/script.js"></script>
+      
+</body>
+</html>

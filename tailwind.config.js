@@ -5,9 +5,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-pattern": "url('/images/bg-hero.png')",
+        "header-image": "url('/images/header-image.jpg')",
       },
       fontFamily: {
-        'almendra': ["Almendra SC", "serif"],
+        almendra: ["Almendra SC", "serif"],
       },
     },
   },
