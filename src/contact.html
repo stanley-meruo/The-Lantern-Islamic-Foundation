@@ -1,253 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="/images/TLIF.png" size="32x32" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
     <title>TLIF | The Lantern Islamic Foundation</title>
-  </head>
-  <body>
+</head>
+<body>
     <header class="sticky top-0 z-50">
-      <nav
-        class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16"
-      >
-        <a href="./index.html" class="flex items-center py-3">
-          <img src="/images/TLIF.png" alt="logo" class="w-16" />
-          <div class="text-black">
-            <p class="leading-3 text-center">
-              <span
-                class="font-semibold text-xl font-sans tracking-widest text-yellow-600"
-                >The Lantern</span
-              ><br /><span class="font-serif tracking-tighter"
-                >Islamic Foundation</span
-              >
-            </p>
+        <nav class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16">
+  
+          <a href="./index.html" class="flex items-center py-3">
+            <img src="/images/TLIF.png" alt="logo" class="w-16" />
+            <div class="text-black">
+              <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-600">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
+            </div>
+          </a>
+  
+          <div class="flex items-center gap-6">
+            <img src="/images/search.svg" alt="" class="lg:hidden">
+            <div class="bg-yellow-500 p-2 hover:bg-gray-400 lg:hidden" onclick="openNav()">
+              <img src="/images/icon-hamburger.svg" alt="Hamburger image"/>
+            </div>
           </div>
-        </a>
-
-        <div class="flex items-center gap-6">
-          <img src="/images/search.svg" alt="" class="lg:hidden" />
-          <div
-            class="bg-yellow-500 p-2 hover:bg-gray-400 lg:hidden"
-            onclick="openNav()"
-          >
-            <img src="/images/icon-hamburger.svg" alt="Hamburger image" />
+          <!-- Desktop Navigation -->
+          <ul class="hidden lg:flex text-xl items-center gap-8
+           text-gray-700 font-serif lg:ml-8">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./activities.html">Activities</a></li>
+            <li><a href="./event.html">Event</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg ml-16"><a href="#">Competition</a></button>
+          </ul>
+          <!-- End of Desktop Navigation -->
+          
+          <div id="sideNav"
+            class="fixed top-0 right-0 bg-gray-200 text-black w-0 h-full flex items-center overflow-x-hidden duration-500 font-bold z-10 lg:hidden">
+              
+            <div class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48">
+              <a href="javascript:void(0)" onclick="exitNav()"><img src="/images/icon-close.svg" alt="Close logo"/></a>
+            </div>
+              
+              <!-- Mobile Navigation -->
+            <nav>
+              <ul class="text-left text-3xl font-light font-serif ml-4 sm:text-3xl">
+                <li class="p-1"><a href="./index.html">Home</a></li>
+                <li class="p-2"><a href="./aboutUs.html">About Us</a></li>
+                <li class="p-2"><a href="./activities.html">Activities</a></li> 
+                <li class="p-2"><a href="./event.html">Events</a></li>
+                <li class="p-2"><a href="./contact.html">Contact</a></li>    
+                <li class="p-2"><a href="./competition.html">Competition</a></li>  
+              </ul>
+            </nav>
           </div>
+        </nav>
+  
+        <div onclick="exitNav()" id="sideBar" class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10">
         </div>
-        <!-- Desktop Navigation -->
-        <ul
-          class="hidden lg:flex text-xl items-center gap-8 text-gray-700 font-serif lg:ml-8"
-        >
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./aboutUs.html">About Us</a></li>
-          <li><a href="./activities.html">Activities</a></li>
-          <li><a href="./event.html">Event</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <button
-            class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg ml-16"
-          >
-            <a href="./competition.html">Competition</a>
-          </button>
-        </ul>
-        <!-- End of Desktop Navigation -->
+      </header>
 
-        <div
-          id="sideNav"
-          class="fixed top-0 right-0 bg-gray-200 text-black w-0 h-full flex items-center overflow-x-hidden duration-500 font-bold z-10 lg:hidden"
-        >
-          <div
-            class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48"
-          >
-            <a href="javascript:void(0)" onclick="exitNav()"
-              ><img src="/images/icon-close.svg" alt="Close logo"
-            /></a>
-          </div>
 
-          <!-- Mobile Navigation -->
-          <nav>
-            <ul
-              class="text-left text-3xl font-light font-serif ml-4 sm:text-3xl"
-            >
-              <li class="p-1"><a href="./index.html">Home</a></li>
-              <li class="p-2"><a href="./aboutUs.html">About Us</a></li>
-              <li class="p-2"><a href="./activities.html">Activities</a></li>
-              <li class="p-2"><a href="./event.html">Events</a></li>
-              <li class="p-2"><a href="./contact.html">Contact</a></li>
-              <li class="p-2"><a href="./competition.html">Competition</a></li>
-            </ul>
-          </nav>
-        </div>
-      </nav>
+      <section class="bg-hero-pattern lg:flex lg:justify-evenly">
 
-      <div
-        onclick="exitNav()"
-        id="sideBar"
-        class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10"
-      ></div>
-    </header>
-
-    <section class="bg-hero-pattern lg:flex lg:justify-evenly">
-      <div>
-        <h1 class="text-3xl text-yellow-400 font-semibold text-center py-5">
-          Contact
-        </h1>
-        <p class="text-xl ml-5 mb-3">Address</p>
-        <p class="ml-5 mb-3">24,Apapa Road Ebute-Metta, Lagos, Nigeria.</p>
-        <p class="text-xl ml-5 mb-3">Contact</p>
-        <p class="ml-5 mb-3">08024070582</p>
-        <p class="text-xl ml-5 mb-3">Email</p>
-        <p class="ml-5 mb-3">hub@dervac.com</p>
-      </div>
-
-      <section class="lg:grid-cols-none">
-        <div class="grid lg:hidden">
-          <img
-            src="../images/ai-zin.jpeg"
-            alt="An image here"
-            class="w-80 lg:96 mt-10 rounded-xl mx-auto mb-10"
-          />
+        <div>
+          <h1 class="text-3xl text-yellow-400 font-semibold lg:text-left lg:ml-5 text-center py-5">Contact </h1>
+          <p class="text-xl ml-5 mb-3">Address </p>
+          <p class="ml-5 mb-3">24,Apapa Road Ebute-Metta, Lagos, Nigeria. </p>
+          <p class="text-xl ml-5 mb-3" >Contact </p>
+          <p class="ml-5 mb-3"> 08024070582</p>
+          <p class="text-xl ml-5 mb-3" >Email </p>
+          <p class="ml-5 mb-3"> info@thelanternislamicfoundation.com</p>
         </div>
 
-        <div class="mt-10 lg:flex mx-auto">
-          <div>
-            <label class="ml-5">Name :</label>
-            <input
-              type="text"
-              class="p-3 rounded-lg border-2 border-yellow-400 bg-white lg:mt-10 w-60 ml-6"
-            />
-            <br />
+        <section class=" lg:grid-cols-none">
 
+          <div class="grid lg:hidden">
+            <img src="../images/ai-zin.jpeg" alt="An image here" class="w-80 lg:96 mt-10 rounded-xl mx-auto mb-10">
+          </div>
+  
+          <div class="mt-10 lg:flex mx-auto">
+
+            <div>
+              <label class="ml-5">Name :</label>
+            <input type="text"  class="p-3 rounded-lg border-2 border-yellow-400 bg-white lg:mt-10  w-60 ml-6">
+            <br>
+    
             <label class="ml-5">Email :</label>
-            <input
-              type="text"
-              class="p-3 rounded-lg border-2 border-yellow-400 bg-white w-60 ml-8 mt-10"
-            />
-            <br />
-
+            <input type="text"  class="p-3 rounded-lg border-2 border-yellow-400 bg-white w-60 ml-8 mt-10">
+            <br>
+    
             <label class="ml-1">Phone No :</label>
-            <input
-              type="text"
-              class="p-3 rounded-lg border-2 border-yellow-400 bg-white mt-10 w-60 ml-6"
-            />
-            <br />
-          </div>
+            <input type="text"  class="p-3 rounded-lg border-2 border-yellow-400 bg-white mt-10 w-60 ml-6 ">
+            <br>
 
-          <div class="">
-            <label class="ml-5">Message :</label>
-            <input
-              type="text"
-              class="p-10 lg:py-24 mb-5 rounded-lg border-2 border-yellow-400 bg-white w-60 ml-6 mt-10"
-            />
+            </div>
+
+            <div class="">
+              <label class="ml-5">Message :</label>
+              <input type="text"  class="p-10 lg:py-24 mb-5 rounded-lg border-2 border-yellow-400 bg-white w-60 ml-6 mt-10 ">
+            </div>
+    
           </div>
-        </div>
-        <button
-          class="bg-yellow-400 text-white rounded-2xl lg:mt-5 mt-2 border-2 border-gray-300 text-xl px-20 py-3 mb-5 lg:px-24 lg:mb-12 ml-28 lg:ml-24"
-        >
-          <a href="#">Join Now</a>
-        </button>
+          <button class="bg-yellow-400 text-white rounded-2xl lg:mt-5 mt-2 border-2 border-gray-300  text-xl px-20 py-3 mb-5 lg:px-24 lg:mb-12 ml-28 lg:ml-24"><a href="#">Join Now</a></button>
+        </section>
+<!-- Inner section ends here -->
+
       </section>
-      <!-- Inner section ends here -->
-    </section>
 
-    <section class="w-full">
-      <iframe
-        class="w-full"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3143881248448!2d3.3785404740456415!3d6.4818094236483885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b7fd941dfd7%3A0xa6fb6e6235d343fe!2s24%20Apapa%20Rd%2C%20Ebute%20Metta
-        %2C%20Lagos%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1715176606798!5m2!1sen!2sng"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
+      <section class="w-full">
+        <iframe class="w-full"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3143881248448!2d3.3785404740456415!3d6.4818094236483885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b7fd941dfd7%3A0xa6fb6e6235d343fe!2s24%20Apapa%20Rd%2C%20Ebute%20Metta
+        %2C%20Lagos%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1715176606798!5m2!1sen!2sng" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
 
-    <footer class="bg-black px-6 py-10 lg:flex lg:justify-evenly">
-      <div class="">
-        <div class="flex items-center py-3">
-          <img src="/images/TLIF.png" alt="logo" class="w-16" />
-          <div class="text-white">
-            <p class="leading-3 text-center">
-              <span
-                class="font-semibold text-xl font-sans tracking-widest text-yellow-500"
-                >The Lantern</span
-              ><br /><span class="font-serif tracking-tighter"
-                >Islamic Foundation</span
-              >
-            </p>
+      
+    
+      
+      <footer class="bg-black px-6 py-10 lg:flex lg:justify-evenly">
+        <div class="">
+          <div class="flex items-center py-3">
+            <img src="/images/TLIF.png" alt="logo" class="w-16" />
+            <div class="text-white">
+              <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-500">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
+            </div>
           </div>
-        </div>
-        <p class="text-white lg:max-w-96">
-          We are dedicated to the advancement of the individual, family, and the
-          community at large through faith, education and service.
-        </p>
-
-        <div class="flex items-center gap-4 py-3">
-          <a
-            href="https://www.facebook.com/profile.php?id=61557895405553"
-            target="_blank"
-            ><img src="/images/icon-facebook.svg" alt="" class="rounded-md"
-          /></a>
-          <p class="text-white font-serif">
-            The Lantern Islamic foundation - TLIF
+          <p class="text-white lg:max-w-96">We are dedicated to the advancement of the individual, family, and the community at large through faith, education and service.
           </p>
+    
+          <div class="flex items-center gap-4 py-3">
+            <a href="https://www.facebook.com/profile.php?id=61557895405553" target="_blank"><img src="/images/icon-facebook.svg" alt="" class="rounded-md"></a>
+            <p class="text-white font-serif">The Lantern Islamic foundation - TLIF</p>
+            
+          </div>
         </div>
-      </div>
-
-      <section class="text-white flex gap-10 md:gap-48 lg:gap-10 lg:px-20">
-        <div class="">
-          <p class="text-2xl pb-3 font-almendra pt-7">EVENTS</p>
-          <ul class="list-disc px-5">
-            <li class="p-1"><a href="#">Quran Memorization</a></li>
-            <li class="p-1"><a href="#">Solah (Five Daily Prayers)</a></li>
-            <li class="p-1"><a href="#">Mosque Development</a></li>
-            <li class="p-1"><a href="#">Charity & Donation</a></li>
-            <li class="p-1"><a href="#">Quiz competition</a></li>
-            <li class="p-1"><a href="#">Fiqh (Understanding Islam)</a></li>
-          </ul>
+        
+        <section class="text-white flex gap-10 md:gap-48 lg:gap-10 lg:px-20">
+          <div class="">
+            <p class="text-2xl pb-3 font-almendra pt-7">EVENTS</p>
+            <ul class="list-disc px-5">
+                <li class="p-1"><a href="#">Quran Memorization</a></li>
+                <li class="p-1"><a href="#">Solah (Five Daily Prayers)</a></li>
+                <li class="p-1"><a href="#">Mosque Development</a></li>
+                <li class="p-1"><a href="#">Charity & Donation</a></li>
+                <li class="p-1"><a href="#">Quiz competition</a></li>
+                <li class="p-1"><a href="#">Fiqh (Understanding Islam)</a></li>
+            </ul>
+          </div>
+      
+          <div class="">
+              <p class="text-2xl pb-3 font-almendra pt-7">QUICK LINKS</p>
+              <ul class="list-disc px-5">
+                <li class="p-1"><a href="./index.html">Home</a></li>
+                      <li class="p-1"><a href="./aboutUs.html">About Us</a></li>
+                      <li class="p-1"><a href="./activities.html">Activities</a></li>
+                      <li class="p-1"><a href="./events.html">Events</a></li>
+                      <li class="p-1"><a href="./contact.html">Contact</a></li>    
+                      <li class="p-1"><a href="./competition.html">Competition</a></li>        
+              </ul>
+          </div>
+        </section>
+          
+        
+    
+        <div class=" mt-5">
+          <p class="text-2xl text-white font-almendra pb-3">NEWSLETTER</p>
+          <input type="text" name="email" placeholder="Your Email..." class="w-full p-3 border-[2px] rounded-lg">
+          <button class="bg-yellow-500 font-medium font-almendra text-white px-4 py-2 my-4 w-full rounded-lg hover:bg-yellow-600">SUBSCRIBE</button>
         </div>
-
-        <div class="">
-          <p class="text-2xl pb-3 font-almendra pt-7">QUICK LINKS</p>
-          <ul class="list-disc px-5">
-            <li class="p-1"><a href="./index.html">Home</a></li>
-            <li class="p-1"><a href="./aboutUs.html">About Us</a></li>
-            <li class="p-1"><a href="./activities.html">Activities</a></li>
-            <li class="p-1"><a href="./events.html">Events</a></li>
-            <li class="p-1"><a href="./contact.html">Contact</a></li>
-            <li class="p-1"><a href="./competition.html">Competition</a></li>
-          </ul>
-        </div>
-      </section>
-
-      <div class="mt-5">
-        <p class="text-2xl text-white font-almendra pb-3">NEWSLETTER</p>
-        <input
-          type="text"
-          name="email"
-          placeholder="Your Email..."
-          class="w-full p-3 border-[2px] rounded-lg"
-        />
-        <button
-          class="bg-yellow-500 font-medium font-almendra text-white px-4 py-2 my-4 w-full rounded-lg hover:bg-yellow-600"
-        >
-          SUBSCRIBE
-        </button>
-      </div>
-    </footer>
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <img src="/images/arrow-small-up.svg" alt="" class="" />
-    </button>
-
-    <script src="/script.js"></script>
-  </body>
+    
+      </footer>
+    
+      <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="/images/arrow-small-up.svg" alt="" class="">
+      </button>
+    
+    
+    
+        <script src="./script.js"></script>
+      
+</body>
 </html>
