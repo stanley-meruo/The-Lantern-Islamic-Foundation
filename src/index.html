@@ -4,757 +4,963 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./output.css" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="/images/TLIF.png" size="32x32" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap"
+      rel="stylesheet"
+    />
     <title>TLIF | The Lantern Islamic Foundation</title>
   </head>
   <body>
-
     <header class="sticky top-0 z-50">
-      <nav class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16">
-
+      <nav
+        class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16"
+      >
         <a href="./index.html" class="flex items-center py-3">
           <img src="/images/TLIF.png" alt="logo" class="w-16" />
           <div class="text-black">
-            <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-600">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
+            <p class="leading-3 text-center">
+              <span
+                class="font-semibold text-xl font-sans tracking-widest text-yellow-600"
+                >The Lantern</span
+              ><br /><span class="font-serif tracking-tighter"
+                >Islamic Foundation</span
+              >
+            </p>
           </div>
         </a>
 
         <div class="flex items-center gap-6">
-          <img src="/images/search.svg" alt="" class="lg:hidden">
-          <div class="bg-yellow-500 p-2 hover:bg-gray-400 lg:hidden" onclick="openNav()">
-            <img src="/images/icon-hamburger.svg" alt="Hamburger image"/>
+          <img src="/images/search.svg" alt="" class="lg:hidden" />
+          <div
+            class="bg-yellow-500 p-2 hover:bg-gray-400 lg:hidden"
+            onclick="openNav()"
+          >
+            <img src="/images/icon-hamburger.svg" alt="Hamburger image" />
           </div>
         </div>
         <!-- Desktop Navigation -->
-        <ul class="hidden lg:flex text-xl items-center gap-8
-         text-gray-700 font-serif lg:ml-8">
+        <ul
+          class="hidden lg:flex text-xl items-center gap-8 text-gray-700 font-serif lg:ml-8"
+        >
           <li><a href="./index.html">Home</a></li>
           <li><a href="./aboutUs.html">About Us</a></li>
           <li><a href="./activities.html">Activities</a></li>
           <li><a href="./event.html">Event</a></li>
           <li><a href="./contact.html">Contact</a></li>
-          <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg ml-16"><a href="competition.html">Competition</a></button>
+          <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg ml-16"><a href="#">Competition</a></button>
         </ul>
         <!-- End of Desktop Navigation -->
-        
-        <div id="sideNav"
-          class="fixed top-0 right-0 bg-gray-200 text-black w-0 h-full flex items-center overflow-x-hidden duration-500 font-bold z-10 lg:hidden">
-            
-          <div class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48">
-            <a href="javascript:void(0)" onclick="exitNav()"><img src="/images/icon-close.svg" alt="Close logo"/></a>
+
+        <div
+          id="sideNav"
+          class="fixed top-0 right-0 bg-gray-200 text-black w-0 h-full flex items-center overflow-x-hidden duration-500 font-bold z-10 lg:hidden"
+        >
+          <div
+            class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48"
+          >
+            <a href="javascript:void(0)" onclick="exitNav()"
+              ><img src="/images/icon-close.svg" alt="Close logo"
+            /></a>
           </div>
-            
-            <!-- Mobile Navigation -->
+
+          <!-- Mobile Navigation -->
           <nav>
-            <ul class="text-left text-3xl font-light font-serif ml-4 sm:text-3xl">
+            <ul
+              class="text-left text-3xl font-light font-serif ml-4 sm:text-3xl"
+            >
               <li class="p-1"><a href="./index.html">Home</a></li>
               <li class="p-2"><a href="./aboutUs.html">About Us</a></li>
-              <li class="p-2"><a href="./activities.html">Activities</a></li> 
+              <li class="p-2"><a href="./activities.html">Activities</a></li>
               <li class="p-2"><a href="./event.html">Events</a></li>
-              <li class="p-2"><a href="./contact.html">Contact</a></li>    
-              <li class="p-2"><a href="./competition.html">Competition</a></li>  
+              <li class="p-2"><a href="./contact.html">Contact</a></li>
+              <li class="p-2"><a href="./competition.html">Competition</a></li>
             </ul>
           </nav>
         </div>
       </nav>
 
-      <div onclick="exitNav()" id="sideBar" class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10">
-      </div>
+      <div
+        onclick="exitNav()"
+        id="sideBar"
+        class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10"
+      ></div>
     </header>
 
     <!-- HERO SECTION -->
-    <section class="grid text-center bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center border-1 rounded-2xl px-4 pb-16 lg:flex lg:items-center lg:gap-12 lg:px-16 lg:py-24 lg:rounded-3xl">
+    <section
+      class="grid text-center bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center border-1 rounded-2xl px-4 pb-16 lg:flex lg:items-center lg:gap-12 lg:px-16 lg:py-24 lg:rounded-3xl"
+    >
       <div class="md:mx-10 lg:mx-6">
-        <img src="/images/logo-mosque.svg" alt="An image here" class="mx-auto my-7 xl:-mt-12">
-        <p class="text-3xl font-bold font-almendra mb-3 md:text-4xl lg:text-5xl lg:leading-normal xl:text-6xl xl:leading-normal">“Turn To Allah Before You Return To Allah.”</p>
-        <p class="text-lg font-semibold my-5 md:text-xl lg:text-2xl lg:leading-snug">The Heart That Beats For Allah Is Always A Stranger Among The Hearts That Beat For The Dunya (World).</p>
-        <button class=" text-gray-700 border-1 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-600 rounded-xl shadow-xl py-2 mx-auto my-8 w-2/5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:duration-200 sm:w-1/4 md:w-1/4 md:px-2 lg:w-3/6 lg:py-4 xl:w-2/6 "><a href="./aboutUs.html" class="font-almendra font-semibold">DISCOVER MORE</a></button>
+        <img
+          src="/images/logo-mosque.svg"
+          alt="An image here"
+          class="mx-auto my-7 xl:-mt-12"
+        />
+        <p
+          class="text-3xl font-bold font-almendra mb-3 md:text-4xl lg:text-5xl lg:leading-normal xl:text-6xl xl:leading-normal"
+        >
+          “Turn To Allah Before You Return To Allah.”
+        </p>
+        <p
+          class="text-lg font-semibold my-5 md:text-xl lg:text-2xl lg:leading-snug"
+        >
+          The Heart That Beats For Allah Is Always A Stranger Among The Hearts
+          That Beat For The Dunya (World).
+        </p>
+        <button
+          class="text-gray-700 border-1 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-600 rounded-xl shadow-xl py-2 mx-auto my-8 w-2/5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:duration-200 sm:w-1/4 md:w-1/4 md:px-2 lg:w-3/6 lg:py-4 xl:w-2/6"
+        >
+          <a href="./aboutUs.html" class="font-almendra font-semibold"
+            >DISCOVER MORE</a
+          >
+        </button>
       </div>
-      
-      <img src="/images/hero-image.jpg" alt="An image here" class="w-11/12 rounded-3xl mx-auto mt-4 md:w-3/4 md:rounded-4xl lg:w-1/2">
 
+      <img
+        src="/images/hero-image.jpg"
+        alt="An image here"
+        class="w-11/12 rounded-3xl mx-auto mt-4 md:w-3/4 md:rounded-4xl lg:w-1/2"
+      />
     </section>
     <!-- END OF HERO SECTION -->
-
 
     <section class="lg:px-10">
       <!-- Mobile section start here -->
       <section class="px-12 pt-12 mx-4 md:hidden">
-        <img src="../images/section-image-00.jpg" alt="Mosque image" class="rounded-3xl w-[400px]">
-        <img src="../images/section-image-01.jpg" alt="Mosque image" class="rounded-3xl w-[220px] -mt-64 ml-[135px]" >
+        <img
+          src="../images/section-image-00.jpg"
+          alt="Mosque image"
+          class="rounded-3xl w-[400px]"
+        />
+        <img
+          src="../images/section-image-01.jpg"
+          alt="Mosque image"
+          class="rounded-3xl w-[220px] -mt-64 ml-[135px]"
+        />
       </section>
       <!-- Mobile section ends here -->
-      
+
       <!-- Tablet and Desktop section -->
-      <div class="md:grid md:place-content-center md:grid-cols-2 md:grid-rows-1 lg:grid lg:gap-24 lg:place-content-center lg:grid-cols-2 lg:grid-rows-1 xl:gap-8">
-        <section class="hidden md:grid md:col-start-1 md:col-end-2 md:ml-10 md:mt-12 lg:flex lg:mb-4">
-          <img src="../images/section-image-00.jpg" alt="An image here" class="rounded-3xl md:w-72 md:h-72 lg:w-[400px] lg:h-[500px] xl:w[500px]">
-          <img src="../images/section-image-01.jpg" alt="An image here" class="rounded-3xl md:w-72 md:h-72 lg:-ml-56 lg:mt-56 lg:w-[300px] lg:h-[400px] xl:w-[400px]">
+      <div
+        class="md:grid md:place-content-center md:grid-cols-2 md:grid-rows-1 lg:grid lg:gap-24 lg:place-content-center lg:grid-cols-2 lg:grid-rows-1 xl:gap-8"
+      >
+        <section
+          class="hidden md:grid md:col-start-1 md:col-end-2 md:ml-10 md:mt-12 lg:flex lg:mb-4"
+        >
+          <img
+            src="../images/section-image-00.jpg"
+            alt="An image here"
+            class="rounded-3xl md:w-72 md:h-72 lg:w-[400px] lg:h-[500px] xl:w[500px]"
+          />
+          <img
+            src="../images/section-image-01.jpg"
+            alt="An image here"
+            class="rounded-3xl md:w-72 md:h-72 lg:-ml-56 lg:mt-56 lg:w-[300px] lg:h-[400px] xl:w-[400px]"
+          />
         </section>
-  
-        <section class="px-4 py-12 md:-ml-10 md:grid-cols-1 md:col-start-2 md:col-end-4 ">
+
+        <section
+          class="px-4 py-12 md:-ml-10 md:grid-cols-1 md:col-start-2 md:col-end-4"
+        >
           <div class="text-center md:text-left">
-            <p class="text-xl font-semibold font-abel text-yellow-600 mb-2">About Us</p>
-            <p class="text-4xl font-bold font-almendra mb-6">Welcome To The Lantern Islamic Foundation</p>
+            <p class="text-xl font-semibold font-abel text-yellow-600 mb-2">
+              About Us
+            </p>
+            <p class="text-4xl font-bold font-almendra mb-6">
+              Welcome To The Lantern Islamic Foundation
+            </p>
           </div>
-          <p class="text-lg text-center mb-6 md:my-10 md:text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id excepturi soluta doloremque velit consequatur enim modi dicta quis? Exercitationem quidem labore illum debitis alias provident deleniti esse, nulla ab. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim nisi, quibusdam in ab fugiat officia quisquam qui earum omnis placeat amet incidunt numquam? Nihil quos error beatae suscipit necessitatibus veniam?</p>
-    
-          <button class="bg-yellow-500 px-6 py-3 rounded-2xl hover:bg-yellow-600 shadow-md transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:duration-200"><a href="./aboutUs.html" class="font-bold text-white">Discover More</a></button>
+          <p class="text-lg text-center mb-6 md:my-10 md:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+            excepturi soluta doloremque velit consequatur enim modi dicta quis?
+            Exercitationem quidem labore illum debitis alias provident deleniti
+            esse, nulla ab. Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Enim nisi, quibusdam in ab fugiat officia quisquam qui earum
+            omnis placeat amet incidunt numquam? Nihil quos error beatae
+            suscipit necessitatibus veniam?
+          </p>
+
+          <button
+            class="bg-yellow-500 px-6 py-3 rounded-2xl hover:bg-yellow-600 shadow-md transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:duration-200"
+          >
+            <a href="./aboutUs.html" class="font-bold text-white"
+              >Discover More</a
+            >
+          </button>
           <div class="flex items-center gap-3 my-3">
-            <img src="/images/phone-call.svg" alt="">
-            <p class="font-medium text-gray-600">Call us: <br><span class="text-lg text-black">+(234)-8024-070-582</span></p>
+            <img src="/images/phone-call.svg" alt="" />
+            <p class="font-medium text-gray-600">
+              Call us: <br /><span class="text-lg text-black"
+                >+(234)-8024-070-582</span
+              >
+            </p>
           </div>
         </section>
       </div>
-
     </section>
 
-
-
-
-    <section class="bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center text-center py-12 px-2 lg:hidden">
+    <section
+      class="bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center text-center py-12 px-2 lg:hidden"
+    >
       <p class="text-xl font-semibold text-yellow-600 mb-2">Islam Pillar</p>
-      <p class="text-4xl font-bold font-almendra mb-12">FIVE PILLARS OF ISLAM</p>
-      
+      <p class="text-4xl font-bold font-almendra mb-12">
+        FIVE PILLARS OF ISLAM
+      </p>
+
       <!-- Slideshow container -->
-        <div class="slideshow-container">
-
+      <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 5</div>
-            <img src="/images/image-1.jpg" style="width:100%">
-            <div class="text">SAWN</div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 5</div>
-            <img src="/images/image-2.jpg" style="width:100%">
-            <div class="text">SALAH</div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 5</div>
-            <img src="/images/image-3.jpg" style="width:100%">
-            <div class="text">ZAKAR</div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">4 / 5</div>
-            <img src="/images/image-4.jpg" style="width:100%">
-            <div class="text">SHAHADAH</div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">5 / 5</div>
-            <img src="/images/mosque.jpeg" style="width:100%">
-            <div class="text">HAJJ</div>
-          </div>
-
-          <!-- Next and previous buttons -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 5</div>
+          <img src="/images/image-1.jpg" style="width: 100%" />
+          <div class="text">SAWN</div>
         </div>
-        <br>
 
-          <!-- The dots/circles -->
-         <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
-          <span class="dot" onclick="currentSlide(4)"></span>
-          <span class="dot" onclick="currentSlide(5)"></span>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 5</div>
+          <img src="/images/image-2.jpg" style="width: 100%" />
+          <div class="text">SALAH</div>
         </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 5</div>
+          <img src="/images/image-3.jpg" style="width: 100%" />
+          <div class="text">ZAKAR</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 5</div>
+          <img src="/images/image-4.jpg" style="width: 100%" />
+          <div class="text">SHAHADAH</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">5 / 5</div>
+          <img src="/images/mosque.jpeg" style="width: 100%" />
+          <div class="text">HAJJ</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
     </section>
-    
 
     <!-- SLIDER FOR DESKTOP -->
-    <section class="hidden lg:block bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center text-center py-12 px-2">
+    <section
+      class="hidden lg:block bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center text-center py-12 px-2"
+    >
       <p class="text-xl font-semibold text-yellow-600 mb-2">Islam Pillar</p>
-      <p class="text-4xl font-bold font-almendra mb-12">FIVE PILLARS OF ISLAM</p>
+      <p class="text-4xl font-bold font-almendra mb-12">
+        FIVE PILLARS OF ISLAM
+      </p>
 
       <section id="animate-slider" class="hidden md:block">
-  
         <div class="content-width">
           <div class="slideshow">
-  
             <!-- Slideshow Items -->
             <div class="slideshow-items">
               <div class="item">
                 <div class="item-image-container">
                   <img class="item-image" src="/images/image-1.jpg" />
                 </div>
-            <!-- Staggered Header Elements -->
+                <!-- Staggered Header Elements -->
                 <div class="item-header">
                   <span class="vertical-part"><b>S</b></span>
                   <span class="vertical-part"><b>A</b></span>
                   <span class="vertical-part"><b>W</b></span>
                   <span class="vertical-part"><b>N</b></span>
                 </div>
-          <!-- Staggered Description Elements -->
-            <div class="item-description">
-            <span class="vertical-part">
-              <b>Sawn</b>
-            </span>
-            <span class="vertical-part">
-              <b>is</b>
-            </span> 
-            <span class="vertical-part">
-              <b>the</b>
-            </span>
-            <span class="vertical-part">
-              <b>act</b>
-            </span> 
-            <span class="vertical-part">
-              <b>of</b>
-            </span>
-            <span class="vertical-part">
-              <b>fasting</b>
-            </span> 
-            <span class="vertical-part">
-              <b>during</b>
-            </span>
-            <span class="vertical-part">
-              <b>the</b>
-            </span> 
-            <span class="vertical-part">
-              <b>holy</b>
-            </span>
-            <span class="vertical-part">
-              <b>month</b>
-            </span> 
-            <span class="vertical-part">
-              <b>of</b>
-            </span>
-            <span class="vertical-part">
-              <b>Ramadam.</b>
-            </span> 
-            <span class="vertical-part">
-              <b>Muslims</b>
-            </span>
-            <span class="vertical-part">
-              <b>are</b>
-            </span> 
-            <span class="vertical-part">
-              <b>required</b>
-            </span>
-            <span class="vertical-part">
-              <b>to</b>
-            </span> 
-            <span class="vertical-part">
-              <b>fast,</b>
-            </span>
-            <span class="vertical-part">
-              <b>which</b>
-            </span> 
-            <span class="vertical-part">
-              <b>entails</b>
-            </span>
-            <span class="vertical-part">
-              <b>abstaining</b>
-            </span> 
-            <span class="vertical-part">
-              <b>from,</b>
-            </span> 
-            <span class="vertical-part">
-              <b>drink</b>
-            </span>
-            <span class="vertical-part">
-              <b>sexual relations</b>
-            </span> 
-            <span class="vertical-part">
-              <b>and displeasing</b>
-            </span>
-            <span class="vertical-part">
-              <b>speech</b>
-            </span> 
-            <span class="vertical-part">
-              <b>and behaviour</b>
-            </span>
-            <span class="vertical-part">
-              <b>from</b>
-            </span> 
-            <span class="vertical-part">
-              <b>dawn</b>
-            </span>
-            <span class="vertical-part">
-              <b>until</b>
-            </span> 
-            <span class="vertical-part">
-              <b>dusk.</b>
-            </span>      
-          </div>
-          </div>
-          <div class="item">
-            <div class="item-image-container">
-            <img class="item-image" src="/images/image-2.jpg" />
+                <!-- Staggered Description Elements -->
+                <div class="item-description">
+                  <span class="vertical-part">
+                    <b>Sawn</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>is</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>the</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>act</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>of</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>fasting</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>during</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>the</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>holy</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>month</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>of</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>Ramadam.</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>Muslims</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>are</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>required</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>to</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>fast,</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>which</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>entails</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>abstaining</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>from,</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>drink</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>sexual relations</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>and displeasing</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>speech</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>and behaviour</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>from</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>dawn</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>until</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>dusk.</b>
+                  </span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image-container">
+                  <img class="item-image" src="/images/image-2.jpg" />
+                </div>
+                <!-- Staggered Header Elements -->
+                <div class="item-header">
+                  <span class="vertical-part"><b>S</b></span>
+                  <span class="vertical-part"><b>A</b></span>
+                  <span class="vertical-part"><b>L</b></span>
+                  <span class="vertical-part"><b>A</b></span>
+                  <span class="vertical-part"><b>H</b></span>
+                </div>
+                <!-- Staggered Description Elements -->
+                <div class="item-description">
+                  <span class="vertical-part">
+                    <b>Salah</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>is</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>the</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>ritual</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>required</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>of every</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>muslim</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>five</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>times a</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>day</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>thoughout</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>their</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>lifetime.</b>
+                  </span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image-container">
+                  <img class="item-image" src="/images/image-3.jpg" />
+                </div>
+                <!-- Staggered Header Elements -->
+                <div class="item-header">
+                  <span class="vertical-part"><b>Z</b></span>
+                  <span class="vertical-part"><b>A</b></span>
+                  <span class="vertical-part"><b>K</b></span>
+                  <span class="vertical-part"><b>A</b></span>
+                  <span class="vertical-part"><b>R</b></span>
+                </div>
+                <!-- Staggered Description Elements -->
+                <div class="item-description">
+                  <span class="vertical-part">
+                    <b>Zakar</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>or Almsgiving</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>is the</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>act of</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>giving</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>a portion</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>of a</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>muslim's</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>wealth</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>to those</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>in need</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>throughout</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>their</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>lifetime.</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>This.</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>means</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>that</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>Zakat is</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>mandatory</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>for Muslims,</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>along with</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>the four</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>sacred</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>pillars of</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>Islam.</b>
+                  </span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image-container">
+                  <img class="item-image" src="/images/image-4.jpg" />
+                </div>
+                <!-- Staggered Header Elements -->
+                <div class="item-header">
+                  <span class="vertical-part"><b>S</b></span>
+                  <span class="vertical-part"><b>H</b></span>
+                  <span class="vertical-part"><b>A</b></span>
+                  <span class="vertical-part"><b>H</b></span>
+                  <span class="vertical-part"><b>A</b></span>
+                  <span class="vertical-part"><b>D</b></span>
+                  <span class="vertical-part"><b>A</b></span>
+                  <span class="vertical-part"><b>H</b></span>
+                </div>
+                <!-- Staggered Description Elements -->
+                <div class="item-description">
+                  <span class="vertical-part">
+                    <b>Shahadah</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>as a</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>pillar of</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>Islam</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>is ths</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>declaration</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>of faith</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>in one</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>God(Allah)</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>and his</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>messenger</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>(peace be upon him)</b>
+                  </span>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item-image-container">
+                  <img class="item-image" src="/images/mosque.jpeg" />
+                </div>
+                <!-- Staggered Header Elements -->
+                <div class="item-header">
+                  <span class="vertical-part"><b>H</b></span>
+                  <span class="vertical-part"><b>A</b></span>
+                  <span class="vertical-part"><b>J</b></span>
+                  <span class="vertical-part"><b>J</b></span>
+                </div>
+                <!-- Staggered Description Elements -->
+                <div class="item-description">
+                  <span class="vertical-part">
+                    <b>Hajj</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>is the</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>sacred</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>pilgrimage</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>to Mecca</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>required</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>of every</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>Muslim</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>at least</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>once in</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>their</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>lifetime</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>if it</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>is within</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>their</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>means and</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>reach.</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>Hajj</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>takes</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>place</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>during</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>the same</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>period</b>
+                  </span>
+                  <span class="vertical-part">
+                    <b>each year.</b>
+                  </span>
+                </div>
+              </div>
             </div>
-          <!-- Staggered Header Elements -->
-          <div class="item-header">
-            <span class="vertical-part"><b>S</b></span>
-            <span class="vertical-part"><b>A</b></span>
-            <span class="vertical-part"><b>L</b></span>
-            <span class="vertical-part"><b>A</b></span>
-            <span class="vertical-part"><b>H</b></span>
-          </div>
-          <!-- Staggered Description Elements -->
-          <div class="item-description">
-            <span class="vertical-part">
-              <b>Salah</b>
-            </span>
-            <span class="vertical-part">
-              <b>is</b>
-            </span>
-            <span class="vertical-part">
-              <b>the</b>
-            </span>
-            <span class="vertical-part">
-              <b>ritual</b>
-            </span>
-            <span class="vertical-part">
-              <b>required</b>
-            </span>
-            <span class="vertical-part">
-              <b>of every</b>
-            </span>
-            <span class="vertical-part">
-              <b>muslim</b>
-            </span>
-            <span class="vertical-part">
-              <b>five</b>
-            </span>
-            <span class="vertical-part">
-              <b>times a</b>
-            </span>
-            <span class="vertical-part">
-              <b>day</b>
-            </span>
-            <span class="vertical-part">
-              <b>thoughout</b>
-            </span>
-            <span class="vertical-part">
-              <b>their</b>
-            </span>
-            <span class="vertical-part">
-              <b>lifetime.</b>
-            </span>
+            <div class="controls">
+              <ul>
+                <li class="control" data-index="0"></li>
+                <li class="control" data-index="1"></li>
+                <li class="control" data-index="2"></li>
+                <li class="control" data-index="3"></li>
+                <li class="control" data-index="4"></li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="item">
-          <div class="item-image-container">
-            <img class="item-image" src="/images/image-3.jpg"/>
-          </div>
-          <!-- Staggered Header Elements -->
-          <div class="item-header">
-            <span class="vertical-part"><b>Z</b></span>
-            <span class="vertical-part"><b>A</b></span>
-            <span class="vertical-part"><b>K</b></span>
-            <span class="vertical-part"><b>A</b></span>
-            <span class="vertical-part"><b>R</b></span>
-          </div>
-          <!-- Staggered Description Elements -->
-          <div class="item-description">
-            <span class="vertical-part">
-              <b>Zakar</b>
-            </span>
-            <span class="vertical-part">
-              <b>or Almsgiving</b>
-            </span>
-            <span class="vertical-part">
-              <b>is the</b>
-            </span>
-            <span class="vertical-part">
-              <b>act of</b>
-            </span>
-            <span class="vertical-part">
-              <b>giving</b>
-            </span>
-            <span class="vertical-part">
-              <b>a portion</b>
-            </span>
-            <span class="vertical-part">
-              <b>of a</b>
-            </span>
-            <span class="vertical-part">
-              <b>muslim's</b>
-            </span>
-            <span class="vertical-part">
-              <b>wealth</b>
-            </span>
-            <span class="vertical-part">
-              <b>to those</b>
-            </span>
-            <span class="vertical-part">
-              <b>in need</b>
-            </span>
-            <span class="vertical-part">
-              <b>throughout</b>
-            </span>
-            <span class="vertical-part">
-              <b>their</b>
-            </span>
-            <span class="vertical-part">
-              <b>lifetime.</b>
-            </span>
-            <span class="vertical-part">
-              <b>This.</b>
-            </span>
-            <span class="vertical-part">
-              <b>means</b>
-            </span>
-            <span class="vertical-part">
-              <b>that</b>
-            </span>
-            <span class="vertical-part">
-              <b>Zakat is</b>
-            </span>
-            <span class="vertical-part">
-              <b>mandatory</b>
-            </span>
-            <span class="vertical-part">
-              <b>for Muslims,</b>
-            </span>
-            <span class="vertical-part">
-              <b>along with</b>
-            </span>
-            <span class="vertical-part">
-              <b>the four</b>
-            </span>
-            <span class="vertical-part">
-              <b>sacred</b>
-            </span>
-            <span class="vertical-part">
-              <b>pillars of</b>
-            </span>
-            <span class="vertical-part">
-              <b>Islam.</b>
-            </span>
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-image-container">
-            <img class="item-image" src="/images/image-4.jpg"/>
-          </div>
-          <!-- Staggered Header Elements -->
-          <div class="item-header">
-            <span class="vertical-part"><b>S</b></span>
-            <span class="vertical-part"><b>H</b></span>
-            <span class="vertical-part"><b>A</b></span>
-            <span class="vertical-part"><b>H</b></span>
-            <span class="vertical-part"><b>A</b></span>
-            <span class="vertical-part"><b>D</b></span>
-            <span class="vertical-part"><b>A</b></span>
-            <span class="vertical-part"><b>H</b></span>
-          </div>
-          <!-- Staggered Description Elements -->
-          <div class="item-description">
-            <span class="vertical-part">
-              <b>Shahadah</b>
-            </span>
-            <span class="vertical-part">
-              <b>as a</b>
-            </span>
-            <span class="vertical-part">
-              <b>pillar of</b>
-            </span>
-            <span class="vertical-part">
-              <b>Islam</b>
-            </span>
-            <span class="vertical-part">
-              <b>is ths</b>
-            </span>
-            <span class="vertical-part">
-              <b>declaration</b>
-            </span>
-            <span class="vertical-part">
-              <b>of faith</b>
-            </span>
-            <span class="vertical-part">
-              <b>in one</b>
-            </span>
-            <span class="vertical-part">
-              <b>God(Allah)</b>
-            </span>
-            <span class="vertical-part">
-              <b>and his</b>
-            </span>
-            <span class="vertical-part">
-              <b>messenger</b>
-            </span>
-            <span class="vertical-part">
-              <b>(peace be upon him)</b>
-            </span> 
-          </div>
-        </div>
-        <div class="item">
-          <div class="item-image-container">
-            <img class="item-image" src="/images/mosque.jpeg"/>
-          </div>
-          <!-- Staggered Header Elements -->
-          <div class="item-header">
-            <span class="vertical-part"><b>H</b></span>
-            <span class="vertical-part"><b>A</b></span>
-            <span class="vertical-part"><b>J</b></span>
-            <span class="vertical-part"><b>J</b></span>
-          </div>
-          <!-- Staggered Description Elements -->
-          <div class="item-description">
-            <span class="vertical-part">
-              <b>Hajj</b>
-            </span>
-            <span class="vertical-part">
-              <b>is the</b>
-            </span>
-            <span class="vertical-part">
-              <b>sacred</b>
-            </span>
-            <span class="vertical-part">
-              <b>pilgrimage</b>
-            </span>
-            <span class="vertical-part">
-              <b>to Mecca</b>
-            </span>
-            <span class="vertical-part">
-              <b>required</b>
-            </span>
-            <span class="vertical-part">
-              <b>of every</b>
-            </span>
-            <span class="vertical-part">
-              <b>Muslim</b>
-            </span>
-            <span class="vertical-part">
-              <b>at least</b>
-            </span>
-            <span class="vertical-part">
-              <b>once in</b>
-            </span>
-            <span class="vertical-part">
-              <b>their</b>
-            </span>
-            <span class="vertical-part">
-              <b>lifetime</b>
-            </span>
-            <span class="vertical-part">
-              <b>if it</b>
-            </span>
-            <span class="vertical-part">
-              <b>is within</b>
-            </span>
-            <span class="vertical-part">
-              <b>their</b>
-            </span>
-            <span class="vertical-part">
-              <b>means and</b>
-            </span>
-            <span class="vertical-part">
-              <b>reach.</b>
-            </span>
-            <span class="vertical-part">
-              <b>Hajj</b>
-            </span>
-            <span class="vertical-part">
-              <b>takes</b>
-            </span>
-            <span class="vertical-part">
-              <b>place</b>
-            </span>
-            <span class="vertical-part">
-              <b>during</b>
-            </span>
-            <span class="vertical-part">
-              <b>the same</b>
-            </span>
-            <span class="vertical-part">
-              <b>period</b>
-            </span>
-            <span class="vertical-part">
-              <b>each year.</b>
-            </span>
-          </div>
-        </div>
-  
-      </div>
-      <div class="controls">
-        <ul>
-          <li class="control" data-index="0"></li>
-          <li class="control" data-index="1"></li>
-          <li class="control" data-index="2"></li>
-          <li class="control" data-index="3"></li>
-          <li class="control" data-index="4"></li>
-        </ul>
-      </div>
-      </div>
-      </div>
       </section>
     </section>
     <!-- END OF DESKTOP SLIDER -->
-
 
     <section class="py-12 px-4 md:">
       <div class="text-center">
         <p class="text-xl font-semibold text-yellow-600 mb-2">Activities</p>
         <p class="text-4xl font-bold font-almendra mb-12">OUR ACTIVITIES</p>
       </div>
-      
-      <section class="md:grid md:grid-cols-2 md:grid-rows-3 md:gap-5 md:px-6 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-10 lg:px-12 xl:grid-cols-3 xl:grid-rows-2 ">
+
+      <section
+        class="md:grid md:grid-cols-2 md:grid-rows-3 md:gap-5 md:px-6 lg:grid lg:grid-cols-2 lg:grid-rows-3 lg:gap-10 lg:px-12 xl:grid-cols-3 xl:grid-rows-2"
+      >
+        <div class="border-2 rounded-3xl shadow-md p-8 mb-8">
+          <div class="flex items-center justify-between mb-4">
+            <img src="/images/value-image-06.svg" alt="" />
+            <p
+              class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300"
+            >
+              01
+            </p>
+          </div>
+          <p class="text-2xl font-semibold font-almendra mb-4">
+            QUARAN MEMORIZATION
+          </p>
+          <p class="mb-4 text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut
+            ea sed voluptas, deleniti incidunt ratione consectetur quaerat quis
+            et maiores quo temporibus iste cupiditate.
+          </p>
+          <a
+            href="./activities.html"
+            class="text-yellow-600 text-lg font-bold hover:text-black"
+            >Read More...</a
+          >
+        </div>
 
         <div class="border-2 rounded-3xl shadow-md p-8 mb-8">
           <div class="flex items-center justify-between mb-4">
-            <img src="/images/value-image-06.svg" alt="">
-            <p class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300">01</p>
+            <img src="/images/value-image-05.svg" alt="" />
+            <p
+              class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300"
+            >
+              02
+            </p>
           </div>
-          <p class="text-2xl font-semibold font-almendra mb-4">QUARAN MEMORIZATION</p>
-          <p class="mb-4 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut ea sed voluptas, deleniti incidunt ratione consectetur quaerat quis et maiores quo temporibus iste cupiditate.</p>
-          <a href="./activities.html" class="text-yellow-600 text-lg font-bold hover:text-black">Read More...</a>
+          <p class="text-2xl font-semibold font-almendra mb-4">
+            SOLAH (Five Daily Prayers)
+          </p>
+          <p class="mb-4 text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut
+            ea sed voluptas, deleniti incidunt ratione consectetur quaerat quis
+            et maiores quo temporibus iste cupiditate.
+          </p>
+          <a
+            href="./activities.html"
+            class="text-yellow-600 text-lg font-bold hover:text-black"
+            >Read More...</a
+          >
         </div>
-  
+
         <div class="border-2 rounded-3xl shadow-md p-8 mb-8">
           <div class="flex items-center justify-between mb-4">
-            <img src="/images/value-image-05.svg" alt="">
-            <p class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300">02</p>
+            <img src="/images/value-image-04.svg" alt="" />
+            <p
+              class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300"
+            >
+              03
+            </p>
           </div>
-          <p class="text-2xl font-semibold font-almendra mb-4">SOLAH (Five Daily Prayers)</p>
-          <p class="mb-4 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut ea sed voluptas, deleniti incidunt ratione consectetur quaerat quis et maiores quo temporibus iste cupiditate.</p>
-          <a href="./activities.html" class="text-yellow-600 text-lg font-bold hover:text-black">Read More...</a>
+          <p class="text-2xl font-semibold font-almendra mb-4">
+            MOSQUE DEVELOPMENT
+          </p>
+          <p class="mb-4 text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut
+            ea sed voluptas, deleniti incidunt ratione consectetur quaerat quis
+            et maiores quo temporibus iste cupiditate.
+          </p>
+          <a
+            href="./activities.html"
+            class="text-yellow-600 text-lg font-bold hover:text-black"
+            >Read More...</a
+          >
         </div>
-  
+
         <div class="border-2 rounded-3xl shadow-md p-8 mb-8">
           <div class="flex items-center justify-between mb-4">
-            <img src="/images/value-image-04.svg" alt="">
-            <p class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300">03</p>
+            <img src="/images/value-image-03.svg" alt="" />
+            <p
+              class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300"
+            >
+              04
+            </p>
           </div>
-          <p class="text-2xl font-semibold font-almendra mb-4">MOSQUE DEVELOPMENT</p>
-          <p class="mb-4 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut ea sed voluptas, deleniti incidunt ratione consectetur quaerat quis et maiores quo temporibus iste cupiditate.</p>
-          <a href="./activities.html" class="text-yellow-600 text-lg font-bold hover:text-black">Read More...</a>
+          <p class="text-2xl font-semibold font-almendra mb-4">
+            CHARITY AND DONATION
+          </p>
+          <p class="mb-4 text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut
+            ea sed voluptas, deleniti incidunt ratione consectetur quaerat quis
+            et maiores quo temporibus iste cupiditate.
+          </p>
+          <a
+            href="./activities.html"
+            class="text-yellow-600 text-lg font-bold hover:text-black"
+            >Read More...</a
+          >
         </div>
-  
-        <div class="border-2 rounded-3xl shadow-md p-8 mb-8 ">
-          <div class="flex items-center justify-between mb-4">
-            <img src="/images/value-image-03.svg" alt="">
-            <p class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300">04</p>
-          </div>
-          <p class="text-2xl font-semibold font-almendra mb-4">CHARITY AND DONATION</p>
-          <p class="mb-4 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut ea sed voluptas, deleniti incidunt ratione consectetur quaerat quis et maiores quo temporibus iste cupiditate.</p>
-          <a href="./activities.html" class="text-yellow-600 text-lg font-bold hover:text-black">Read More...</a>
-        </div>
-  
+
         <div class="border-2 rounded-3xl shadow-md p-8 mb-8">
           <div class="flex items-center justify-between mb-4">
-            <img src="/images/value-image-01.svg" alt="">
-            <p class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300">05</p>
+            <img src="/images/value-image-01.svg" alt="" />
+            <p
+              class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300"
+            >
+              05
+            </p>
           </div>
-          <p class="text-2xl font-semibold font-almendra mb-4">FIQH (Understanding Islam)</p>
-          <p class="mb-4 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut ea sed voluptas, deleniti incidunt ratione consectetur quaerat quis et maiores quo temporibus iste cupiditate.</p>
-          <a href="./activities.html" class="text-yellow-600 text-lg font-bold hover:text-black">Read More...</a>
+          <p class="text-2xl font-semibold font-almendra mb-4">
+            FIQH (Understanding Islam)
+          </p>
+          <p class="mb-4 text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut
+            ea sed voluptas, deleniti incidunt ratione consectetur quaerat quis
+            et maiores quo temporibus iste cupiditate.
+          </p>
+          <a
+            href="./activities.html"
+            class="text-yellow-600 text-lg font-bold hover:text-black"
+            >Read More...</a
+          >
         </div>
-  
+
         <div class="border-2 rounded-3xl shadow-md p-8 mb-8">
           <div class="flex items-center justify-between mb-4">
-            <img src="/images/value-image-05.svg" alt="">
-            <p class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300">06</p>
+            <img src="/images/value-image-05.svg" alt="" />
+            <p
+              class="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-600 to-yellow-300"
+            >
+              06
+            </p>
           </div>
-          <p class="text-2xl font-semibold font-almendra mb-4">Quiz Competition</p>
-          <p class="mb-4 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut ea sed voluptas, deleniti incidunt ratione consectetur quaerat quis et maiores quo temporibus iste cupiditate.</p>
-          <a href="./competition.html" class="text-yellow-600 text-lg font-bold hover:text-black">Read More...</a>
+          <p class="text-2xl font-semibold font-almendra mb-4">
+            Quiz Competition
+          </p>
+          <p class="mb-4 text-lg">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ut
+            ea sed voluptas, deleniti incidunt ratione consectetur quaerat quis
+            et maiores quo temporibus iste cupiditate.
+          </p>
+          <a
+            href="./competition.html"
+            class="text-yellow-600 text-lg font-bold hover:text-black"
+            >Read More...</a
+          >
         </div>
       </section>
-
     </section>
-     
 
-    <section class="bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center text-center px-2 py-12 lg:px-12">
+    <section
+      class="bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center text-center px-2 py-12 lg:px-12"
+    >
       <div class="text-center">
         <p class="text-xl font-semibold text-yellow-600 mb-2">Events</p>
-        <p  class="text-4xl font-bold font-almendra mb-12">OUR COMING EVENTS</p>
+        <p class="text-4xl font-bold font-almendra mb-12">OUR COMING EVENTS</p>
       </div>
 
-      <div class=" px-4 py-10 md:flex md:justify-evenly md:gap-10 lg:flex lg:justify-evenly">
+      <div
+        class="px-4 py-10 md:flex md:justify-evenly md:gap-10 lg:flex lg:justify-evenly"
+      >
         <div>
-          <img src="/images/events-image.jpg" alt="" class="rounded-3xl mx-4 mb-4 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 hover:duration-300 hover:shadow-md hover:opacity-80">
+          <img
+            src="/images/events-image.jpg"
+            alt=""
+            class="rounded-3xl mx-4 mb-4 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 hover:duration-300 hover:shadow-md hover:opacity-80"
+          />
         </div>
-  
-        <div>
-          <p class="text-3xl font-almendra font-semibold my-6 hover:text-yellow-600">EXPLORING ISLAMIC INSIGHTS AND WISDOM</p>
-          <p class="text-xl font-medium mb-6 lg:w-4/5 lg:mx-auto ">We are dedicated to the advancement of the individual, family, and the community at large through faith, education and service.</p>
 
-          <div class="flex items-center justify-center gap-2 ">
-            <img src="/images/marker.svg" alt="" class="md:mb-5 lg:mt-7">
-            <p class="text-xl text-gray-700">24, Apapa Road, Ebute-Metta, Lagos, Nigeria.</p>
+        <div>
+          <p
+            class="text-3xl font-almendra font-semibold my-6 hover:text-yellow-600"
+          >
+            EXPLORING ISLAMIC INSIGHTS AND WISDOM
+          </p>
+          <p class="text-xl font-medium mb-6 lg:w-4/5 lg:mx-auto">
+            We are dedicated to the advancement of the individual, family, and
+            the community at large through faith, education and service.
+          </p>
+
+          <div class="flex items-center justify-center gap-2">
+            <img src="/images/marker.svg" alt="" class="md:mb-5 lg:mt-7" />
+            <p class="text-xl text-gray-700">
+              24, Apapa Road, Ebute-Metta, Lagos, Nigeria.
+            </p>
           </div>
-            
-    
-          <button class="bg-yellow-500 text-white mt-10 px-8 py-3 rounded-2xl hover:bg-yellow-600 shadow-md transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:duration-300"><a href="./aboutUs.html" class="font-semibold">JOIN US</a></button>
+
+          <button
+            class="bg-yellow-500 text-white mt-10 px-8 py-3 rounded-2xl hover:bg-yellow-600 shadow-md transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:duration-300"
+          >
+            <a href="./aboutUs.html" class="font-semibold">JOIN US</a>
+          </button>
         </div>
-          
       </div>
     </section>
-
-
-    
-
 
     <footer class="bg-black px-6 py-10 lg:flex lg:justify-evenly">
       <div class="">
         <div class="flex items-center py-3">
           <img src="/images/TLIF.png" alt="logo" class="w-16" />
           <div class="text-white">
-            <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-500">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
+            <p class="leading-3 text-center">
+              <span
+                class="font-semibold text-xl font-sans tracking-widest text-yellow-500"
+                >The Lantern</span
+              ><br /><span class="font-serif tracking-tighter"
+                >Islamic Foundation</span
+              >
+            </p>
           </div>
         </div>
-        <p class="text-white lg:max-w-96">We are dedicated to the advancement of the individual, family, and the community at large through faith, education and service.
+        <p class="text-white lg:max-w-96">
+          We are dedicated to the advancement of the individual, family, and the
+          community at large through faith, education and service.
         </p>
 
         <div class="flex items-center gap-4 py-3">
-          <a href="https://www.facebook.com/profile.php?id=61557895405553" target="_blank"><img src="/images/icon-facebook.svg" alt="" class="rounded-md"></a>
-          <p class="text-white font-serif">The Lantern Islamic foundation - TLIF</p>
-          
+          <a
+            href="https://www.facebook.com/profile.php?id=61557895405553"
+            target="_blank"
+            ><img src="/images/icon-facebook.svg" alt="" class="rounded-md"
+          /></a>
+          <p class="text-white font-serif">
+            The Lantern Islamic foundation - TLIF
+          </p>
         </div>
       </div>
-      
+
       <section class="text-white flex gap-10 md:gap-48 lg:gap-10 lg:px-20">
         <div class="">
           <p class="text-2xl pb-3 font-almendra pt-7">EVENTS</p>
           <ul class="list-disc px-5">
-              <li class="p-1"><a href="#">Quran Memorization</a></li>
-              <li class="p-1"><a href="#">Solah (Five Daily Prayers)</a></li>
-              <li class="p-1"><a href="#">Mosque Development</a></li>
-              <li class="p-1"><a href="#">Charity & Donation</a></li>
-              <li class="p-1"><a href="#">Quiz competition</a></li>
-              <li class="p-1"><a href="#">Fiqh (Understanding Islam)</a></li>
+            <li class="p-1"><a href="#">Quran Memorization</a></li>
+            <li class="p-1"><a href="#">Solah (Five Daily Prayers)</a></li>
+            <li class="p-1"><a href="#">Mosque Development</a></li>
+            <li class="p-1"><a href="#">Charity & Donation</a></li>
+            <li class="p-1"><a href="#">Quiz competition</a></li>
+            <li class="p-1"><a href="#">Fiqh (Understanding Islam)</a></li>
           </ul>
         </div>
-    
+
         <div class="">
-            <p class="text-2xl pb-3 font-almendra pt-7">QUICK LINKS</p>
-            <ul class="list-disc px-5">
-              <li class="p-1"><a href="./index.html">Home</a></li>
-                    <li class="p-1"><a href="./aboutUs.html">About Us</a></li>
-                    <li class="p-1"><a href="./activities.html">Activities</a></li>
-                    <li class="p-1"><a href="./events.html">Events</a></li>
-                    <li class="p-1"><a href="./contact.html">Contact</a></li>    
-                    <li class="p-1"><a href="./competition.html">Competition</a></li>        
-            </ul>
+          <p class="text-2xl pb-3 font-almendra pt-7">QUICK LINKS</p>
+          <ul class="list-disc px-5">
+            <li class="p-1"><a href="./index.html">Home</a></li>
+            <li class="p-1"><a href="./aboutUs.html">About Us</a></li>
+            <li class="p-1"><a href="./activities.html">Activities</a></li>
+            <li class="p-1"><a href="./events.html">Events</a></li>
+            <li class="p-1"><a href="./contact.html">Contact</a></li>
+            <li class="p-1"><a href="./competition.html">Competition</a></li>
+          </ul>
         </div>
       </section>
-        
-      
 
-      <div class=" mt-5">
+      <div class="mt-5">
         <p class="text-2xl text-white font-almendra pb-3">NEWSLETTER</p>
-        <input type="text" name="email" placeholder="Your Email..." class="w-full p-3 border-[2px] rounded-lg">
-        <button class="bg-yellow-500 font-medium font-almendra text-white px-4 py-2 my-4 w-full rounded-lg hover:bg-yellow-600">SUBSCRIBE</button>
+        <input
+          type="text"
+          name="email"
+          placeholder="Your Email..."
+          class="w-full p-3 border-[2px] rounded-lg"
+        />
+        <button
+          class="bg-yellow-500 font-medium font-almendra text-white px-4 py-2 my-4 w-full rounded-lg hover:bg-yellow-600"
+        >
+          SUBSCRIBE
+        </button>
       </div>
-
     </footer>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <img src="/images/arrow-small-up.svg" alt="" class="">
+      <img src="/images/arrow-small-up.svg" alt="" class="" />
     </button>
-
 
     <script src="./script.js"></script>
   </body>
