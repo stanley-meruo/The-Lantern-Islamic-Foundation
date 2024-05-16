@@ -32,12 +32,12 @@
         <!-- Desktop Navigation -->
         <ul class="hidden lg:flex text-xl items-center gap-8
          text-gray-700 font-serif lg:ml-8">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./aboutUs.html">About Us</a></li>
-          <li><a href="./activities.html">Activities</a></li>
-          <li><a href="./event.html">Event</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg ml-16"><a href="#">Competition</a></button>
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./index.html">Home</a></li>
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./aboutUs.html">About Us</a></li>
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./activities.html">Activities</a></li>
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./event.html">Event</a></li>
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./contact.html">Contact</a></li>
+          <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg ml-16"><a href="./competition.html">Competition</a></button>
         </ul>
         <!-- End of Desktop Navigation -->
         
@@ -66,6 +66,10 @@
       </div>
     </header>
 
+     <section class="bg-hero-activities bg-cover bg-center bg-no-repeat text-center py-20 md:py-24 lg:py-32">
+      <p class="text-white text-xl font-medium lg:text-2xl"><a href="./index.html" class="hover:text-yellow-600">HOME</a>/EVENT</p>
+    </section>
+
     <div class="bg-hero-pattern pb-10">
         <p class="text-xl pt-5  text-center font-semibold text-yellow-500">Our Event</p>
         <p class="text-2xl pt-4 mb-3 text-center text-gray-500 font-semibold">Our Upcoming Events</p>
@@ -77,13 +81,14 @@
       <div class="w-80 grid">
         <img src="../images/section-image-00.jpg" alt="An image here" class="rounded-3xl mx-auto ml-20">
       </div>
-      <div class="">
-        <p  class="text-3xl mx-auto pb-5 lg:ml-5 lg:mb-2 px-3 text-black max-w-[700px]  pt-12 lg:pt-10 text-center font-bold">The Face of Bilqis Qur'an and Quiz competition</p>
+      <div class="flex flex-col ">
+        <p  class="text-3xl mx-auto pb-5 lg:ml-5 lg:mb-2 px-3 text-black max-w-[700px]  pt-12 lg:pt-10 text-center font-bold hover:text-yellow-500">The Face of Bilqis Qur'an and Quiz competition</p>
         <p class="text-xl mx-auto text-gray-400 lg:mt-5 lg:max-w-[600px] max-w-[400px] text-center font-semibold pb-5 lg:pb-2"> 1 For children between the age of 7-10</p>
         <p class="text-xl mx-auto text-gray-400 lg:mt-3 lg:max-w-[600px] max-w-[400px] text-center font-semibold pb-3 lg:pb-2"> 1 Qur'an recitation (3 juz'u, Mujaadilah to Nas).</p>
         <p class="text-xl mx-auto text-gray-400 lg:mt-3 lg:max-w-[600px] max-w-[400px] text-center font-semibold pb-3 lg:pb-2"> 1 Qur'an recitation (3 juz'u, Mujaadilah to Nas).</p>
         <p class="text-xl mx-auto text-gray-400 lg:mt-3 lg:max-w-[600px] max-w-[400px] text-center font-semibold pb-3 lg:pb-2"> 1 Qur'an recitation (3 juz'u, Mujaadilah to Nas).</p>
-
+        <button class="bg-yellow-500 text-white mt-5 rounded-3xl border-2 border-gray-300 hover:bg-yellow-600 shadow-md transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:duration-300 text-xl mx-auto  px-10 py-3 mb-5 lg:px-12 lg:py-3 lg:mb-1"><a href="#">Join Now</a></button>
+          </div>
       </div>
     </section>
   <!-- Section ends here -->
@@ -100,8 +105,7 @@
           <p class="text-3xl mx-auto px-5 pb-5 lg:mb-2 text-black max-w-[500px] pt-10 text-center font-serif font-bold hover:text-yellow-500">The Lantern Monthly Moral Clinic</p>
           <p class="text-xl mx-auto text-gray-400 lg:-mt-12 lg:max-w-[600px] max-w-[400px] text-center font-serif font-semibold pb-5 lg:pb-2 ">The lantern monthly moral clinic is Where we 
             have scholar that will speak about Islam and answer your question in full detail. You can also make some changes on what you feel like is important and needs to be change in the lantern organisation</p>
-        <button class="bg-yellow-400 text-white rounded-3xl border-2 border-gray-300  text-xl mx-auto px-10 py-3 mb-5 lg:px-12 lg:py-0.5 lg:mb-12"><a href="#">Join Now</a></button>
-          </div>
+            
       </section>
       <!-- inner section ends here -->
     </section>
@@ -122,67 +126,86 @@
 
      <!-- Next section start here -->
     
+<footer class="bg-black px-6 py-10 lg:flex lg:justify-evenly">
+      <div class="">
+        <div class="flex items-center py-3">
+          <img src="/images/TLIF.png" alt="logo" class="w-16" />
+          <div class="text-white">
+            <p class="leading-3 text-center">
+              <span
+                class="font-semibold text-xl font-sans tracking-widest text-yellow-500"
+                >The Lantern</span
+              ><br /><span class="font-serif tracking-tighter"
+                >Islamic Foundation</span
+              >
+            </p>
+          </div>
+        </div>
+        <p class="text-white lg:max-w-96">
+          We are dedicated to the advancement of the individual, family, and the
+          community at large through faith, education and service.
+        </p>
 
-  <footer class="bg-black px-6 py-10 lg:flex lg:justify-evenly">
-    <div class="">
-      <div class="flex items-center py-3">
-        <img src="/images/TLIF.png" alt="logo" class="w-16" />
-        <div class="text-white">
-          <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-500">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
+        <div class="flex items-center gap-4 py-3">
+          <a
+            href="https://www.facebook.com/profile.php?id=61557895405553"
+            target="_blank"
+            ><img src="/images/icon-facebook.svg" alt="" class="rounded-md"
+          /></a>
+          <p class="text-white font-serif">
+            The Lantern Islamic foundation - TLIF
+          </p>
         </div>
       </div>
-      <p class="text-white lg:max-w-96">We are dedicated to the advancement of the individual, family, and the community at large through faith, education and service.
-      </p>
 
-      <div class="flex items-center gap-4 py-3">
-        <a href="https://www.facebook.com/profile.php?id=61557895405553" target="_blank"><img src="/images/icon-facebook.svg" alt="" class="rounded-md"></a>
-        <p class="text-white font-serif">The Lantern Islamic foundation - TLIF</p>
-        
-      </div>
-    </div>
-    
-    <section class="text-white flex gap-10 md:gap-48 lg:gap-10 lg:px-20">
-      <div class="">
-        <p class="text-2xl pb-3 font-almendra pt-7">EVENTS</p>
-        <ul class="list-disc px-5">
-            <li class="p-1"><a href="#">Quran Memorization</a></li>
-            <li class="p-1"><a href="#">Solah (Five Daily Prayers)</a></li>
-            <li class="p-1"><a href="#">Mosque Development</a></li>
-            <li class="p-1"><a href="#">Charity & Donation</a></li>
-            <li class="p-1"><a href="#">Quiz competition</a></li>
-            <li class="p-1"><a href="#">Fiqh (Understanding Islam)</a></li>
-        </ul>
-      </div>
-  
-      <div class="">
+      <section class="text-white flex gap-10 md:gap-48 lg:gap-10 lg:px-20">
+        <div class="">
+          <p class="text-2xl pb-3 font-almendra pt-7">EVENTS</p>
+          <ul class="list-disc px-5">
+            <li class="py-2"><a href="./activities.html#section1">Quran Memorization</a></li>
+            <li class="py-2"><a href="./activities.html#section2">Mosque Development</a></li>
+            <li class="py-3 "><a href="./activities.html#section3">Quiz competition</a></li>
+          </ul>
+        </div>
+
+        <div class="">
           <p class="text-2xl pb-3 font-almendra pt-7">QUICK LINKS</p>
           <ul class="list-disc px-5">
-            <li class="p-1"><a href="./index.html">Home</a></li>
-                  <li class="p-1"><a href="./aboutUs.html">About Us</a></li>
-                  <li class="p-1"><a href="./activities.html">Activities</a></li>
-                  <li class="p-1"><a href="./events.html">Events</a></li>
-                  <li class="p-1"><a href="./contact.html">Contact</a></li>    
-                  <li class="p-1"><a href="./competition.html">Competition</a></li>        
+            <li class="py-2"><a href="./index.html">Home</a></li>
+            <li class="py-2"><a href="./activities.html">Activities</a></li>
+            <li class="py-3"><a href="./competition.html">Competition</a></li>
           </ul>
-      </div>
-    </section>
-      
-    
+        </div>
+      </section>
 
-    <div class=" mt-5">
-      <p class="text-2xl text-white font-almendra pb-3">NEWSLETTER</p>
-      <input type="text" name="email" placeholder="Your Email..." class="w-full p-3 border-[2px] rounded-lg">
-      <button class="bg-yellow-500 font-medium font-almendra text-white px-4 py-2 my-4 w-full rounded-lg hover:bg-yellow-600">SUBSCRIBE</button>
+      <div class="mt-5">
+        <p class="text-2xl text-white font-almendra pb-3">NEWSLETTER</p>
+        <input
+          type="text"
+          name="email"
+          placeholder="Your Email..."
+          class="w-full p-3 border-[2px] rounded-lg"
+        />
+        <button
+          class="bg-yellow-500 font-medium font-almendra text-white px-4 py-3 my-4 w-full rounded-lg hover:bg-yellow-600"
+        >
+          SUBSCRIBE
+        </button>
+      </div>
+    </footer>
+
+    <div class="bg-gray-300 lg:flex lg:justify-between lg:px-10 font-thin">
+      <p class="">
+        Copyright © 2024~The Lantern Islamic Foundation. All Rights Reserved.
+      </p>
+      <p class="mr-6 text-center pt-1">Powered by <a href="https://www.dervac.com" class="font-semibold">dervac</a></p>
     </div>
 
-  </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img src="/images/arrow-small-up.svg" alt="" class="" />
+    </button>
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top">
-    <img src="/images/arrow-small-up.svg" alt="" class="">
-  </button>
+    <script src="./script.js"></script>
 
-
-
-    <script src="/script.js"></script>
   </body>
 </html>
