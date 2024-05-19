@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="/images/TLIF.png" size="32x32" />
+    <link rel="icon" href="/images/TLIF-LOGO.png" size="32x32" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
         <nav class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16">
   
           <a href="./index.html" class="flex items-center py-3">
-            <img src="/images/TLIF.png" alt="logo" class="w-16" />
+            <img src="/images/TLIF-LOGO.png" alt="logo" class="w-16" />
             <div class="text-black">
               <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-400">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
             </div>
@@ -63,67 +63,94 @@
   
         <div onclick="exitNav()" id="sideBar" class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10">
         </div>
-      </header>
+</header>
+
     
-<section class="bg-hero-pattern lg:pt-10 pb-1 lg:grid">
-  <p class="text-center text-4xl lg:w-[800px] lg:mx-auto pt-5 text-yellow-400 lg:pb-10 font-semibold">Welcome to Balikis Quran and Quiz Competition for children between Age 7-10 </p>
-    <section class=" lg:ml-52 lg:mr-52 mb-10 lg:rounded-lg border-2 lg:border-yellow-400 lg:flex lg:justify-between">
+<section class="bg-hero-pattern bg-gray-200 bg-blend-multiply py-6">
 
-      <div class="grid lg:pt-0 pt-5">
-        <img src="../images/section-image-00.jpg" alt="An image here" class=" lg:h-[730px] lg:w-96 w-72 rounded-lg mx-auto ">
-      </div>
+  <div class="text-center px-4 md:px-16 ">
+    <p class="text-4xl py-5 text-yellow-600 font-semibold shadow-yellow-900 uppercase lg:w-[800px] lg:mx-auto lg:pb-10 ">Welcome to The Face of Balqis Qur'an and Quiz Competition</p>
+    <p class="text-xl font-semibold"><span class="font-extrabold underline underline-offset-4">NOTE:</span> THIS QUIZ COMPETITION IS OPEN FOR CHILDREN IN THE AGE OF 7 - 10</p>
+  </div>
 
-      <div class="grid">
-        <form class=" pt-10 "> 
-          <label class="ml-5 lg:ml-20">Name :</label>
-          <input type="text"  class="p-3 rounded-lg border-2 border-yellow-400 bg-white lg:w-80 w-64 ml-6 lg:ml-12">
-          <br>
-  
-          <label class="ml-5 lg:ml-20">Class :</label>
-          <input type="text"  class="p-3 rounded-lg border-2 border-yellow-400 bg-white lg:w-80 w-64 ml-8 mt-10 lg:ml-14">
-          <br>
-  
-          <label class="ml-5 lg:ml-20">Age :</label>
-          <input type="number" min="7" max="10"  class="p-3 rounded-lg border-2 border-yellow-400 bg-white lg:ml-16 lg:w-80 w-[250px] ml-10 mt-10 ">
-          <br>
-  
-          <label class="ml-5 lg:ml-20">Email :</label>
-          <input type="email"  class="p-3 rounded-lg border-2 border-yellow-400 bg-white lg:w-80 w-[250px] ml-8 mt-10 lg:ml-14 ">
-          <br>
-  
-          <label class="ml-1 lg:ml-20">Phone No :</label>
-          <input type="text"  class="p-3 rounded-lg border-2 border-yellow-400 bg-white mt-10 lg:w-80 w-60 ml-6 ">
-          <br>
-  
-          <label class="ml-1 lg:ml-20">State of origin :</label>
-          <input type="text" class="p-3 rounded-lg border-2 border-yellow-400 bg-white mt-10 lg:w-80 w-60  " >
+  <section class="my-10 mx-4 pb-8 border-2 border-yellow-500 rounded-xl md:mx-12 sm:pt-8 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:mx-8 lg:py-6">
 
-        
-        </form>
+    <div class="grid lg:row-start-1 lg:row-end-2 lg:mx-6">
+      <img src="/images/section-image-00.jpg" alt="An image here" class="rounded-xl mx-auto lg:my-8">
+      <img src="/images/events-image.jpg" alt="" class="hidden lg:rounded-xl lg:block lg:mx-auto">
+    </div>
 
-        <select class="p-3 rounded-lg border-2 border-yellow-400 bg-white w-[330px] lg:w-[500px] ml-5 mt-10 lg:mr-5">
-          <option>Select your Juz</option>
-          <option>Juz Amma</option>
-          <option>Juz Tabarak</option>
-          <option>Juz Mujadilla</option>
-          <option>Juz Ahqaf</option>
+    <div class="grid px-6 lg:row-start-1 lg:row-end-2 lg:pb-12">
+
+      <form class="pt-16 sm:px-8 md:px-16 lg:py-8 lg:px-4 "> 
+        <label class="text-xl font-medium">Name:
+          <input type="text" placeholder="Enter fullname" class="w-full font-normal mt-2 px-2 py-4 border-2 border-t-0 border-x-0 border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
+        </label>
+
+        <label class="text-xl font-medium">Age:
+          <input type="number" placeholder="Enter your age" min="7" max="10" class="w-full mt-2 font-normal px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
+        </label>
+
+        <label class="text-xl font-medium">Name of Parents/Guardians:
+          <input type="text" placeholder="Enter name" class="w-full font-normal mt-2 px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
+        </label>
+
+        <label class="text-xl font-medium">Address of Parents/Guardians:
+          <input type="text" placeholder="Enter name" class="w-full font-normal mt-2 px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
+        </label>
+
+        <label class="text-xl font-medium">Email of Parents/Guardians:
+          <input type="email" placeholder="john@example.com" class="w-full font-normal mt-2 px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
+        </label>
+
+        <label class="text-xl font-medium">Phone Number of Parents/Guardians :
+          <input type="number" placeholder="Enter phone number" class="w-full font-normal mt-2 px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
+        </label>
+
+        <label class="text-xl font-medium">State of Origin:
+          <input type="text" placeholder="Enter state of Origin" class="w-full font-normal mt-2 px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
+        </label>
+
+        <p class="text-xl font-medium">Representing:</p>
+        <div class="">
+          <label class="flex gap-3 items-center text-gray-800 rounded-md my-2 cursor-pointer">
+            <input type="radio" name="represent" class="h-6 w-5">
+            <i class="font-semibold">MADRASAH</i>
+          </label>
+          <label class="flex gap-3 items-center text-gray-800 rounded-md mb-6 cursor-pointer">
+            <input type="radio" name="represent" class="h-6 w-5">
+            <i class="font-semibold">SCHOOL</i>
+          </label>
+        </div>
+
+        <label class="text-xl font-medium">Name of School Representing <i>(If you tick school)</i>:
+          <input type="text" placeholder="Enter School name" class="w-full font-normal mt-2 px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
+        </label>
+          
+
+        <p class="text-xl font-medium">Category :</p>
+        <select class="w-full font-normal mt-2 capitalize px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
+            <option selected>Choose a Category</option>
+            <option value="quaran">QUR'AN</option>
+            <option value="hadith">HADITH</option>
+            <option value="fiqh">FIQH</option>
+            <option value="adab">ADAB</option>
         </select>
         
-        <button class="bg-yellow-400 text-white rounded-2xl border-2 border-gray-300  text-xl mx-auto px-32 py-3 lg:mb-3 lg:px-52 mt-5 "><a href="#">Submit</a></button>
+      </form>
         
-      </div>
+      <button class="bg-yellow-400 py-4 px-16 text-white text-lg font-bold rounded-2xl mx-auto hover:bg-yellow-500 active:bg-yellow-700 focus:outline-none focus:ring focus:ring-yellow-600">SUBMIT</button>
+        
+    </div>  
+  </section>
       
-      
-      
-      </section>
-      
-    </section>
+</section>
        
 
 <footer class="bg-black px-6 py-10 lg:flex lg:justify-evenly">
       <div class="">
         <div class="flex items-center py-3">
-          <img src="/images/TLIF.png" alt="logo" class="w-16" />
+          <img src="/images/TLIF-LOGO.png" alt="logo" class="w-16" />
           <div class="text-white">
             <p class="leading-3 text-center">
               <span
