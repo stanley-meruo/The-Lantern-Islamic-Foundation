@@ -1,8 +1,9 @@
+/* MOBILE AND TABLET SLIDER */
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto 4px;
+  margin: auto 12px;
 }
 
 /* Hide the images by default */
@@ -109,6 +110,12 @@
 @media (min-width: 759px) and (max-width: 1024px) {
   .prev {
     right: 95%;
+  }
+  .text {
+    font-size: 64px;
+  }
+  .slideshow-container {
+    margin: auto 28px;
   }
 }
 @media (min-width: 600px) and (max-width: 760px) {

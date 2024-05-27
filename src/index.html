@@ -8,13 +8,11 @@
     <link rel="icon" href="/images/TLIF-LOGO.png" size="32x32" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/dist/aos.css"/>
     <title>TLIF | The Lantern Islamic Foundation</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <header class="sticky top-0 z-50">
       <nav
         class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16"
@@ -114,56 +112,59 @@
       ></div>
     </header>
 
+
     <!-- HERO SECTION -->
     <section
-      class="grid text-center bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center border-1 rounded-2xl px-4 pb-16 lg:flex lg:items-center lg:gap-12 lg:px-16 lg:py-24 lg:rounded-3xl"
+      class="grid text-center bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center border-1 rounded-2xl px-4 pt-8 pb-16 lg:flex lg:gap-8 lg:px-8 lg:py-24 lg:rounded-3xl xl:px-16" data-aos="fade-in" data-aos-duration="3000"
     >
       <div class="md:mx-10 lg:mx-6">
         <img
           src="/images/logo-mosque.svg"
           alt="An image here"
-          class="mx-auto my-7 xl:-mt-12"
+          class="mx-auto my-7 xl:mt-24" data-aos="zoom-in"
         />
-        <p
-          class="text-3xl font-bold font-almendra mb-3 drop-shadow-lg shadow-black md:text-4xl lg:text-5xl lg:leading-normal xl:text-6xl xl:leading-normal"
-        >
-          “Turn To Allah Before You Return To Allah.”
-        </p>
-        <p
-          class="text-lg font-semibold my-5 md:text-xl lg:text-2xl lg:leading-snug"
-        >
-          The Heart That Beats For Allah Is Always A Stranger Among The Hearts
-          That Beat For The Dunya (World).
-        </p>
-        <button
-          class="text-gray-700 border-1 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-600 rounded-xl shadow-xl py-2 mx-auto my-8 w-2/5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:duration-200 sm:w-1/4 md:w-1/4 md:px-2 lg:w-3/6 lg:py-4 xl:w-2/6"
-        >
-          <a href="./aboutUs.html" class="font-almendra font-semibold"
-            >DISCOVER MORE</a
-          >
-        </button>
+        <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">
+          <p
+            class="text-4xl font-bold font-almendra mb-3 drop-shadow-lg shadow-black md:text-5xl md:leading-normal lg:text-5xl lg:leading-normal xl:text-6xl xl:leading-normal" >
+            “Turn To Allah Before You Return To Allah.”
+          </p>
+          <p
+            class="text-lg font-semibold my-5 md:text-xl lg:text-2xl lg:leading-snug"
+            >
+            The Heart that beats for Allah is always a stranger among the Hearts that beat for the Dunya (World).
+            The Most beloved actions to Allah are those performed consistently, even if they are few.
+          </p>
+          
+          <button
+            class=" text-gray-700 border-1 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-600 rounded-xl shadow-xl py-2 mx-auto my-8 w-2/5 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:duration-200 sm:w-1/4 md:w-1/4 md:px-2 lg:w-3/6 lg:py-4 lg:mt-8 xl:w-2/6"
+            >
+            <a href="./aboutUs.html" class="font-almendra font-semibold"
+            >DISCOVER MORE</a>
+          </button>
+        </div>
       </div>
-
+      
       <img
         src="/images/hero-image.jpg"
         alt="An image here"
-        class="w-11/12 rounded-3xl mx-auto mt-4 md:w-3/4 md:rounded-4xl lg:w-1/2"
+        class="w-11/12 rounded-3xl mx-auto mt-4 md:w-3/4 md:rounded-4xl lg:w-1/2" data-aos="zoom-in" data-aos-easing="ease" data-aos-delay="400"
       />
+      
     </section>
     <!-- END OF HERO SECTION -->
 
     <section class="lg:px-10">
       <!-- Mobile section start here -->
-      <section class="px-2 pt-12 mx-4 sm:ml-44 md:hidden">
+      <section class="px-2 pt-12 mx-5 sm:ml-36 md:hidden">
         <img
-          src="../images/section-image-00.jpg"
+          src="/images/section-image-00.jpg"
           alt="Mosque image"
-          class="rounded-3xl w-[300px]"
+          class="rounded-3xl w-[300px] sm:w-4/6" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
         />
         <img
-          src="../images/section-image-01.jpg"
+          src="/images/section-image-01.jpg"
           alt="Mosque image"
-          class="rounded-3xl w-[220px] -mt-64 ml-[130px]"
+          class="rounded-3xl w-[220px] -mt-64 ml-[130px] sm:w-3/6 sm:ml-47 sm:-mt-[280px]" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
         />
       </section>
       <!-- Mobile section ends here -->
@@ -173,28 +174,28 @@
         class="md:grid md:place-content-center md:grid-cols-2 md:grid-rows-1 lg:grid lg:gap-24 lg:place-content-center lg:grid-cols-2 lg:grid-rows-1 xl:gap-8"
       >
         <section
-          class="hidden md:grid md:col-start-1 md:col-end-2 md:ml-10 md:mt-12 lg:flex lg:mb-4"
+          class="hidden md:grid md:col-start-1 md:col-end-2 md:ml-10 md:mt-12 lg:flex lg:mb-4 xl:mb-8"
         >
           <img
-            src="../images/section-image-00.jpg"
+            src="/images/section-image-00.jpg"
             alt="An image here"
-            class="rounded-3xl  md:w-72 md:h-72 lg:w-[400px] lg:h-[500px] xl:w[500px]"
+            class="rounded-3xl  md:w-72 md:h-[350px] lg:w-[400px] lg:h-[500px] xl:w-[500px]" data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine"
           />
           <img
-            src="../images/section-image-01.jpg"
+            src="/images/section-image-01.jpg"
             alt="An image here"
-            class="rounded-3xl md:w-72 md:h-72 lg:-ml-56 lg:mt-56 lg:w-[300px] lg:h-[400px] xl:w-[400px]"
+            class="rounded-3xl md:w-72 md:h-[350px] lg:-ml-56 lg:mt-56 lg:w-[400px] lg:h-[400px] xl:w-[400px]" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"
           />
         </section>
 
         <section
-          class="px-4 py-12 md:-ml-10 md:grid-cols-1 md:col-start-2 lg:ml-5 md:col-end-4"
+          class="px-4 py-12 md:-ml-10 md:grid-cols-1 md:col-start-2 lg:ml-5 md:col-end-4" data-aos="zoom-in-up" data-aos-duration="3000"
         >
           <div class="text-center md:text-left">
-            <p class="text-xl font-semibold font-abel text-yellow-600 mb-2">
+            <p class="text-xl font-semibold font-abel text-yellow-600 mb-2 lg:text-2xl">
               About Us
             </p>
-            <p class="text-4xl font-bold font-almendra mb-3">
+            <p class="text-4xl font-bold font-almendra mb-3 lg:text-5xl">
               Welcome To The Lantern Islamic Foundation
             </p>
           </div>
@@ -240,8 +241,8 @@
     <section
       class="bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center text-center py-12 px-2 lg:hidden"
     >
-      <p class="text-xl font-semibold text-yellow-600 mb-2">Islam Pillar</p>
-      <p class="text-4xl font-bold font-almendra mb-12">
+      <p class="text-xl font-semibold text-yellow-600 mb-2 md:text-2xl">Islam Pillar</p>
+      <p class=" text-4xl font-bold font-almendra mb-12">
         FIVE PILLARS OF ISLAM
       </p>
 
@@ -296,10 +297,10 @@
 
     <!-- SLIDER FOR DESKTOP -->
     <section
-      class="hidden lg:block bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center text-center py-12 px-2"
+      class="hidden lg:block bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center text-center py-12 px-16"
     >
-      <p class="text-xl font-semibold text-yellow-600 mb-2">Islam Pillar</p>
-      <p class="text-4xl font-bold font-almendra mb-12">
+      <p class="text-xl font-semibold text-yellow-600 mb-2 lg:text-2xl">Islam Pillar</p>
+      <p class="text-4xl font-bold font-almendra mb-12 lg:text-5xl">
         FIVE PILLARS OF ISLAM
       </p>
 
@@ -718,15 +719,15 @@
     <!-- END OF DESKTOP SLIDER -->
 
     <section class="py-12 px-4 md:">
-      <div class="text-center">
-        <p class="text-xl font-semibold text-yellow-600 mb-2">Activities</p>
-        <p class="text-4xl font-bold font-almendra mb-12">OUR ACTIVITIES</p>
+      <div class="text-center" data-aos="zoom-out">
+        <p class="text-xl font-semibold text-yellow-600 mb-2 lg:text-2xl">Activities</p>
+        <p class="text-4xl font-bold font-almendra mb-12 lg:text-5xl">OUR ACTIVITIES</p>
       </div>
 
       <section
         class="md:grid md:grid-cols-1 md:grid-rows-3 md:gap-5 md:px-6 lg:grid lg:grid-cols-1 lg:grid-rows-3 lg:gap-10 lg:px-12 xl:grid-cols-3 xl:grid-rows-1"
       >
-        <div class="border-2 rounded-3xl shadow-md p-8 mb-8">
+        <div class="border-2 rounded-3xl shadow-md p-8 mb-8" data-aos="zoom-in" data-aos-delay="300">
           <div class="flex items-center justify-between mb-4">
             <img src="/images/value-image-06.svg" alt="" />
             <p
@@ -752,7 +753,7 @@
           >
         </div>
 
-        <div class="border-2 rounded-3xl shadow-md p-8 mb-8">
+        <div class="border-2 rounded-3xl shadow-md p-8 mb-8" data-aos="zoom-in" data-aos-delay="300">
           <div class="flex items-center justify-between mb-4">
             <img src="/images/value-image-04.svg" alt="" />
             <p
@@ -777,7 +778,7 @@
           >
         </div>
 
-        <div class="border-2 rounded-3xl shadow-md p-8 mb-8">
+        <div class="border-2 rounded-3xl shadow-md p-8 mb-8" data-aos="zoom-in" data-aos-delay="300">
           <div class="flex items-center justify-between mb-4">
             <img src="/images/value-image-05.svg" alt="" />
             <p
@@ -787,7 +788,7 @@
             </p>
           </div>
           <p class="text-2xl font-semibold font-almendra mb-4">
-            Quiz Competition
+            QUIZ COMPETITION
           </p>
           <p class="mb-4 text-lg">
             Quran quiz competition tests participants' knowledge of Islam's holy
@@ -807,9 +808,9 @@
     <section
       class="bg-hero-pattern bg-gray-100 bg-blend-multiply bg-center text-center px-2 py-12 lg:px-12"
     >
-      <div class="text-center">
-        <p class="text-xl font-semibold text-yellow-600 mb-2">Events</p>
-        <p class="text-4xl font-bold font-almendra mb-10">OUR COMING EVENTS</p>
+      <div class="text-center" data-aos="zoom-out">
+        <p class="text-xl font-semibold text-yellow-600 mb-2 lg:text-2xl">Events</p>
+        <p class="text-4xl font-bold font-almendra mb-10 lg:text-5xl">OUR COMING EVENTS</p>
       </div>
 
       <div
@@ -819,13 +820,13 @@
           <img
             src="/images/events-image.jpg"
             alt=""
-            class="rounded-3xl mx-auto mb-4 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-105 hover:duration-300 hover:shadow-md hover:opacity-80"
+            class="rounded-3xl mx-auto mb-5 hover:shadow-md hover:opacity-80 sm:w-full md:w-[1000px] md:h-[400px] lg:w-[1100px] lg:h-[480px]" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
           />
         </div>
 
-        <div>
+        <div data-aos="zoom-out">
           <p
-            class="text-3xl font-almendra font-semibold my-6 hover:text-yellow-600"
+            class="text-3xl font-almendra font-semibold my-6 md:my-10 hover:text-yellow-600 lg:text-4xl"
           >
             EXPLORING ISLAMIC INSIGHTS AND WISDOM
           </p>
@@ -918,17 +919,37 @@
       </div>
     </footer>
 
-    <div class="bg-gray-300 lg:flex lg:justify-between lg:px-10 font-thin">
+    <div class="bg-gray-300 text-center text-sm font-normal md:flex md:justify-between md:px-6 md:py-1 xl:px-16">
       <p class="">
-        Copyright © 2024~The Lantern Islamic Foundation. All Rights Reserved.
+        Copyright &copy 2024 The Lantern Islamic Foundation. All Rights Reserved.
       </p>
-      <p class="mr-6 text-center pt-1">Powered by <a href="https://www.dervac.com" class="font-semibold">dervac</a></p>
+      <p class="">Powered by <a href="https://www.dervac.com" class="font-semibold">dervac</a></p>
     </div>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <img src="/images/arrow-small-up.svg" alt="" class="" />
     </button>
 
+
+
+
     <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script src="/dist/aos.js"></script>
+    <script>AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+    </script>
+    <script>
+			hljs.initHighlightingOnLoad();
+
+			$('.hero__scroll').on('click', function(e) {
+				$('html, body').animate({
+					scrollTop: $(window).height()
+				}, 1200);
+			});
+		</script>
   </body>
 </html>

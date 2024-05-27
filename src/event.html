@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
-    <title>TLIF | The Lantern Islamic Foundation</title>
+    <link rel="stylesheet" href="/dist/aos.css"/>
+    <title>TLIF | Events</title>
   </head>
   <body>
   
@@ -71,17 +72,19 @@
     </section>
 
     <div class="bg-hero-pattern pb-16">
-      <p class="text-xl pt-8  text-center font-semibold text-yellow-500">Our Event</p>
-      <p class="text-4xl pt-2 mb-3 text-center font-semibold font-almendra">OUR UPCOMING EVENT</p>
+      <div data-aos="zoom-in">
+        <p class="text-xl pt-8 text-center font-semibold text-yellow-500">Our Event</p>
+        <p class="text-4xl pt-2 mb-3 text-center font-semibold font-almendra">OUR UPCOMING EVENT</p>
+      </div>
     </div>
 
 
     <section class="bg-hero-pattern bg-gray-100 bg-blend-multiply pb-8 lg:flex lg:justify-between my-5 lg:py-10 lg:pb-10 lg:px-8 xl:px-16 -mt-5">
       
-      <div class="grid px-4">
+      <div class="grid px-4" data-aos="zoom-in">
         <img src="/images/section-image-00.jpg" alt="An image here" class="rounded-3xl mx-auto">
       </div>
-      <div class="flex flex-col ">
+      <div class="flex flex-col" data-aos="zoom-in-up" data-aos-duration="1500">
         <p class="text-3xl pb-5 lg:ml-5 lg:mb-2 px-3 pt-12 lg:pt-10 text-center font-almendra font-bold hover:text-yellow-500 lg:text-4xl xl:text-5xl">The Face of Bilqis Qur'an and Quiz competition</p>
         <p class="text-xl mx-auto lg:mt-5 lg:max-w-[600px] max-w-[400px] text-center font-medium pb-5 lg:pb-2"> 1 For children between the age of 7-10</p>
         <p class="text-xl mx-auto lg:mt-3 lg:max-w-[600px] max-w-[400px] text-center font-medium pb-3 lg:pb-2"> 1 Qur'an recitation (3 juz'u, Mujaadilah to Nas).</p>
@@ -97,22 +100,22 @@
     <!-- Next section -->  
     <section class="py-16 px-4 md:grid md:grid-cols-2 md:gap-4 md:px-8 lg:px-12 lg:gap-8 xl:px-20 xl:gap-16 ">
 
-        <div class="">
+        <div class="" data-aos="fade-right" data-aos-duration="1500">
           <img src="/images/eid-mubarak.jpg" alt="An image here" class=" rounded-3xl">
         </div>
   
-        <div class="mb-16">
+        <div class="mb-16" data-aos="fade-left" data-aos-duration="1500">
           <p class="text-3xl font-almendra mx-auto py-5 text-black text-center font-bold hover:text-yellow-500 lg:text-4xl">The Lantern Monthly Moral Clinic</p>
           <p class="text-center lg:text-lg">The lantern monthly moral clinic is Where we have scholar that will speak about Islam and answer your question in full detail. You can also make some changes on what you feel like is important and needs to be change in the lantern organisation</p>
         </div>    
       
   
       
-        <div class="md:col-start-2 md:col-end-3">
+        <div class="md:col-start-2 md:col-end-3" data-aos="fade-left" data-aos-duration="1500">
           <img src="/images/ramadan-diet.jpg" alt="An image here" class="rounded-3xl">
         </div>
 
-        <div class="md:col-start-1 md:col-end-2 md:row-start-2">
+        <div class="md:col-start-1 md:col-end-2 md:row-start-2" data-aos="fade-right" data-aos-duration="1500">
           <p  class="text-3xl text-black py-5 text-center font-almendra font-bold hover:text-yellow-500 lg:text-4xl">The Lantern Ramadan Diet</p>
           <p class="text-center lg:text-lg">The lantern monthly moral clinic is Where we 
           have scholar that will speak about Islam and answer your question in full detail. You can also make some changes on what you feel like is important and needs to be change in the lantern organisation</p>
@@ -191,18 +194,35 @@
       </div>
     </footer>
 
-    <div class="bg-gray-300 lg:flex lg:justify-between lg:px-10 font-thin">
+    <div class="bg-gray-300 text-center text-sm font-normal md:flex md:justify-between md:px-6 md:py-1 xl:px-16">
       <p class="">
-        Copyright © 2024~The Lantern Islamic Foundation. All Rights Reserved.
+        Copyright &copy 2024 The Lantern Islamic Foundation. All Rights Reserved.
       </p>
-      <p class="mr-6 text-center pt-1">Powered by <a href="https://www.dervac.com" class="font-semibold">dervac</a></p>
+      <p class="">Powered by <a href="https://www.dervac.com" class="font-semibold">dervac</a></p>
     </div>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <img src="/images/arrow-small-up.svg" alt="" class="" />
     </button>
 
-    <script src="./script.js"></script>
 
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script src="/dist/aos.js"></script>
+    <script>AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			});
+    </script>
+    <script>
+			hljs.initHighlightingOnLoad();
+
+			$('.hero__scroll').on('click', function(e) {
+				$('html, body').animate({
+					scrollTop: $(window).height()
+				}, 1200);
+			});
+		</script>
   </body>
 </html>
