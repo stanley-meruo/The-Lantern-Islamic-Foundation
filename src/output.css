@@ -816,6 +816,7 @@ video {
   margin-top: 2rem;
 }
 
+<<<<<<< Updated upstream
 .-mt-8 {
   margin-top: -2rem;
 }
@@ -824,6 +825,8 @@ video {
   margin-bottom: 1.75rem;
 }
 
+=======
+>>>>>>> Stashed changes
 .block {
   display: block;
 }
@@ -900,6 +903,7 @@ video {
   width: 100%;
 }
 
+<<<<<<< Updated upstream
 .w-max {
   width: -moz-max-content;
   width: max-content;
@@ -909,6 +913,8 @@ video {
   max-width: 72rem;
 }
 
+=======
+>>>>>>> Stashed changes
 .max-w-\[400px\] {
   max-width: 400px;
 }
@@ -967,6 +973,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-9 {
+  gap: 2.25rem;
 }
 
 .overflow-x-hidden {
@@ -1198,11 +1208,14 @@ video {
   padding-right: 2.5rem;
 }
 
+<<<<<<< Updated upstream
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
 }
 
+=======
+>>>>>>> Stashed changes
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
