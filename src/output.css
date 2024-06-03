@@ -648,10 +648,6 @@ video {
   margin: 1rem;
 }
 
-.-m-8 {
-  margin: -2rem;
-}
-
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -707,11 +703,6 @@ video {
   margin-bottom: 2rem;
 }
 
-.-my-8 {
-  margin-top: -2rem;
-  margin-bottom: -2rem;
-}
-
 .-mt-20 {
   margin-top: -5rem;
 }
@@ -724,6 +715,10 @@ video {
   margin-top: -16rem;
 }
 
+.-mt-8 {
+  margin-top: -2rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -734,10 +729,6 @@ video {
 
 .mb-12 {
   margin-bottom: 3rem;
-}
-
-.mb-14 {
-  margin-bottom: 3.5rem;
 }
 
 .mb-16 {
@@ -768,6 +759,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-7 {
+  margin-bottom: 1.75rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -786,6 +781,10 @@ video {
 
 .mr-2 {
   margin-right: 0.5rem;
+}
+
+.mr-6 {
+  margin-right: 1.5rem;
 }
 
 .mt-10 {
@@ -808,25 +807,10 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-7 {
-  margin-top: 1.75rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
 
-<<<<<<< Updated upstream
-.-mt-8 {
-  margin-top: -2rem;
-}
-
-.mb-7 {
-  margin-bottom: 1.75rem;
-}
-
-=======
->>>>>>> Stashed changes
 .block {
   display: block;
 }
@@ -875,6 +859,10 @@ video {
   width: 1.25rem;
 }
 
+.w-\[1000px\] {
+  width: 1000px;
+}
+
 .w-\[220px\] {
   width: 220px;
 }
@@ -903,18 +891,28 @@ video {
   width: 100%;
 }
 
-<<<<<<< Updated upstream
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-2\/4 {
+  width: 50%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
 }
 
 .max-w-6xl {
   max-width: 72rem;
 }
 
-=======
->>>>>>> Stashed changes
 .max-w-\[400px\] {
   max-width: 400px;
 }
@@ -1096,11 +1094,6 @@ video {
   background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
-.bg-slate-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1122,12 +1115,6 @@ video {
 .from-yellow-600 {
   --tw-gradient-from: #ca8a04 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(202 138 4 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-yellow-700 {
-  --tw-gradient-from: #a16207 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(161 98 7 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1199,23 +1186,16 @@ video {
   padding: 2rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
 
-<<<<<<< Updated upstream
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
 }
 
-=======
->>>>>>> Stashed changes
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1317,6 +1297,10 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pb-6 {
+  padding-bottom: 1.5rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -1335,6 +1319,10 @@ video {
 
 .pr-32 {
   padding-right: 8rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .pt-12 {
@@ -1359,14 +1347,6 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
-.pb-6 {
-  padding-bottom: 1.5rem;
 }
 
 .text-left {
@@ -1446,6 +1426,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .uppercase {
