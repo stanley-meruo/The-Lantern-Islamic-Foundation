@@ -648,6 +648,11 @@ video {
   margin: 1rem;
 }
 
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -701,6 +706,11 @@ video {
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .-mt-20 {
@@ -896,6 +906,10 @@ video {
   width: max-content;
 }
 
+.w-2\/4 {
+  width: 50%;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -1086,11 +1100,11 @@ video {
 }
 
 .bg-header-image {
-  background-image: url('../src/images/header-image.jpg');
+  background-image: url('../images/header-image.jpg');
 }
 
 .bg-hero-pattern {
-  background-image: url('../src/images/bg-hero.png');
+  background-image: url('../images/bg-hero.png');
 }
 
 .from-yellow-500 {

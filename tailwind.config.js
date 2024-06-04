@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-pattern": "url('../src/images/bg-hero.png')",
-        "header-image": "url('../src/images/header-image.jpg')",
+        "hero-pattern": "url('../images/bg-hero.png')",
+        "header-image": "url('../images/header-image.jpg')",
       },
       fontFamily: {
         almendra: ["Almendra SC", "serif"],
