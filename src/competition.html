@@ -29,15 +29,14 @@
             </div>
           </div>
           <!-- Desktop Navigation -->
-          <ul class="hidden lg:flex text-xl items-center gap-8
-           text-gray-700 font-serif lg:ml-8">
+          <ul class="hidden lg:flex lg:text-xl lg:items-center lg:gap-4 text-gray-700 font-sans font-medium lg:ml-8 xl:gap-8">
             <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./index.html">Home</a></li>
             <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./aboutUs.html">About Us</a></li>
             <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./activities.html">Activities</a></li>
-            <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./event.html">Event</a></li>
-            <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./contact.html">Contact</a></li>
+            <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./event.html">Events</a></li>
             <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./contact.html">Donation</a></li>
-            <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg ml-16"><a href="./competition.html">Competition</a></button>
+            <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./contact.html">Contact</a></li>
+            <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg"><a href="./competition.html">Competition</a></button>
           </ul>
           <!-- End of Desktop Navigation -->
           
@@ -50,8 +49,8 @@
               
               <!-- Mobile Navigation -->
             <nav>
-              <ul class="text-left text-3xl font-light font-serif ml-4 sm:text-3xl">
-                <li class="p-1"><a href="./index.html">Home</a></li>
+              <ul class="text-left text-3xl font-medium font-sans ml-4 text-gray-700 sm:text-3xl">
+                <li class="p-2"><a href="./index.html">Home</a></li>
                 <li class="p-2"><a href="./aboutUs.html">About Us</a></li>
                 <li class="p-2"><a href="./activities.html">Activities</a></li> 
                 <li class="p-2"><a href="./event.html">Events</a></li>
@@ -78,76 +77,30 @@
   <section class="my-10 mx-4 pb-8 border-2 border-yellow-500 rounded-xl md:mx-12 sm:pt-8 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:mx-8 lg:py-6">
 
     <div class="grid lg:row-start-1 lg:row-end-2 lg:ml-6">
-      <img src="./images/section-image-00.jpg" alt="An image here" class="rounded-xl mx-auto lg:my-8 xl:w-[800px] hidden lg:block">
-      <img src="./images/events-image.jpg" alt="" class="hidden lg:rounded-xl lg:ml-4 lg:block lg:w-80 xl:w-[690px]">
+      <img src="./images/section-image-00.jpg" alt="An image here" class="rounded-xl mx-auto lg:my-3 xl:w-[800px] hidden lg:block">
+      <img src="./images/events-image.jpg" alt="" class="hidden lg:rounded-xl lg:ml-4 lg:mt-96 lg:block lg:w-80 xl:w-[690px]">
     </div>
 
     <div class="grid lg:row-start-1 lg:row-end-2 lg:pb-12">
 
-      <!-- <form class="pt-16 sm:px-8 md:px-16 lg:py-8 lg:px-4 "> 
-        <label class="text-xl font-medium">Name:
-          <input type="text" placeholder="Enter fullname" class="w-full font-normal mt-2 px-2 py-4 border-2 border-t-0 border-x-0 border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
-        </label>
-
-        <label class="text-xl font-medium">Age:
-          <input type="number" placeholder="Enter your age" min="7" max="10" class="w-full mt-2 font-normal px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
-        </label>
-
-        <label class="text-xl font-medium">Name of Parents/Guardians:
-          <input type="text" placeholder="Enter name" class="w-full font-normal mt-2 px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
-        </label>
-
-        <label class="text-xl font-medium">Address of Parents/Guardians:
-          <input type="text" placeholder="Enter name" class="w-full font-normal mt-2 px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
-        </label>
-
-        <label class="text-xl font-medium">Email of Parents/Guardians:
-          <input type="email" placeholder="john@example.com" class="w-full font-normal mt-2 px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
-        </label>
-
-        <label class="text-xl font-medium">Phone Number of Parents/Guardians :
-          <input type="number" placeholder="Enter phone number" class="w-full font-normal mt-2 px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
-        </label>
-
-        <label class="text-xl font-medium">State of Origin:
-          <input type="text" placeholder="Enter state of Origin" class="w-full font-normal mt-2 px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
-        </label>
-
-        <p class="text-xl font-medium">Representing:</p>
-        <div class="">
-          <label class="flex gap-3 items-center text-gray-800 rounded-md my-2 cursor-pointer">
-            <input type="radio" name="represent" class="h-6 w-5">
-            <i class="font-semibold">MADRASAH</i>
-          </label>
-          <label class="flex gap-3 items-center text-gray-800 rounded-md mb-6 cursor-pointer">
-            <input type="radio" name="represent" class="h-6 w-5">
-            <i class="font-semibold">SCHOOL</i>
-          </label>
-        </div>
-
-        <label class="text-xl font-medium">Name of School Representing <i>(If you tick school)</i>:
-          <input type="text" placeholder="Enter School name" class="w-full font-normal mt-2 px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
-        </label>
-          
-
-        <p class="text-xl font-medium">Category :</p>
-        <select class="w-full font-normal mt-2 capitalize px-2 py-4 border-2 border-t-0 border-x-0 shadow-inner border-yellow-400 rounded-lg mb-8 focus:outline-yellow-600">
-            <option selected>Choose a Category</option>
-            <option value="quaran">QUR'AN</option>
-            <option value="hadith">HADITH</option>
-            <option value="fiqh">FIQH</option>
-            <option value="adab">ADAB</option>
-        </select>
-        
-      </form>
-        
-      <button class="bg-yellow-400 py-2 px-16 text-white text-lg font-bold rounded-2xl mx-auto hover:bg-yellow-500 active:bg-yellow-700 focus:outline-none focus:ring focus:ring-yellow-600">SUBMIT</button>
-         -->
-         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7id64ck_QNG1kyrxmLaZMAYjg87eGPkPhapF0YydnNiXbMA/viewform?embedded=true" width="650" height="1803" frameborder="0" marginheight="0" marginwidth="0" class="w-20">Loading…</iframe>
+         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7id64ck_QNG1kyrxmLaZMAYjg87eGPkPhapF0YydnNiXbMA/viewform?embedded=true" height="2000" width="420" frameborder="0" marginheight="0" marginwidth="0" class="iframe">Loading…</iframe>
     </div>  
   </section>
       
 </section>
+
+<style>
+  @media(min-width:600px){
+  .iframe{
+    width: 600px;
+  }
+}
+ @media(min-width:768px){
+  .iframe{
+    width: 700px;
+  }
+}
+</style>
        
 
 <footer class="bg-black px-6 py-10 lg:flex lg:justify-evenly">

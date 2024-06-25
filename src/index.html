@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="/dist/aos.css"/>
     <title>TLIF | The Lantern Islamic Foundation</title>
   </head>
-  <body class="overflow-x-hidden">
+  <body>
+
     <header class="sticky top-0 z-50">
       <nav
-        class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16"
+        class="flex w-full items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16"
       >
         <a href="./index.html" class="flex items-center py-3">
           <img src="./images/TLIF-LOGO.png" alt="logo" class="w-16" />
@@ -42,12 +43,12 @@
         </div>
         <!-- Desktop Navigation -->
         <ul
-          class="hidden lg:flex text-xl items-center gap-8 text-gray-700 font-serif lg:ml-8"
+          class="hidden lg:flex lg:text-xl lg:items-center lg:gap-4 text-gray-700 font-sans font-medium lg:ml-8 xl:gap-8"
         >
           <li
-            class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
+            class="text-yellow-600 p-2"
           >
-            <a href="./index.html">Home</a>
+            <a href="./index.html" class="hover:text-yellow-600">Home</a>
           </li>
           <li
             class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
@@ -62,21 +63,21 @@
           <li
             class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
           >
-            <a href="./event.html">Event</a>
+            <a href="./event.html">Events</a>
+          </li>
+          <li
+            class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
+          >
+            <a href="./donation.html">Donation</a>
           </li>
           <li
             class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
           >
             <a href="./contact.html">Contact</a>
           </li>
-           <li
-            class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
-          >
-            <a href="./donation.html">Donation</a>
-          </li>
-
+           
           <button
-            class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg ml-16"
+            class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg"
           >
             <a href="./competition.html">Competition</a>
           </button>
@@ -98,14 +99,14 @@
           <!-- Mobile Navigation -->
           <nav>
             <ul
-              class="text-left text-3xl font-light font-serif ml-4 sm:text-3xl"
+              class="text-left text-3xl font-medium font-sans text-gray-700 ml-4 sm:text-3xl"
             >
-              <li class="p-1"><a href="./index.html">Home</a></li>
+              <li class="p-2"><a href="./index.html">Home</a></li>
               <li class="p-2"><a href="./aboutUs.html">About Us</a></li>
               <li class="p-2"><a href="./activities.html">Activities</a></li>
               <li class="p-2"><a href="./event.html">Events</a></li>
-              <li class="p-2"><a href="./contact.html">Contact</a></li>
               <li class="p-2"><a href="./donation.html">Donation</a></li>
+              <li class="p-2"><a href="./contact.html">Contact</a></li>
               <li class="p-2"><a href="./competition.html">Competition</a></li>
             </ul>
           </nav>
@@ -128,7 +129,7 @@
         <img
           src="./images/logo-mosque.svg"
           alt="An image here"
-          class="mx-auto my-7 xl:mt-24"
+          class="mx-auto my-7 xl:mt-24 xl:w-32 lg:w-28"
         />
         <div>
           <p
@@ -162,16 +163,16 @@
 
     <section class="lg:px-10">
       <!-- Mobile section start here -->
-      <section class="px-2 pt-12 mx-5 sm:ml-36 md:hidden">
+      <section class="px-2 pt-12 mx-20 sm:ml-36 md:hidden">
         <img
           src="./images/section-image-00.jpg"
           alt="Mosque image"
-          class="rounded-3xl w-[300px] sm:w-4/6"
+          class="rounded-3xl w-[300px]"
         />
         <img
           src="./images/section-image-01.jpg"
           alt="Mosque image"
-          class="rounded-3xl w-[220px] -mt-64 ml-[130px] sm:w-3/6 sm:ml-47 sm:-mt-[280px]"
+          class="rounded-3xl w-[220px] ml-10 -mt-40"
         />
       </section>
       <!-- Mobile section ends here -->
@@ -238,7 +239,7 @@
             <img src="/images/envelope.svg" alt=""/>
             <p class="font-medium text-gray-600 my-5">
               Message us today: <br /><span class="text-lg text-black"
-                >info@thelanternislamicfoundation</span
+                >thelanternislamicfoundation@gmail.com</span
               >
             </p>
           </div>

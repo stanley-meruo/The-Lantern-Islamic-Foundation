@@ -4,129 +4,226 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/output.css" />
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./images/TLIF-LOGO.png" size="32x32" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap"
+      rel="stylesheet"
+    />
     <title>TLIF | Events</title>
   </head>
   <body>
-  
     <header class="sticky top-0 z-50">
-      <nav class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16">
-
+      <nav
+        class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16"
+      >
         <a href="./index.html" class="flex items-center py-3">
           <img src="./images/TLIF-LOGO.png" alt="logo" class="w-16" />
           <div class="text-black">
-            <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-600">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
+            <p class="leading-3 text-center">
+              <span
+                class="font-semibold text-xl font-sans tracking-widest text-yellow-600"
+                >The Lantern</span
+              ><br /><span class="font-serif tracking-tighter"
+                >Islamic Foundation</span
+              >
+            </p>
           </div>
         </a>
 
         <div class="flex items-center gap-6">
-          <img src="./images/search.svg" alt="" class="lg:hidden">
-          <div class="bg-yellow-500 p-2 hover:bg-gray-400 lg:hidden" onclick="openNav()">
-            <img src="./images/icon-hamburger.svg" alt="Hamburger image"/>
+          <img src="./images/search.svg" alt="" class="lg:hidden" />
+          <div
+            class="bg-yellow-500 p-2 hover:bg-gray-400 lg:hidden"
+            onclick="openNav()"
+          >
+            <img src="./images/icon-hamburger.svg" alt="Hamburger image" />
           </div>
         </div>
         <!-- Desktop Navigation -->
-        <ul class="hidden lg:flex text-xl items-center gap-8
-         text-gray-700 font-serif lg:ml-8">
-          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./index.html">Home</a></li>
-          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./aboutUs.html">About Us</a></li>
-          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./activities.html">Activities</a></li>
-          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./event.html">Event</a></li>
-          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./contact.html">Contact</a></li>
-           <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./donation.html">Donation</a></li>
-          <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg ml-16"><a href="./competition.html">Competition</a></button>
+        <ul
+          class="hidden lg:flex lg:text-xl lg:items-center lg:gap-4 text-gray-700 font-sans font-medium lg:ml-8 xl:gap-8"
+        >
+          <li
+            class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
+          >
+            <a href="./index.html">Home</a>
+          </li>
+          <li
+            class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
+          >
+            <a href="./aboutUs.html">About Us</a>
+          </li>
+          <li
+            class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
+          >
+            <a href="./activities.html">Activities</a>
+          </li>
+          <li class="text-yellow-600 p-2"><a href="./event.html">Events</a></li>
+          <li
+            class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
+          >
+            <a href="./donation.html">Donation</a>
+          </li>
+          <li
+            class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
+          >
+            <a href="./contact.html">Contact</a>
+          </li>
+          <button
+            class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg"
+          >
+            <a href="./competition.html">Competition</a>
+          </button>
         </ul>
         <!-- End of Desktop Navigation -->
-        
-        <div id="sideNav"
-          class="fixed top-0 right-0 bg-gray-200 text-black w-0 h-full flex items-center overflow-x-hidden duration-500 font-bold z-10 lg:hidden">
-            
-          <div class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48">
-            <a href="javascript:void(0)" onclick="exitNav()"><img src="./images/icon-close.svg" alt="Close logo"/></a>
+
+        <div
+          id="sideNav"
+          class="fixed top-0 right-0 bg-gray-200 text-black w-0 h-full flex items-center overflow-x-hidden duration-500 font-bold z-10 lg:hidden"
+        >
+          <div
+            class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48"
+          >
+            <a href="javascript:void(0)" onclick="exitNav()"
+              ><img src="./images/icon-close.svg" alt="Close logo"
+            /></a>
           </div>
-            
-            <!-- Mobile Navigation -->
+
+          <!-- Mobile Navigation -->
           <nav>
-            <ul class="text-left text-3xl font-light font-serif ml-4 sm:text-3xl">
-              <li class="p-1"><a href="./index.html">Home</a></li>
+            <ul
+              class="text-left text-3xl font-medium font-sans ml-4 text-gray-700 sm:text-3xl"
+            >
+              <li class="p-2"><a href="./index.html">Home</a></li>
               <li class="p-2"><a href="./aboutUs.html">About Us</a></li>
-              <li class="p-2"><a href="./activities.html">Activities</a></li> 
+              <li class="p-2"><a href="./activities.html">Activities</a></li>
               <li class="p-2"><a href="./event.html">Events</a></li>
-              <li class="p-2"><a href="./contact.html">Contact</a></li> 
-              <li class="p-2"><a href="./donation.html">Donation</a></li>    
-              <li class="p-2"><a href="./competition.html">Competition</a></li>  
+              <li class="p-2"><a href="./donation.html">Donation</a></li>
+              <li class="p-2"><a href="./contact.html">Contact</a></li>
+              <li class="p-2"><a href="./competition.html">Competition</a></li>
             </ul>
           </nav>
         </div>
       </nav>
 
-      <div onclick="exitNav()" id="sideBar" class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10">
-      </div>
+      <div
+        onclick="exitNav()"
+        id="sideBar"
+        class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10"
+      ></div>
     </header>
 
-    <section class="bg-header-image bg-cover bg-center bg-no-repeat text-center py-20 md:py-24 lg:py-32">
+    <section
+      class="bg-header-image bg-cover bg-center bg-no-repeat text-center py-20 md:py-24 lg:py-32"
+    >
       <p class="text-white text-xl font-medium lg:text-3xl">EVENTS</p>
     </section>
 
     <div class="bg-hero-pattern pb-16">
       <div>
-        <p class="text-xl pt-8 text-center font-semibold text-yellow-500">Our Event</p>
-        <p class="text-4xl pt-2 mb-3 text-center font-semibold font-almendra">OUR UPCOMING EVENT</p>
+        <p class="text-xl pt-8 text-center font-semibold text-yellow-500">
+          Our Event
+        </p>
+        <p class="text-4xl pt-2 mb-3 text-center font-semibold font-almendra">
+          OUR UPCOMING EVENT
+        </p>
       </div>
     </div>
 
-
-    <section class="bg-hero-pattern bg-gray-100 bg-blend-multiply pb-8 lg:flex lg:justify-between my-5 lg:py-10 lg:pb-10 lg:px-8 xl:px-16 -mt-5">
-      
+    <section
+      class="bg-hero-pattern bg-gray-100 bg-blend-multiply pb-8 lg:flex lg:justify-between my-5 lg:py-10 lg:pb-10 lg:px-8 xl:px-16 -mt-5"
+    >
       <div class="grid px-4">
-        <img src="./images/section-image-00.jpg" alt="An image here" class="rounded-3xl mx-auto">
+        <img
+          src="./images/section-image-00.jpg"
+          alt="An image here"
+          class="rounded-3xl mx-auto"
+        />
       </div>
       <div class="flex flex-col">
-        <p class="text-3xl pb-5 lg:ml-5 lg:mb-2 px-3 pt-12 lg:pt-10 text-center font-almendra font-bold hover:text-yellow-500 lg:text-4xl xl:text-5xl">The Face of Bilqis Qur'an and Quiz competition</p>
-        <p class="text-xl mx-auto lg:mt-5 lg:max-w-[600px] max-w-[400px] text-center font-medium pb-5 lg:pb-2"> 1 For children between the age of 7-10</p>
-        <p class="text-xl mx-auto lg:mt-3 lg:max-w-[600px] max-w-[400px] text-center font-medium pb-3 lg:pb-2"> 1 Qur'an recitation (3 juz'u, Mujaadilah to Nas).</p>
-        <p class="text-xl mx-auto lg:mt-3 lg:max-w-[600px] max-w-[400px] text-center font-medium pb-3 lg:pb-2"> 1 Qur'an recitation (3 juz'u, Mujaadilah to Nas).</p>
-        <p class="text-xl mx-auto lg:mt-3 lg:max-w-[600px] max-w-[400px] text-center font-medium pb-3 lg:pb-2"> 1 Qur'an recitation (3 juz'u, Mujaadilah to Nas).</p>
-        <button class="bg-yellow-500 text-white mt-5 rounded-3xl border-2 border-gray-300 hover:bg-yellow-600 shadow-md transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:duration-300 text-xl mx-auto  px-10 py-3 mb-5 lg:px-12 lg:py-3 lg:mt-12 xl:mt-16"><a href="#">Join Now</a></button>
-      
+        <p
+          class="text-3xl pb-5 lg:mx-5 lg:mb-2 px-3 pt-12 lg:pt-10 lg:max-w-[800px] text-center font-almendra font-bold hover:text-yellow-500 lg:text-4xl xl:text-5xl"
+        >
+          The Lantern Face of Bilqis Qur'an and Quiz competition for children
+          Between the Age of 7-11 in the Following Categories
+        </p>
+        <div class="text-center lg:text-left lg:ml-20">
+          <p class="text-xl lg:mt-3 font-medium pb-3 lg:pb-2">
+            Qur'an recitation (3 Juz'u;Mujaadilah to Nas)
+          </p>
+          <p class="text-xl lg:mt-3 font-medium pb-3 lg:pb-2">
+            HADITH Recitation,Lesson and Commentary(Annawawi's collection)
+          </p>
+          <p class="text-xl lg:mt-3 font-medium pb-3 lg:pb-2">
+            SALAH (The 5 Obligatory Prayers)
+          </p>
+          <p class="text-xl lg:mt-3 font-medium pb-3 lg:pb-2">
+            AAHDAAB (Islamic Etiquettes)AKHLAAQ(character)
+          </p>
+          <p class="text-xl lg:mt-3 font-medium pb-3 lg:pb-2">
+            FIQH (Islamic Jurisprudence)
+          </p>
+        </div>
+        <button
+          class="bg-yellow-500 text-white mt-5 rounded-3xl border-2 border-gray-300 hover:bg-yellow-600 shadow-md transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 hover:duration-300 text-xl mx-auto px-10 py-3 mb-5 lg:px-12 lg:py-3 lg:mt-12 xl:mt-16"
+        >
+          <a href="./competition.html">Register Now</a>
+        </button>
       </div>
     </section>
-  <!-- Section ends here -->
+    <!-- Section ends here -->
 
+    <!-- Next section -->
+    <section
+      class="py-16 px-4 md:grid md:grid-cols-2 md:gap-4 md:px-8 lg:px-12 lg:gap-8 xl:px-20 xl:gap-16"
+    >
+      <div class="">
+        <img
+          src="./images/eid-mubarak.jpg"
+          alt="An image here"
+          class="rounded-3xl"
+        />
+      </div>
 
-    <!-- Next section -->  
-    <section class="py-16 px-4 md:grid md:grid-cols-2 md:gap-4 md:px-8 lg:px-12 lg:gap-8 xl:px-20 xl:gap-16 ">
+      <div class="mb-16">
+        <p
+          class="text-3xl font-almendra mx-auto py-5 text-black text-center font-bold hover:text-yellow-500 lg:text-4xl"
+        >
+          The Lantern Monthly Moral Clinic
+        </p>
+        <p class="text-center lg:text-lg">
+          The lantern monthly moral clinic is Where we have scholar that will
+          speak about Islam and answer your question in full detail. You can
+          also make some changes on what you feel like is important and needs to
+          be change in the lantern organisation
+        </p>
+      </div>
 
-        <div class="">
-          <img src="./images/eid-mubarak.jpg" alt="An image here" class=" rounded-3xl">
-        </div>
-  
-        <div class="mb-16">
-          <p class="text-3xl font-almendra mx-auto py-5 text-black text-center font-bold hover:text-yellow-500 lg:text-4xl">The Lantern Monthly Moral Clinic</p>
-          <p class="text-center lg:text-lg">The lantern monthly moral clinic is Where we have scholar that will speak about Islam and answer your question in full detail. You can also make some changes on what you feel like is important and needs to be change in the lantern organisation</p>
-        </div>    
-      
-  
-      
-        <div class="md:col-start-2 md:col-end-3">
-          <img src="./images/ramadan-diet.jpg" alt="An image here" class="rounded-3xl">
-        </div>
+      <div class="md:col-start-2 md:col-end-3">
+        <img
+          src="./images/ramadan-diet.jpg"
+          alt="An image here"
+          class="rounded-3xl"
+        />
+      </div>
 
-        <div class="md:col-start-1 md:col-end-2 md:row-start-2">
-          <p  class="text-3xl text-black py-5 text-center font-almendra font-bold hover:text-yellow-500 lg:text-4xl">The Lantern Ramadan Diet</p>
-          <p class="text-center lg:text-lg">The lantern monthly moral clinic is Where we 
-          have scholar that will speak about Islam and answer your question in full detail. You can also make some changes on what you feel like is important and needs to be change in the lantern organisation</p>
-        </div>
-      
-
+      <div class="md:col-start-1 md:col-end-2 md:row-start-2 py-20">
+        <p
+          class="text-3xl mb-5 text-black text-center font-almendra font-bold hover:text-yellow-500 lg:text-4xl"
+        >
+          The Lantern Ramadan Diet
+        </p>
+        <p class="text-center lg:text-lg">
+          The Lantern Ramadan Diet is a lecture series in all sundays of the
+          month of Ramadan, not monthly as you wrote.
+        </p>
+      </div>
     </section>
     <!--Next Section ends here -->
 
-    
     <footer class="bg-black px-6 py-10 lg:flex lg:justify-evenly">
       <div class="">
         <div class="flex items-center py-3">
@@ -163,9 +260,15 @@
         <div class="">
           <p class="text-2xl pb-3 font-almendra pt-7">EVENTS</p>
           <ul class="list-disc px-5">
-            <li class="py-2"><a href="./activities.html#section1">Quran Memorization</a></li>
-            <li class="py-2"><a href="./activities.html#section2">Mosque Development</a></li>
-            <li class="py-3 "><a href="./activities.html#section3">Quiz competition</a></li>
+            <li class="py-2">
+              <a href="./activities.html#section1">Quran Memorization</a>
+            </li>
+            <li class="py-2">
+              <a href="./activities.html#section2">Mosque Development</a>
+            </li>
+            <li class="py-3">
+              <a href="./activities.html#section3">Quiz competition</a>
+            </li>
           </ul>
         </div>
 
@@ -195,11 +298,17 @@
       </div>
     </footer>
 
-    <div class="bg-gray-300 text-center text-sm font-normal md:flex md:justify-between md:px-6 md:py-1 xl:px-16">
+    <div
+      class="bg-gray-300 text-center text-sm font-normal md:flex md:justify-between md:px-6 md:py-1 xl:px-16"
+    >
       <p class="">
-        Copyright &copy 2024 The Lantern Islamic Foundation. All Rights Reserved.
+        Copyright &copy 2024 The Lantern Islamic Foundation. All Rights
+        Reserved.
       </p>
-      <p class="">Powered by <a href="https://www.dervac.com" class="font-semibold">dervac</a></p>
+      <p class="">
+        Powered by
+        <a href="https://www.dervac.com" class="font-semibold">dervac</a>
+      </p>
     </div>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">
