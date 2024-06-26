@@ -6,7 +6,16 @@
     "flowbite": "^2.3.0",
     "js": "^0.1.0",
     "node.js": "^0.0.1-security",
-    "swipe-js": "^2.2.0",
+    "swipe-js": "^2.0.2",
     "swiper": "^11.1.1"
-  }
+  },
+  "name": "c",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
