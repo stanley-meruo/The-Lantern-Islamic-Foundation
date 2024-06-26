@@ -18,7 +18,7 @@
       <nav
         class="flex w-full items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16"
       >
-        <a href="./index.html" class="flex items-center py-3">
+        <a href="./index.html" class="flex items-center py-2.5">
           <img src="./images/TLIF-LOGO.png" alt="logo" class="w-16" />
           <div class="text-black">
             <p class="leading-3 text-center">
@@ -83,10 +83,9 @@
           </button>
         </ul>
         <!-- End of Desktop Navigation -->
-
         <div
           id="sideNav"
-          class="fixed top-0 right-0 bg-gray-200 text-black w-0 h-full flex items-center overflow-x-hidden duration-500 font-bold z-10 lg:hidden"
+          class="fixed top-0 right-0 bg-gray-200 w-0 h-full flex overflow-x-hidden duration-500 z-10 lg:hidden"
         >
           <div
             class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48"
@@ -98,16 +97,14 @@
 
           <!-- Mobile Navigation -->
           <nav>
-            <ul
-              class="text-left text-3xl font-medium font-sans text-gray-700 ml-4 sm:text-3xl"
-            >
-              <li class="p-2"><a href="./index.html">Home</a></li>
-              <li class="p-2"><a href="./aboutUs.html">About Us</a></li>
-              <li class="p-2"><a href="./activities.html">Activities</a></li>
-              <li class="p-2"><a href="./event.html">Events</a></li>
-              <li class="p-2"><a href="./donation.html">Donation</a></li>
-              <li class="p-2"><a href="./contact.html">Contact</a></li>
-              <li class="p-2"><a href="./competition.html">Competition</a></li>
+            <ul class="text-left text-3xl font-sans ml-4 mt-36 sm:text-3xl">
+              <li class="p-2 hover:text-yellow-600"><a href="./index.html">Home</a></li>
+              <li class="p-2 hover:text-yellow-600"><a href="./aboutUs.html">AboutUs</a></li>
+              <li class="p-2 hover:text-yellow-600"><a href="./activities.html">Activities</a></li> 
+              <li class="p-2 hover:text-yellow-600"><a href="./event.html">Events</a></li>
+              <li class="p-2 hover:text-yellow-600"><a href="./donation.html">Donation</a></li>    
+              <li class="p-2 hover:text-yellow-600"><a href="./contact.html">Contact</a></li>
+              <li class="p-2 hover:text-yellow-600"><a href="./competition.html">Competition</a></li>  
             </ul>
           </nav>
         </div>
@@ -163,17 +160,19 @@
 
     <section class="lg:px-10">
       <!-- Mobile section start here -->
-      <section class="px-2 pt-12 mx-20 sm:ml-36 md:hidden">
-        <img
-          src="./images/section-image-00.jpg"
-          alt="Mosque image"
-          class="rounded-3xl w-[300px]"
-        />
-        <img
-          src="./images/section-image-01.jpg"
-          alt="Mosque image"
-          class="rounded-3xl w-[220px] ml-10 -mt-40"
-        />
+      <section class="px-8 pt-12 grid md:hidden">
+        <div class="mx-auto">
+          <img
+            src="./images/section-image-00.jpg"
+            alt="Mosque image"
+            class="rounded-3xl w-[300px]"
+          />
+          <img
+            src="./images/section-image-01.jpg"
+            alt="Mosque image"
+            class="rounded-3xl w-[220px] ml-10 -mt-40"
+          />
+        </div>
       </section>
       <!-- Mobile section ends here -->
 
@@ -188,8 +187,7 @@
             src="./images/section-image-00.jpg"
             alt="An image here"
             class="rounded-3xl  md:w-72 md:h-[350px] lg:w-[400px] lg:h-[500px] xl:w-[500px]" 
-          />
-            
+          /> 
           <img
             src="./images/section-image-01.jpg"
             alt="An image here"
@@ -227,19 +225,18 @@
               >Discover More</a
             >
           </button>
-          <div class="flex items-center gap-3 mt-3">
-            <img src="/images/phone-call.svg" alt="" />
+          <div class="flex items-center gap-2 mt-3">
+            <img src="./images/phone-call.svg" alt="" />
             <p class="font-medium text-gray-600 my-5">
-              Reach out to us: <br /><span class="text-lg text-black"
+              Reach out to us: <br /><span class="text-black"
                 >+(234)-8024-070-582</span
               >
             </p>
           </div>
-          <div class="flex items-center gap-3">
-            <img src="/images/envelope.svg" alt=""/>
+          <div class="flex items-center gap-2">
+            <img src="./images/envelope.svg" alt=""/>
             <p class="font-medium text-gray-600 my-5">
-              Message us today: <br /><span class="text-lg text-black"
-                >thelanternislamicfoundation@gmail.com</span
+              Message us today: <br/><span class="text-black line-clamp-2 mr-2">thelanternislamicfoundation@gmail.com</span
               >
             </p>
           </div>

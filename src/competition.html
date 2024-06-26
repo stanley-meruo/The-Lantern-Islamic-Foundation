@@ -15,7 +15,7 @@
     <header class="sticky top-0 z-50">
         <nav class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16">
   
-          <a href="./index.html" class="flex items-center py-3">
+          <a href="./index.html" class="flex items-center py-2.5">
             <img src="./images/TLIF-LOGO.png" alt="logo" class="w-16" />
             <div class="text-black">
               <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-400">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
@@ -41,24 +41,24 @@
           <!-- End of Desktop Navigation -->
           
           <div id="sideNav"
-            class="fixed top-0 right-0 bg-gray-200 text-black w-0 h-full flex items-center overflow-x-hidden duration-500 font-bold z-10 lg:hidden">
+            class="fixed top-0 right-0 bg-gray-200 w-0 h-full flex overflow-x-hidden duration-500 z-10 lg:hidden">
               
             <div class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48">
               <a href="javascript:void(0)" onclick="exitNav()"><img src="./images/icon-close.svg" alt="Close logo"/></a>
             </div>
               
-              <!-- Mobile Navigation -->
-            <nav>
-              <ul class="text-left text-3xl font-medium font-sans ml-4 text-gray-700 sm:text-3xl">
-                <li class="p-2"><a href="./index.html">Home</a></li>
-                <li class="p-2"><a href="./aboutUs.html">About Us</a></li>
-                <li class="p-2"><a href="./activities.html">Activities</a></li> 
-                <li class="p-2"><a href="./event.html">Events</a></li>
-                <li class="p-2"><a href="./contact.html">Contact</a></li> 
-                <li class="p-2"><a href="./donation.html">Donation</a></li>    
-                <li class="p-2"><a href="./competition.html">Competition</a></li>  
-              </ul>
-            </nav>
+            <!-- Mobile Navigation -->
+          <nav>
+            <ul class="text-left text-3xl font-sans ml-4 mt-36 sm:text-3xl">
+              <li class="p-2 hover:text-yellow-600"><a href="./index.html">Home</a></li>
+              <li class="p-2 hover:text-yellow-600"><a href="./aboutUs.html">AboutUs</a></li>
+              <li class="p-2 hover:text-yellow-600"><a href="./activities.html">Activities</a></li> 
+              <li class="p-2 hover:text-yellow-600"><a href="./event.html">Events</a></li>
+              <li class="p-2 hover:text-yellow-600"><a href="./donation.html">Donation</a></li>    
+              <li class="p-2 hover:text-yellow-600"><a href="./contact.html">Contact</a></li>
+              <li class="p-2 hover:text-yellow-600"><a href="./competition.html">Competition</a></li>  
+            </ul>
+          </nav>
           </div>
         </nav>
   
@@ -70,38 +70,17 @@
 <section class="bg-hero-pattern bg-gray-200 bg-blend-multiply py-6">
 
   <div class="text-center px-4 md:px-16 ">
-    <p class="text-4xl py-5 text-yellow-600 font-semibold shadow-yellow-900 uppercase lg:w-[800px] lg:mx-auto lg:pb-10 ">Welcome to The Face of Bilqis Qur'an and Quiz Competition</p>
-    <p class="text-xl font-semibold"><span class="font-extrabold underline underline-offset-4">NOTE:</span> THIS QUIZ COMPETITION IS OPEN FOR CHILDREN IN THE AGE OF 7 - 10</p>
+    <p class="text-4xl py-5 text-yellow-600 font-semibold shadow-yellow-900 uppercase lg:w-[800px] lg:mx-auto lg:pb-10 lg:text-5xl">Welcome to The Face of Bilqis Qur'an and Quiz Competition</p>
+    <p class="text-xl font-semibold my-4 lg:text-2xl"><span class="font-extrabold underline underline-offset-4">NOTE:</span> THIS QUIZ COMPETITION IS OPEN FOR CHILDREN IN THE AGE OF 7 - 10</p>
   </div>
-
-  <section class="my-10 mx-4 pb-8 border-2 border-yellow-500 rounded-xl md:mx-12 sm:pt-8 lg:grid lg:grid-cols-2 lg:grid-rows-1 lg:mx-8 lg:py-6">
-
-    <div class="grid lg:row-start-1 lg:row-end-2 lg:ml-6">
-      <img src="./images/section-image-00.jpg" alt="An image here" class="rounded-xl mx-auto lg:my-3 xl:w-[800px] hidden lg:block">
-      <img src="./images/events-image.jpg" alt="" class="hidden lg:rounded-xl lg:ml-4 lg:mt-96 lg:block lg:w-80 xl:w-[690px]">
-    </div>
-
-    <div class="grid lg:row-start-1 lg:row-end-2 lg:pb-12">
-
-         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7id64ck_QNG1kyrxmLaZMAYjg87eGPkPhapF0YydnNiXbMA/viewform?embedded=true" height="2000" width="420" frameborder="0" marginheight="0" marginwidth="0" class="iframe">Loading…</iframe>
+  
+  <section class="py-4 h-full border-2 border-yellow-600 rounded-xl my-12">
+    <div class="box">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf7id64ck_QNG1kyrxmLaZMAYjg87eGPkPhapF0YydnNiXbMA/viewform?embedded=true" height="0" width="0" frameborder="0" marginheight="0" marginwidth="0" class="iframe"></iframe>
     </div>  
   </section>
-      
+  
 </section>
-
-<style>
-  @media(min-width:600px){
-  .iframe{
-    width: 600px;
-  }
-}
- @media(min-width:768px){
-  .iframe{
-    width: 700px;
-  }
-}
-</style>
-       
 
 <footer class="bg-black px-6 py-10 lg:flex lg:justify-evenly">
       <div class="">
@@ -183,8 +162,9 @@
       <img src="./images/arrow-small-up.svg" alt="" class="" />
     </button>
 
-    <script src="./js/script.js"></script>
-
-      
+  
+  
+  <script src="./js/script.js"></script>
+    
 </body>
 </html>
