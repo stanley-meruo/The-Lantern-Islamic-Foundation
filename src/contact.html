@@ -13,235 +13,233 @@
 </head>
 <body>
 
-    <header class="sticky top-0 z-50">
-        <nav class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16">
+  <header class="sticky top-0 z-50">
+      <nav class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16">
   
-          <a href="./index.html" class="flex items-center py-2.5">
-            <img src="./images/TLIF-LOGO.png" alt="logo" class="w-16" />
-            <div class="text-black">
-              <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-600">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
-            </div>
-          </a>
-  
-          <div class="flex items-center gap-6">
-            <img src="./images/search.svg" alt="" class="lg:hidden">
-            <div class="bg-yellow-500 p-2 hover:bg-gray-400 lg:hidden" onclick="openNav()">
-              <img src="./images/icon-hamburger.svg" alt="Hamburger image"/>
-            </div>
-          </div>
-          <!-- Desktop Navigation -->
-          <ul class="hidden lg:flex lg:text-xl lg:items-center lg:gap-4 text-gray-700 font-sans font-medium lg:ml-8 xl:gap-8">
-            <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./index.html">Home</a></li>
-            <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./aboutUs.html">About Us</a></li>
-            <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./activities.html">Activities</a></li>
-            <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./event.html">Events</a></li>
-            <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./donation.html">Donation</a></li>
-            <li class="text-yellow-600 p-2"><a href="./contact.html">Contact</a></li>
-            <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg"><a href="./competition.html">Competition</a></button>
-          </ul>
-          <!-- End of Desktop Navigation -->
-          
-          <div id="sideNav"
-            class="fixed top-0 right-0 bg-gray-200 w-0 h-full flex overflow-x-hidden duration-500 z-10 lg:hidden">
-              
-            <div class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48">
-              <a href="javascript:void(0)" onclick="exitNav()"><img src="./images/icon-close.svg" alt="Close logo"/></a>
-            </div>
-              
-            <!-- Mobile Navigation -->
-          <nav>
-            <ul class="text-left text-3xl font-sans ml-4 mt-36 sm:text-3xl">
-              <li class="p-2 hover:text-yellow-600"><a href="./index.html">Home</a></li>
-              <li class="p-2 hover:text-yellow-600"><a href="./aboutUs.html">AboutUs</a></li>
-              <li class="p-2 hover:text-yellow-600"><a href="./activities.html">Activities</a></li> 
-              <li class="p-2 hover:text-yellow-600"><a href="./event.html">Events</a></li>
-              <li class="p-2 hover:text-yellow-600"><a href="./donation.html">Donation</a></li>    
-              <li class="p-2 hover:text-yellow-600"><a href="./contact.html">Contact</a></li>
-              <li class="p-2 hover:text-yellow-600"><a href="./competition.html">Competition</a></li>  
-            </ul>
-          </nav>
-          </div>
-        </nav>
-  
-      <div onclick="exitNav()" id="sideBar" class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10">
-      </div>
-    </header>
-     
-    
-    <section class="bg-header-image bg-cover bg-center bg-no-repeat text-center py-20 md:py-24 lg:py-32">
-      <p class="text-white text-xl font-medium lg:text-3xl">CONTACT</p>
-    </section>
-
-
-    <section class="bg-hero-pattern bg-gray-100 bg-blend-multiply lg:px-12">
-      <h1 class="text-4xl text-yellow-600 font-semibold font-almendra text-center py-8 lg:py-12">CONTACT </h1>
-
-      <div class="text-center px-4 pb-10 lg:flex lg:items-center lg:justify-between lg:gap-8 xl:gap-4">
-
-        <div class="">
-          <p class="text-2xl font-semibold mb-1 lg:text-3xl lg:mb-3">Address: </p>
-          <div class="flex gap-2 items-center justify-center mb-4">
-            <img src="./images/marker.svg" alt="" class="">
-            <p class="text-lg lg:text-xl">24, Apapa Road Ebute-Metta, Lagos, Nigeria. </p>
-          </div>
-        </div>
-
-        <div class="">
-          <p class="text-2xl font-semibold mb-1 lg:text-3xl lg:mb-3" >Phone Number: </p>
-          <div class="flex gap-2 items-center justify-center mb-4">
-            <img src="./images/phone-call.svg" alt="">
-            <p class="text-lg lg:text-xl"> 08024070582</p>
-          </div>
-        </div>
-
-        <div>
-          <p class="text-2xl font-semibold mb-1 lg:text-3xl lg:mb-3" >Email: </p>
-          <div class="flex gap-2 items-center justify-center mb-4">
-            <img src="./images/envelope.svg" alt="">
-            <p class="text-lg lg:text-xl"> thelanternislamicfoundation@gmail.com</p>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-
-    <section class="px-4 md:px-10 lg:px-20">
-      <div class="grid">
-        <img src="./images/zed.jpeg" alt="Banner Image" class=" w-8/12 lg:mt-10 my-5 mx-auto rounded-xl" />
-      </div>
-
-      <div class=" mb-6 px-4 md:px-10 md:-mt-28 lg:px-20">
-        <div class="mx-auto max-w-6xl shadow-lg py-8 px-6 relative bg-white rounded-xl lg:mt-36">
-            <form class="mt-8 grid sm:grid-cols-2 gap-6 ">
-                <div>
-                  <label class="font-semibold">Your Name</label>
-                  <input type='text' placeholder='Enter Name' class="w-full rounded-xl shadow-md py-2.5 px-4 mt-2 border-2 text-sm outline-yellow-500 lg:py-3.5 lg:text-base" />
-                </div>
-                <div>
-                  <label class="font-semibold">Your Email</label>
-                  <input type='email' placeholder='Email'
-                  class="w-full rounded-xl shadow-md py-2.5 px-4 border-2 mt-2 text-sm outline-yellow-500 lg:py-3.5 lg:text-base" />
-                </div>
-                <div>
-                  <label class="font-semibold">Your Number</label>
-                  <input type='email' placeholder='Phone No.'
-                  class="w-full rounded-xl shadow-md py-2.5 px-4 border-2 mt-2 text-sm outline-yellow-500 lg:py-3.5 lg:text-base" />
-                </div>
-                <div>
-                  <label class="font-semibold">Address</label>
-                  <input type='text' placeholder='Address'
-                  class="w-full rounded-xl shadow-md py-2.5 px-4 border-2 mt-2 text-sm outline-yellow-500 lg:py-3.5 lg:text-base" />
-                </div>
-                <div>
-                  <label class="font-semibold">Subject</label>
-                  <input type='text' placeholder='Subject'
-                  class="w-full rounded-xl shadow-md py-2.5 px-4 border-2 mt-2 text-sm outline-yellow-500 lg:py-3.5 lg:text-base" />
-                </div>
-                <div class="col-span-full">
-                  <label class="font-semibold">Message</label>
-                  <textarea placeholder='Message' rows="6" cols="5"
-                  class="w-full rounded-xl shadow-md px-4 border-2 mt-2 text-sm pt-3 outline-yellow-500 lg:text-base"></textarea>
-                </div>
-                      
-              <button type='button' class="text-white w-max bg-yellow-500 hover:bg-yellow-600 font-semibold font-almendra rounded-xl text-sm px-6 py-3 focus:ring focus:ring-yellow-700">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2 inline" viewBox="0 0 548.244 548.244">
-                <path fill-rule="evenodd" d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z" clip-rule="evenodd" data-original="#000000" /></svg>SEND MESSAGE
-              </button>
-            </form>
-        </div>
-      </div>
-    </section>
-        
-
-    <section class="w-full">
-      <iframe class="w-full"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3143881248448!2d3.3785404740456415!3d6.4818094236483885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b7fd941dfd7%3A0xa6fb6e6235d343fe!2s24%20Apapa%20Rd%2C%20Ebute%20Metta
-        %2C%20Lagos%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1715176606798!5m2!1sen!2sng" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-      
-    
-      
-    <footer class="bg-black px-6 py-10 lg:flex lg:justify-evenly">
-      <div class="">
-        <div class="flex items-center py-3">
+       <a href="./index.html" class="flex items-center py-2.5">
           <img src="./images/TLIF-LOGO.png" alt="logo" class="w-16" />
-          <div class="text-white">
-            <p class="leading-3 text-center">
-              <span
-                class="font-semibold text-xl font-sans tracking-widest text-yellow-500"
-                >The Lantern</span
-              ><br /><span class="font-serif tracking-tighter"
-                >Islamic Foundation</span
-              >
-            </p>
+          <div class="text-black">
+            <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-600">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
+          </div>
+        </a>
+  
+       <div class="flex items-center gap-6">
+          <img src="./images/search.svg" alt="" class="lg:hidden">
+          <div class="bg-yellow-500 p-2 hover:bg-gray-400 lg:hidden" onclick="openNav()">
+            <img src="./images/icon-hamburger.svg" alt="Hamburger image"/>
           </div>
         </div>
-        <p class="text-white lg:max-w-96">
-          We are dedicated to the advancement of the individual, family, and the
-          community at large through faith, education and service.
-        </p>
+        <!-- Desktop Navigation -->
+        <ul class="hidden lg:flex lg:text-xl lg:items-center lg:gap-4 text-gray-700 font-sans font-medium lg:ml-8 xl:gap-8">
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./index.html">Home</a></li>
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./aboutUs.html">About Us</a></li>
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./activities.html">Activities</a></li>
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./event.html">Events</a></li>
+          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./donation.html">Donation</a></li>
+          <li class="text-yellow-600 p-2"><a href="./contact.html">Contact</a></li>
+          <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg"><a href="./competition.html">Competition</a></button>
+        </ul>
+        <!-- End of Desktop Navigation -->
+        
+        <div id="sideNav"
+          class="fixed top-0 right-0 bg-gray-200 w-0 h-full flex overflow-x-hidden duration-500 z-10 lg:hidden">
+            
+          <div class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48">
+            <a href="javascript:void(0)" onclick="exitNav()"><img src="./images/icon-close.svg" alt="Close logo"/></a>
+          </div>
+            
+          <!-- Mobile Navigation -->
+        <nav>
+          <ul class="text-left text-3xl font-sans ml-4 mt-36 sm:text-3xl">
+            <li class="p-2 hover:text-yellow-600"><a href="./index.html">Home</a></li>
+            <li class="p-2 hover:text-yellow-600"><a href="./aboutUs.html">AboutUs</a></li>
+            <li class="p-2 hover:text-yellow-600"><a href="./activities.html">Activities</a></li> 
+            <li class="p-2 hover:text-yellow-600"><a href="./event.html">Events</a></li>
+            <li class="p-2 hover:text-yellow-600"><a href="./donation.html">Donation</a></li>    
+            <li class="p-2 hover:text-yellow-600"><a href="./contact.html">Contact</a></li>
+            <li class="p-2 hover:text-yellow-600"><a href="./competition.html">Competition</a></li>  
+          </ul>
+        </nav>
+        </div>
+      </nav>
+  
+   <div onclick="exitNav()" id="sideBar" class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10">
+    </div>
+  </header>
+   
+  
+  <section class="bg-header-image bg-cover bg-center bg-no-repeat text-center py-20 md:py-24 lg:py-32">
+    <p class="text-white text-xl font-medium lg:text-3xl">CONTACT</p>
+  </section>
 
-        <div class="flex items-center gap-4 py-3">
-          <a
-            href="https://www.facebook.com/profile.php?id=61557895405553"
-            target="_blank"
-            ><img src="/images/icon-facebook.svg" alt="" class="rounded-md"
-          /></a>
-          <p class="text-white font-serif">
-            The Lantern Islamic foundation - TLIF
+ <section class="bg-hero-pattern bg-gray-100 bg-blend-multiply lg:px-12">
+    <h1 class="text-4xl text-yellow-600 font-semibold font-almendra text-center py-8 lg:py-12">CONTACT </h1>
+
+   <div class="text-center px-4 pb-10 lg:flex lg:items-center lg:justify-between lg:gap-8 xl:gap-4">
+
+     <div class="">
+        <p class="text-2xl font-semibold mb-1 lg:text-3xl lg:mb-3">Address: </p>
+        <div class="flex gap-2 items-center justify-center mb-4">
+          <img src="./images/marker.svg" alt="" class="">
+          <p class="text-lg lg:text-xl">24, Apapa Road Ebute-Metta, Lagos, Nigeria. </p>
+        </div>
+      </div>
+
+     <div class="">
+        <p class="text-2xl font-semibold mb-1 lg:text-3xl lg:mb-3" >Phone Number: </p>
+        <div class="flex gap-2 items-center justify-center mb-4">
+          <img src="./images/phone-call.svg" alt="">
+          <p class="text-lg lg:text-xl"> 08024070582</p>
+        </div>
+      </div>
+
+     <div>
+        <p class="text-2xl font-semibold mb-1 lg:text-3xl lg:mb-3" >Email: </p>
+        <div class="flex gap-2 items-center justify-center mb-4">
+          <img src="./images/envelope.svg" alt="">
+          <p class="text-lg lg:text-xl"> thelanternislamicfoundation@gmail.com</p>
+        </div>
+      </div>
+    </div>
+
+ </section>
+
+ <section class="px-4 md:px-10 lg:px-20">
+    <div class="grid">
+      <img src="./images/zed.jpeg" alt="Banner Image" class=" w-8/12 lg:mt-10 my-5 mx-auto rounded-xl" />
+    </div>
+
+   <div class=" mb-6 px-4 md:px-10 md:-mt-28 lg:px-20">
+      <div class="mx-auto max-w-6xl shadow-lg py-8 px-6 relative bg-white rounded-xl lg:mt-36">
+          <form class="mt-8 grid sm:grid-cols-2 gap-6 ">
+              <div>
+                <label class="font-semibold">Your Name</label>
+                <input type='text' placeholder='Enter Name' class="w-full rounded-xl shadow-md py-2.5 px-4 mt-2 border-2 text-sm outline-yellow-500 lg:py-3.5 lg:text-base" />
+              </div>
+              <div>
+                <label class="font-semibold">Your Email</label>
+                <input type='email' placeholder='Email'
+                class="w-full rounded-xl shadow-md py-2.5 px-4 border-2 mt-2 text-sm outline-yellow-500 lg:py-3.5 lg:text-base" />
+              </div>
+              <div>
+                <label class="font-semibold">Your Number</label>
+                <input type='email' placeholder='Phone No.'
+                class="w-full rounded-xl shadow-md py-2.5 px-4 border-2 mt-2 text-sm outline-yellow-500 lg:py-3.5 lg:text-base" />
+              </div>
+              <div>
+                <label class="font-semibold">Address</label>
+                <input type='text' placeholder='Address'
+                class="w-full rounded-xl shadow-md py-2.5 px-4 border-2 mt-2 text-sm outline-yellow-500 lg:py-3.5 lg:text-base" />
+              </div>
+              <div>
+                <label class="font-semibold">Subject</label>
+                <input type='text' placeholder='Subject'
+                class="w-full rounded-xl shadow-md py-2.5 px-4 border-2 mt-2 text-sm outline-yellow-500 lg:py-3.5 lg:text-base" />
+              </div>
+              <div class="col-span-full">
+                <label class="font-semibold">Message</label>
+                <textarea placeholder='Message' rows="6" cols="5"
+                class="w-full rounded-xl shadow-md px-4 border-2 mt-2 text-sm pt-3 outline-yellow-500 lg:text-base"></textarea>
+              </div>
+                    
+            <button type='button' class="text-white w-max bg-yellow-500 hover:bg-yellow-600 font-semibold font-almendra rounded-xl text-sm px-6 py-3 focus:ring focus:ring-yellow-700">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2 inline" viewBox="0 0 548.244 548.244">
+              <path fill-rule="evenodd" d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z" clip-rule="evenodd" data-original="#000000" /></svg>SEND MESSAGE
+            </button>
+          </form>
+      </div>
+    </div>
+  </section>
+      
+
+ <section class="w-full">
+    <iframe class="w-full"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3143881248448!2d3.3785404740456415!3d6.4818094236483885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b7fd941dfd7%3A0xa6fb6e6235d343fe!2s24%20Apapa%20Rd%2C%20Ebute%20Metta
+      %2C%20Lagos%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1715176606798!5m2!1sen!2sng" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+   
+  
+    
+  <footer class="bg-black px-6 py-10 lg:flex lg:justify-evenly">
+    <div class="">
+      <div class="flex items-center py-3">
+        <img src="./images/TLIF-LOGO.png" alt="logo" class="w-16" />
+        <div class="text-white">
+          <p class="leading-3 text-center">
+            <span
+              class="font-semibold text-xl font-sans tracking-widest text-yellow-500"
+              >The Lantern</span
+            ><br /><span class="font-serif tracking-tighter"
+              >Islamic Foundation</span
+            >
           </p>
         </div>
       </div>
-
-      <section class="text-white flex gap-10 md:gap-48 lg:gap-10 lg:px-20">
-        <div class="">
-          <p class="text-2xl pb-3 font-almendra pt-7">EVENTS</p>
-          <ul class="list-disc px-5">
-            <li class="py-2"><a href="./activities.html#section1">Quran Memorization</a></li>
-            <li class="py-2"><a href="./activities.html#section2">Mosque Development</a></li>
-            <li class="py-3 "><a href="./activities.html#section3">Quiz competition</a></li>
-          </ul>
-        </div>
-
-        <div class="">
-          <p class="text-2xl pb-3 font-almendra pt-7">QUICK LINKS</p>
-          <ul class="list-disc px-5">
-            <li class="py-2"><a href="./index.html">Home</a></li>
-            <li class="py-2"><a href="./activities.html">Activities</a></li>
-            <li class="py-3"><a href="./competition.html">Competition</a></li>
-          </ul>
-        </div>
-      </section>
-
-      <div class="mt-5">
-        <p class="text-2xl text-white font-almendra pb-3">NEWSLETTER</p>
-        <input
-          type="text"
-          name="email"
-          placeholder="Your Email..."
-          class="w-full p-3 border-[2px] rounded-lg"
-        />
-        <button
-          class="bg-yellow-500 font-medium font-almendra text-white px-4 py-3 my-4 w-full rounded-lg hover:bg-yellow-600"
-        >
-          SUBSCRIBE
-        </button>
-      </div>
-    </footer>
-
-    <div class="bg-gray-300 text-center text-sm font-normal md:flex md:justify-between md:px-6 md:py-1 xl:px-16">
-      <p class="">
-        Copyright &copy 2024 The Lantern Islamic Foundation. All Rights Reserved.
+      <p class="text-white lg:max-w-96">
+        We are dedicated to the advancement of the individual, family, and the
+        community at large through faith, education and service.
       </p>
-      <p class="">Powered by <a href="https://www.dervac.com" class="font-semibold">dervac</a></p>
+
+     <div class="flex items-center gap-4 py-3">
+        <a
+          href="https://www.facebook.com/profile.php?id=61557895405553"
+          target="_blank"
+          ><img src="/images/icon-facebook.svg" alt="" class="rounded-md"
+        /></a>
+        <p class="text-white font-serif">
+          The Lantern Islamic foundation - TLIF
+        </p>
+      </div>
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <img src="./images/arrow-small-up.svg" alt="" class="" />
-    </button>
+   <section class="text-white flex gap-10 md:gap-48 lg:gap-10 lg:px-20">
+      <div class="">
+        <p class="text-2xl pb-3 font-almendra pt-7">EVENTS</p>
+        <ul class="list-disc px-5">
+          <li class="py-2"><a href="./activities.html#section1">Quran Memorization</a></li>
+          <li class="py-2"><a href="./activities.html#section2">Mosque Development</a></li>
+          <li class="py-3 "><a href="./activities.html#section3">Quiz competition</a></li>
+        </ul>
+      </div>
 
-    <script src="./js/script.js"></script>
+     <div class="">
+        <p class="text-2xl pb-3 font-almendra pt-7">QUICK LINKS</p>
+        <ul class="list-disc px-5">
+          <li class="py-2"><a href="./index.html">Home</a></li>
+          <li class="py-2"><a href="./activities.html">Activities</a></li>
+          <li class="py-3"><a href="./competition.html">Competition</a></li>
+        </ul>
+      </div>
+    </section>
+
+   <div class="mt-5">
+      <p class="text-2xl text-white font-almendra pb-3">NEWSLETTER</p>
+      <!-- <input
+        type="text"
+        name="email"
+        placeholder="Your Email..."
+        class="w-full p-3 border-[2px] rounded-lg"
+      /> -->
+      <button
+        class="bg-yellow-500 font-medium font-almendra text-white px-4 py-3 my-4 w-full rounded-lg hover:bg-yellow-600"
+      >
+        <a class="mailtoui" href="mailto:aliuanas004@gmail.com?subject=News%20letter%20subscription&body=i%20to%20subscribe%20to%20your%20news%20letter%20My%20mail:%20%20(%20Your%20mail%20here..... )">SUBSCRIBE TO OUR NEWS LETTER</a> 
+      </button>
+    </div>
+  </footer>
+
+ <div class="bg-gray-300 text-center text-sm font-normal md:flex md:justify-between md:px-6 md:py-1 xl:px-16">
+    <p class="">
+      Copyright &copy 2024 The Lantern Islamic Foundation. All Rights Reserved.
+    </p>
+    <p class="">Powered by <a href="https://www.dervac.com" class="font-semibold">dervac</a></p>
+  </div>
+
+ <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <img src="./images/arrow-small-up.svg" alt="" class="" />
+  </button>
+
+ <script src="./js/script.js"></script>
 
       
 </body>
