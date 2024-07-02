@@ -13,44 +13,92 @@
   </head>
   <body>
 
-    <header class="sticky top-0 z-10">
-      <nav class="flex items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16">
-
+    <header class="sticky top-0 z-50">
+      <nav
+        class="flex w-full items-center justify-between bg-white shadow-md px-4 md:px-8 lg:px-12 xl:px-16"
+      >
         <a href="./index.html" class="flex items-center py-2.5">
           <img src="./images/TLIF-LOGO.png" alt="logo" class="w-16" />
           <div class="text-black">
-            <p class="leading-3 text-center"><span class="font-semibold text-xl font-sans tracking-widest text-yellow-600">The Lantern</span><br><span class="font-serif tracking-tighter">Islamic Foundation</span></p>
+            <p class="leading-3 text-center">
+              <span
+                class="font-semibold text-xl font-sans tracking-widest text-yellow-600"
+                >The Lantern</span
+              ><br /><span class="font-serif tracking-tighter"
+                >Islamic Foundation</span
+              >
+            </p>
           </div>
         </a>
 
         <div class="flex items-center gap-6">
-          <img src="./images/search.svg" alt="" class="lg:hidden">
-          <div class="bg-yellow-500 p-2 hover:bg-gray-400 lg:hidden" onclick="openNav()">
-            <img src="./images/icon-hamburger.svg" alt="Hamburger image"/>
+          <img src="./images/search.svg" alt="" class="lg:hidden" />
+          <div
+            class="bg-yellow-500 p-2 hover:bg-gray-400 lg:hidden"
+            onclick="openNav()"
+          >
+            <img src="./images/icon-hamburger.svg" alt="Hamburger image" />
           </div>
         </div>
-        <ul class="hidden lg:flex lg:text-xl lg:items-center lg:gap-4 text-gray-700 font-sans font-medium lg:ml-8 xl:gap-8">
-          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./index.html">Home</a></li>
-          <li class="text-yellow-600 p-2"><a href="./aboutUs.html">About Us</a></li>
-          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./activities.html">Activities</a></li>
-          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./event.html">Event</a></li>
-          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./donation.html">Donation</a></li>
-          <li class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"><a href="./contact.html">Contact</a></li>
-          <button class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-500 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg"><a href="./competition.html">Competition</a></button>
+        <!-- Desktop Navigation -->
+        <ul
+          class="hidden lg:flex lg:text-xl lg:items-center lg:gap-4 text-gray-700 font-sans font-medium lg:ml-8 xl:gap-8"
+        >
+          <li
+            class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
+          >
+            <a href="./index.html" class="hover:text-yellow-600">Home</a>
+          </li>
+          <li
+            class="text-yellow-600 p-2"
+          >
+            <a href="./aboutUs.html">About Us</a>
+          </li>
+          <li
+            class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
+          >
+            <a href="./activities.html">Activities</a>
+          </li>
+          <li
+            class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
+          >
+            <a href="./event.html">Events</a>
+          </li>
+          <li
+            class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
+          >
+            <a href="./donation.html">Donation</a>
+          </li>
+          <li
+            class="hover:border-4 hover:border-x-0 hover:border-t-0 border-yellow-600 hover:text-yellow-600 p-2"
+          >
+            <a href="./contact.html">Contact</a>
+          </li>
+           
+          <button
+            class="border-4 border-gray-500 border-x-0 border-t-0 text-gray-700 bg-gradient-to-r from-yellow-500 via-yellow-200 to-yellow-500 rounded-full py-3 px-5 shadow-lg"
+          >
+            <a href="./competition.html">Competition</a>
+          </button>
         </ul>
-        
-          <div id="sideNav"
-            class="fixed top-0 right-0 bg-gray-200 w-0 h-full flex overflow-x-hidden duration-500 z-10">
-            
-            <div class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48">
-              <a href="javascript:void(0)" onclick="exitNav()"><img src="./images/icon-close.svg" alt="Close logo"/></a>
-            </div>
-            
-            <!-- Mobile Navigation -->
+        <!-- End of Desktop Navigation -->
+        <div
+          id="sideNav"
+          class="fixed top-0 right-0 bg-gray-200 w-0 h-full flex overflow-x-hidden duration-500 z-10 lg:hidden"
+        >
+          <div
+            class="flex items-center gap-40 absolute top-2 left-1 mx-4 mt-10 sm:gap-48"
+          >
+            <a href="javascript:void(0)" onclick="exitNav()"
+              ><img src="./images/icon-close.svg" alt="Close logo"
+            /></a>
+          </div>
+
+          <!-- Mobile Navigation -->
           <nav>
             <ul class="text-left text-3xl font-sans ml-4 mt-36 sm:text-3xl">
               <li class="p-2 hover:text-yellow-600"><a href="./index.html">Home</a></li>
-              <li class="p-2 hover:text-yellow-600"><a href="./aboutUs.html">AboutUs</a></li>
+              <li class="p-2 text-yellow-600"><a href="./aboutUs.html">AboutUs</a></li>
               <li class="p-2 hover:text-yellow-600"><a href="./activities.html">Activities</a></li> 
               <li class="p-2 hover:text-yellow-600"><a href="./event.html">Events</a></li>
               <li class="p-2 hover:text-yellow-600"><a href="./donation.html">Donation</a></li>    
@@ -58,15 +106,14 @@
               <li class="p-2 hover:text-yellow-600"><a href="./competition.html">Competition</a></li>  
             </ul>
           </nav>
-          <!-- End of Mobile Navigtion -->
-          </div>
-          
         </div>
       </nav>
 
-
-      <div onclick="exitNav()" id="sideBar" class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10">
-      </div>
+      <div
+        onclick="exitNav()"
+        id="sideBar"
+        class="fixed top-0 right-0 bg-transparent w-0 overflow-x-hidden duration-500 z-10"
+      ></div>
     </header>
 
 
@@ -82,7 +129,7 @@
         <p class=" m-4 text-lg leading-6">The idea of setting up an organization for Muslim students was born out of Muslims’ desires to safeguard their religious fundamentals, culture, and identity from the twin effects of forceful evangelization and alluring Christian activities.</p>
       </div>
       <!-- div for mission -->
-      <div class="lg:flex lg:items-center lg:justify-center lg:text-center">
+      <div class="mt-8 lg:flex lg:items-center lg:justify-center lg:text-center">
         <div class="border-2 p-8 m-4 rounded-xl shadow-md bg-white">
           <p class="font-bold text-2xl font-almendra text-yellow-600 pb-3 lg:text-3xl">OUR MISSION</p>
           <p class="text-gray-700 lg:text-lg">We are dedicated to the advancement of the individual, family,<br>and the community at large through faith, education and service.</p>
@@ -90,110 +137,93 @@
         <div class="border-2 p-8 m-4 rounded-xl shadow-md bg-white lg:p-11">
           <p class="font-bold text-2xl font-almendra text-yellow-600 pb-3 lg:text-3xl">OUR BASIS</p>
           <p class="text-gray-700 lg:text-lg">Our basis are Quran,Hadith and sunnah</p>
-          </div>
+        </div>
       </div>
     </section>
 
-    <!-- div for mission clause -->
-    <p class="text-3xl text-yellow-600 font-bold font-almendra text-center my-8 underline lg:text-4xl">MEET OUR EXECUTIVES</p>
 
-    <div>
-      <!-- div for larger screen -->
-      
-      <div class=" lg:flex lg:mb-20 lg:mt-10 lg:mx-44 mb-20">
-        <div class="">
-      <img src="./images/Founder.jpg" class="animsition fade-in-down-sm 4000 w-[485px] shadow-2xl "/>
-        </div>
-        <!-- border div for texts -->
-        <div class="shadow-xl p-4 leading-10">
-        <p class="font-bold text-2xl  hover:text-yellow-300 py-4">NAME: Subair Muees Funlola</p>
-        <p class=" font-semibold">OCCUPATION: <span class="font-normal">Da'awah propagator,art and signs/general printing</span></p>
-        <p class=" font-semibold">STATE OF ORIGIN: <span class="font-normal">Lagos State Epe.</span></p>
-        <p class=" font-semibold">NATIONALITY: <span class="font-normal">Nigerian</span></p>
-        <!-- <p class=" font-semibold">MARITAL STATUS: <span class="font-normal">Married</span></p> -->
-        <p class=" font-semibold">QUALIFICATION: <span class="font-normal">BA islamic studies(LASU)</span></p>
-         <p class=" font-semibold">POST HELD IN THE ORGANISATION: <span class="font-normal">Founder,Amir</span></p>
-          <!-- <a href="https://www.muizfunlola@gmail.com" class="font-semibold">CONTACT EMAIL: <span class="font-normal">muizfunlola@gmail.com</span></a> -->
-      </div>
-    </div>
+    <section class="px-6">
+      <p class="text-3xl text-yellow-600 font-bold font-almendra text-center my-10 underline underline-offset-4 lg:text-4xl">MEET OUR EXECUTIVES</p>
 
-    <!-- div for larger screen -->
+      <section class="md:grid md:grid-cols-2 md:gap-8 lg:grid-cols-3">
       
-    <div class=" lg:flex lg:my-20 lg:mx-44 mb-20">
-      <div>
-        <img src="./images/Director.png" class="lg:w-[400px] w-[450px] ml-4 shadow-2xl "/>
-      </div>
-    <!-- border div for texts -->
-    <div class="shadow-xl pl-4 lg:pb-8 leading-10">
-    <p class="font-bold text-2xl  hover:text-yellow-300 py-4">NAME: Aisha Hammed Subair</p>
-    <p class=" font-semibold">OCCUPATION: <span class="font-normal">Administrative staff</span></p>
-     <p class=" font-semibold">STATE OF ORIGIN: <span class="font-normal">Oyo State. Ogbomosho</span></p>
-      <p class=" font-semibold">NATIONALITY: <span class="font-normal">Nigerian</span></p>
-       <!-- <p class=" font-semibold">MARITAL STATUS: <span class="font-normal">Married</span></p> -->
-        <p class=" font-semibold">QUALIFICATION: <span class="font-normal">HND Mass Communication</span></p>
-        <p class=" font-semibold">POST HELD IN THE ORGANISATION: <span class="font-normal">Director ,women and humanitarian affair</span></p>
-           <!-- <a href="https://www.hammedaishat18@gmail.com" class="font-semibold">CONTACT EMAIL: <span class="font-normal">hammedaishat18@gmail.com</span></a> -->
+        <div class="my-10">
+        <div class="border w-64 mx-auto p-2 -mb-10 rounded-xl shadow-lg shadow-gray-500 ">
+          <img src="/src/images/founder.jpeg" alt="" class="rounded-xl h-48">
         </div>
+        <div class="grid gap-2 px-4 pb-6 pt-16 border shadow-lg shadow-gray-400 rounded-xl md:min-h-80 md:max-h-96 ">
+          <p class="text-center text-xl font-bold hover:text-yellow-600">SUBAIR MUEES FUNLOLA</p>
+          <p class=""><span class="font-medium">OCCUPATION: </span> Da'awah Propagator, Art and Signs, General Printing</p>
+          <p><span class="font-medium">STATE OF ORIGIN: </span> Epe, Lagos State</p>
+          <p><span class="font-medium">NATIONALITY: </span>Nigerian</p>
+          <p><span class="font-medium">QUALIFICATION: </span> (B.Art) Islamic Studies</p>
+          <p><span class="font-medium">POST HELD IN THE ORGANISATION: </span> Founder/Amir</p>
         </div>
-
-        <!-- div for larger screen -->
-      
-      <div class=" lg:flex lg:my-20 lg:mx-44 mb-20">
-        <div>
-        <img src="./images/Executive-member.png" class="w-[400px] ml-4 shadow-2xl "/>
-        </div>
-        <!-- border div for texts -->
-        <div class="shadow-xl p-4  leading-10">
-          <p class="font-bold text-2xl  hover:text-yellow-300 py-4">NAME: Hassan Adekunle Hissa</p>
-          <p class=" font-semibold">OCCUPATION: <span class="font-normal">Public Servant.</span></p>
-          <p class=" font-semibold">STATE OF ORIGIN: <span class="font-normal">Lagos State</span></p>
-          <p class=" font-semibold">NATIONALITY: <span class="font-normal">Nigerian</span></p>
-       <!-- <p class=" font-semibold">MARITAL STATUS: <span class="font-normal">Married</span></p> -->
-        <p class=" font-semibold">QUALIFICATION: <span class="font-normal">HND,Fine Art,LASPOTECH</span></p>
-        <p class=" font-semibold pr-32">POST HELD IN THE ORGANISATION: <span class="font-normal">Executive Member.</span></p>
-           <!-- <a href="https://www.legacyadverts735@gmail.com" class="font-semibold">CONTACT EMAIL: <span class="font-normal">legacyadverts735@gmail.com</span></a> -->
-        </div>
-        </div>
-        
-
-        <!-- div for larger screen -->
-      
-      <div class=" lg:flex lg:my-20 lg:mx-44 mb-20">
-        <div>
-    <img src="./images/Logistic.png" class="lg:w-[450px] w-[465px] ml-4 shadow-2xl "/>
-        </div>
-    <!-- border div for texts -->
-    <div class=" shadow-xl p-7  leading-10">
-    <p class="font-bold text-2xl  hover:text-yellow-300 py-4">NAME: Omoaje Bolaji</p>
-    <p class=" font-semibold">OCCUPATION: <span class="font-normal">Property Consultant and General Contractor.</span></p>
-     <p class=" font-semibold">STATE OF ORIGIN: <span class="font-normal">Oyo State</span></p>
-      <p class=" font-semibold">NATIONALITY: <span class="font-normal">Nigerian</span></p>
-       <!-- <p class=" font-semibold">MARITAL STATUS: <span class="font-normal">Married</span></p> -->
-        <p class=" font-semibold">QUALIFICATION: <span class="font-normal">OND,LASPOTECH</span></p>
-         <p class=" font-semibold">POST HELD IN THE ORGANISATION: <span class="font-normal">Logistic and welfare Director.</span></p>
-         <!-- <a href="https://www.bolajibassia@gmail.com" class="font-semibold">CONTACT EMAIL: <span class="font-normal">bolajibassia@gmail.com</span></a>  -->
-        </div> 
         </div>
 
         
-        <!-- div for larger screen -->
-      
-      <div class=" lg:flex lg:my-20 lg:mx-44 mb-20">
-        <div>
-    <img src="./images/idris.png" class="w-[450px] ml-4 shadow-2xl "/>
+        <div class="my-10">
+          <div class="border w-64 mx-auto p-2 -mb-10 rounded-xl shadow-lg shadow-gray-500">
+            <img src="/src/images/executive-0.jpeg" alt="" class="rounded-xl h-48">
+          </div>
+          <div class="grid gap-2 px-4 pb-6 pt-16 border shadow-lg shadow-gray-400 rounded-xl md:min-h-80 md:max-h-96">
+            <p class="text-center text-xl font-bold hover:text-yellow-600">AISHA HAMMED SUBAIR</p>
+            <p class=""><span class="font-medium">OCCUPATION: </span> Administrative Staff</p>
+            <p><span class="font-medium">STATE OF ORIGIN: </span> Ogbomosho, Oyo State</p>
+            <p><span class="font-medium">NATIONALITY: </span>Nigerian</p>
+            <p><span class="font-medium">QUALIFICATION: </span> (HND) Mass Communication</p>
+            <p><span class="font-medium">POST HELD IN THE ORGANISATION: </span> Director, Women and Humanitarian affair</p>
+          </div>
         </div>
-    <!-- border div for texts -->
-    <div class=" shadow-xl p-4  leading-10">
-    <p class="font-bold text-2xl  hover:text-yellow-300 py-4">NAME: Okunu Idris</p>
-    <p class=" font-semibold">OCCUPATION: <span class="font-normal">Estate agent and product manager</span></p>
-    <p class="font-semibold">STATE OF ORIGIN:<span class="font-normal"> Lagos State</span></p>
-      <p class=" font-semibold">NATIONALITY: <span class="font-normal">Nigerian</span></p>
-       <!-- <p class=" font-semibold">MARITAL STATUS: <span class="font-normal">single</span></p> -->
-        <p class=" font-semibold">QUALIFICATION: <span class="font-normal">Pure and Applied physics (Lautech,Ogbomosho)</span></p>
-         <p class=" font-semibold pr-24">POST HELD IN THE ORGANISATION: <span class="font-normal">Executive member</span></p>
-          <!-- <a href="https://www.idrislarry@yahoo.com" class="font-semibold">CONTACT EMAIL: <span class="font-normal">idrislarry@yahoo.com</span></a>  -->
+
+        <div class="my-10">
+          <div class="border w-64 mx-auto p-2 -mb-10 rounded-xl shadow-lg shadow-gray-500">
+            <img src="/src/images/executive-1.jpeg" alt="" class="rounded-xl h-48">
+          </div>
+          <div class="grid gap-2 px-4 pb-6 pt-16 border shadow-lg shadow-gray-400 rounded-xl md:min-h-80 md:max-h-96">
+            <p class="text-center text-xl font-bold hover:text-yellow-600">HASSA ADEKUNLE HISSA</p>
+            <p class=""><span class="font-medium">OCCUPATION: </span> Public Servant</p>
+            <p><span class="font-medium">STATE OF ORIGIN: </span> Lagos State</p>
+            <p><span class="font-medium">NATIONALITY: </span>Nigerian</p>
+            <p><span class="font-medium">QUALIFICATION: </span> (HND) Fine Art</p>
+            <p><span class="font-medium">POST HELD IN THE ORGANISATION: </span> Executive Member</p>
+          </div>
         </div>
+
+        <div class="my-10">
+          <div class="border w-64 mx-auto p-2 -mb-10 rounded-xl shadow-lg shadow-gray-500">
+            <img src="/src/images/executive-2.jpeg" alt="" class="rounded-xl h-48">
+          </div>
+          <div class="grid gap-2 px-4 pb-6 pt-16 border shadow-lg shadow-gray-400 rounded-xl md:min-h-80 md:max-h-96">
+            <p class="text-center text-xl font-bold hover:text-yellow-600">OMOAJE BOLAJI</p>
+            <p class=""><span class="font-medium">OCCUPATION:</span> Property Consultant and General Contractor</p>
+            <p><span class="font-medium">STATE OF ORIGIN: </span> OyoState</p>
+            <p><span class="font-medium">NATIONALITY: </span>Nigerian</p>
+            <p><span class="font-medium">QUALIFICATION: </span> (OND)</p>
+            <p><span class="font-medium">POST HELD IN THE ORGANISATION: </span> Logistics and Welfare Diractor</p>
+          </div>
         </div>
+
+        <div class="my-10"> 
+          <div class="border w-64 mx-auto p-2 -mb-10 rounded-xl shadow-lg shadow-gray-500">
+            <img src="/src/images/executive-3.jpeg" alt="" class="rounded-xl h-48">
+          </div>
+          <div class="grid gap-2 px-4 pb-6 pt-16 border shadow-lg shadow-gray-400 rounded-xl md:min-h-80 md:max-h-96">
+            <p class="text-center text-xl font-bold hover:text-yellow-600">OKUNU IDRIS</p>
+            <p class=""><span class="font-medium">OCCUPATION:</span> Estate Agent and Product Manager</p>
+            <p><span class="font-medium">STATE OF ORIGIN: </span> Lagos State</p>
+            <p><span class="font-medium">NATIONALITY: </span>Nigerian</p>
+            <p><span class="font-medium">QUALIFICATION: </span> (B.Sc) Pure and Applied Physics</p>
+            <p><span class="font-medium">POST HELD IN THE ORGANISATION: </span> Executive Member</p>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    
+        
+        
 
         
        
@@ -315,7 +345,7 @@
           <ul class="list-disc px-5">
             <li class="py-2"><a href="./activities.html#section1">Quran Memorization</a></li>
             <li class="py-2"><a href="./activities.html#section2">Mosque Development</a></li>
-            <li class="py-3 "><a href="./activities.html#section3">Quiz competition</a></li>
+            <li class="py-3"><a href="./activities.html#section3">Quiz competition</a></li>
           </ul>
         </div>
 
@@ -342,7 +372,7 @@
         </button>
       </div>
     </footer>
-    
+
     <div class="bg-gray-300 text-center text-sm font-normal md:flex md:justify-between md:px-6 md:py-1 xl:px-16">
       <p class="">
         Copyright &copy 2024 The Lantern Islamic Foundation. All Rights Reserved.
@@ -350,7 +380,11 @@
       <p class="">Powered by <a href="https://www.dervac.com" class="font-semibold">dervac</a></p>
     </div>
 
-    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <img src="./images/arrow-small-up.svg" alt="" class="" />
+    </button>
+
+
 
     <script src="./js/script.js"></script>
   </body>

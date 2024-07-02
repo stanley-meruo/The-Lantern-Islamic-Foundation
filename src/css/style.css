@@ -283,7 +283,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 99;
+  z-index: 10;
   border-radius: 20px;
   border-bottom: 2px solid rgb(255, 132, 0);
   outline: none;
