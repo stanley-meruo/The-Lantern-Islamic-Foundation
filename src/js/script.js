@@ -10,8 +10,6 @@ function exitNav() {
 
 
 
-
-
 // SLIDER ON HOME PAGE 
 let slideIndex = 1;
 showSlides(slideIndex);
