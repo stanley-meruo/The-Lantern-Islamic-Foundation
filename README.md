@@ -7,17 +7,18 @@
 - [Author](#author)
 
 ## Overview
-- This is a single landing page, responsive for all srceens sizes
+- This is a website, responsive for all srceens sizes
 
 ### Links
-
-- Live Site URL: [Live Project](https://loop-studio-page-pi.vercel.app/)
-
+- Live Site URL: [Live Project](http://the-lantern-islamic-foundation.vercel.app
+)
 
 ### Built with
 
 - Semantic HTML5 markup
-- Flexbox
-- CSS Grid
 - Mobile-first workflow
 - Vanilla Javascript
+- Tailwind CSS for CSS Styling
+
+- ### Documentation
+- Tailwind CSS : (https://tailwindcss.com/documentation)
