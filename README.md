@@ -4,6 +4,7 @@
 - [Overview](#overview)
   - [Links](#links)
   - [Built with](#built-with)
+  - [Documentation](#documentation)
 
 ## Overview
 
@@ -20,5 +21,5 @@
 - Vanilla Javascript for Functionlity
 - Tailwind CSS for CSS Styling
 
-- ### Documentation
+### Documentation
 - Tailwind CSS : [Tailwind CSS](https://tailwindcss.com/docs/installation)
